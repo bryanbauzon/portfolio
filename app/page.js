@@ -11,14 +11,12 @@ export default async function Page() {
     <>
     
      <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <Home />
-      
-
-        <About />
+        {/* <About />
         <Services />
         <Contact />
-        <Footer />
+        <Footer /> */}
       </div>  
     </>
   );

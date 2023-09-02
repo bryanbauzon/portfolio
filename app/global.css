@@ -186,9 +186,9 @@ a:hover {
   cursor: crosshair;
 }
 
-.socialLinks{
+/* .socialLinks{
 
-}
+} */
 
 #socialLinksContainer {
   top: 125%;
@@ -230,4 +230,18 @@ a:hover {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+}
+
+#inprogress{
+  margin-top: 20px;
+  color: #222831;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFD369;
+  width: 35%;
+  padding: 10px;
+  font-size: 0.65rem;
+  text-align: center;
+}
+#inprogress:hover{
+  cursor: progress;
 }
