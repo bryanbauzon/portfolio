@@ -1,0 +1,8 @@
+{
+  "/_not-found": "/_not-found",
+  "/page": "/",
+  "/@analytics/page": "/",
+  "/@teams/page": "/",
+  "/(route_groups)/about/page": "/about",
+  "/services/page": "/services"
+}
