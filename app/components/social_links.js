@@ -6,17 +6,18 @@ export default function SocialLinks() {
       
       <Link   className="socialLinks" href="https://www.facebook.com/brynbzn.films" target="_blank">
         <Image
-          src="/facebook.png"
+          src="/images/facebook.png"
           width={30}
           height={30}
+          alt="facebook"
         />
       </Link>
       <Link href="https://www.linkedin.com/in/bryanbauzon/" target="_blank">
         <Image
-          src="/linkedin.png"
+          src="/images/linkedin.png"
           className="socialLinks"
           width={30}
-          height={30}
+          height={30}  alt="linkedin"
         />
       </Link>
       <Link
@@ -24,16 +25,16 @@ export default function SocialLinks() {
         target="_blank"
       >
         <Image
-          src="/salesforce.png"
+          src="/images/salesforce.png"
           className="socialLinks"
           width={30}
-          height={30}
+          height={30}  alt="salesforce"
         />
       </Link>
 
       {/* <Link href="https://github.com/bryanbauzon" target="_blank">
         <Image
-          src="/github.png"
+          src="/images/github.png"
           className="socialLinks"
           width={30}
           height={30}
@@ -44,10 +45,10 @@ export default function SocialLinks() {
         target="_blank"
       >
         <Image
-          src="/youtube.png"
+          src="/images/youtube.png"
           className="socialLinks"
           width={30}
-          height={30}
+          height={30}  alt="youtube"
         />
       </Link>
     </div>

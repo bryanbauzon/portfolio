@@ -11,7 +11,7 @@ export default async function Page() {
     <>
     
      <div>
-        {/* <Navbar /> */}
+        {/* <Navbar />  */}
         <Home />
         {/* <About />
         <Services />
