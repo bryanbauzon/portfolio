@@ -129,15 +129,17 @@ a:hover {
 .contactSection {
   height: 100vh;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
 }
 
+.homeSection{
+  width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
 .homeSection div {
-  position: absolute;
-  left: 45%;
-  top: 45%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+ text-align: center;
 }
 
 
