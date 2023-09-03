@@ -7,18 +7,18 @@ export default function SocialLinks() {
         href="https://www.salesforce.com/trailblazer/bryanbauzon"
         target="_blank"
       >
-        <Image src="/salesforce.png" width={30} height={30} alt="salesforce" />
+        <Image  src="/images/salesforce.png" width={30} height={30} alt="salesforce" />
       </Link>
       <Link href="https://www.linkedin.com/in/bryanbauzon/" target="_blank">
-        <Image src="/linkedin.png" width={30} height={30} alt="linkedin" />
+        <Image  src="/images/linkedin.png" width={30} height={30} alt="linkedin" />
       </Link>
       <Link href="https://www.facebook.com/brynbzn.films" target="_blank">
-        <Image src="/facebook.png" width={30} height={30} alt="facebook" />
+        <Image  src="/images/facebook.png" width={30} height={30} alt="facebook" />
       </Link>
 
       {/* <Link href="https://github.com/bryanbauzon" target="_blank">
         <Image
-          src="/github.png"
+           src="/images/github.png"
           className="socialLinks"
           width={30}
           height={30}
@@ -28,7 +28,7 @@ export default function SocialLinks() {
         href="https://www.youtube.com/channel/UCHKE9izs5Z7N9yLWQDFVAlg"
         target="_blank"
       >
-        <Image src="/youtube.png" width={30} height={30} alt="youtube" />
+        <Image  src="/images/youtube.png" width={30} height={30} alt="youtube" />
       </Link>
     </div>
   );
