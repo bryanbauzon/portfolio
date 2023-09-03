@@ -138,7 +138,8 @@
  }
 
  .homeSection div {
-  margin: 0 20px ;
+  margin: 0 50px 0 50px;
+  background-color: red;
    text-align: center;
  }
 
@@ -219,7 +220,7 @@
    text-align: left;
    margin-top: 20px;
    font-size: 1rem;
-   width: 80%;
+   width: 100%;
    font-family: 'Courier New', Courier, monospace
  }
 
