@@ -138,8 +138,9 @@
  }
 
  .homeSection div {
-  margin: 0 50px 0 50px;
-   text-align: center;
+   text-align: left;
+  margin: 0 5% 0 5%;
+
  }
 
 
@@ -189,14 +190,12 @@
    cursor: crosshair;
  }
 
- /* .socialLinks{
-
-} */
+ .socialLinks{
+}
 
  #socialLinksContainer {
-   top: 125%;
    width: 100%;
-   margin-left: 2%;
+   margin-top: 20px;
  }
 
  .homeSection .name {
@@ -217,7 +216,7 @@
  .homeSection .description {
    color: #EEEE;
    text-align: left;
-   margin-top: 20px;
+   margin-top: 10px;
    font-size: 1rem;
    width: 100%;
    font-family: 'Courier New', Courier, monospace
@@ -237,7 +236,7 @@
  }
 
  #inprogress {
-   margin-top: 20px;
+   margin-top: 10px;
    color: #222831;
    font-family: Arial, Helvetica, sans-serif;
    background-color: #FFD369;
@@ -253,5 +252,5 @@
 }
 
  #inprogress:hover {
-   cursor: progress;
+   cursor:none;
  }

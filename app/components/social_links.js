@@ -3,6 +3,7 @@ import Image from "next/image";
 export default function SocialLinks() {
   return (
     <div id="socialLinksContainer">
+      
       <Link   className="socialLinks" href="https://www.facebook.com/brynbzn.films" target="_blank">
         <Image
           src="/facebook.png"
