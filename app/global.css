@@ -220,15 +220,11 @@
    text-align: left;
    margin-top: 20px;
    font-size: 1rem;
-   width: 50%;
+   width: 100%;
    font-family: 'Courier New', Courier, monospace
  }
 
- @media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
-  .homeSection .description{
-    width: 100%;
-  }
-}
+
 
  .servicesSection span {
    position: absolute;
