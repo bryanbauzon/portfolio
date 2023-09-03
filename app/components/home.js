@@ -11,7 +11,7 @@ export default function Home() {
           A Software Engineer by profession with 4+ years work experience based in
           the Philippines.Also, a passionate Photographer and Film maker.
         </h3>
-        <h5 id="inprogress">IN PROGRESS</h5>
+        <h5 id="inprogress">Dev in Progress</h5>
         {/* <SocialLinks/> */}
       </div>
     </section>
