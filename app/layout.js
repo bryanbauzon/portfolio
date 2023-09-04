@@ -1,6 +1,6 @@
 import Link from "next/link";
 import  "./global.css";
-
+import { Analytics } from '@vercel/analytics/react';
 export const metadata = {
   title: "Bryan Bauzon - Portfolio",
   description: "Photography and Videography",
@@ -20,6 +20,7 @@ export default function RootLayout({ analytics, teams, children }) {
           <div> {children}</div>
           {/* <section>{analytics} </section>
                <section>{teams}</section> */}
+               <Analytics/>
         </body>
       </html>
     </>
