@@ -1,27 +1,19 @@
-import Navbar from "./components/nav";
-import Footer from "./components/footer";
-import Home from "./components/home";
-import About from "./components/about";
-import Services from "./components/services";
-import Contact from "./components/contact";
-import Image from "next/image";
+import Navbar from "./_components/navbar";
+import Footer from "./_components/footer";
+import Services from "./_components/services";
 export default async function Page() {
-
   return (
     <>
-    
-     <div>
-        <Navbar />
-        <Home />
-      
-
-        <About />
-        <Services />
-        <Contact />
-        <Footer />
-      </div>  
+     <Navbar />
+      <div className="h-screen bg-pages flex">
+        <div className="m-auto left-0">
+          <p className="text-name font-mono">MAX BRYAN C. BAUZON</p>
+        </div>
+      </div>
+      <div className="h-screen bg-pages">ABOUT</div> 
+      <Services/>
+     <div className="h-screen bg-pages">CONTACT</div>
+      <Footer /> 
     </>
   );
 }
-
- 
