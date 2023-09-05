@@ -1,6 +1,5 @@
 import Link from "next/link";
 import './global.css'
-
 export const metadata = {
   title: "Bryan Bauzon - Portfolio",
   description: "Photography and Videography",
