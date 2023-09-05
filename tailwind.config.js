@@ -31,6 +31,7 @@ module.exports = {
         role: "#EEEEEE",
         footer: "#DBD8E3",
         links:'#352F44',
+        bermuda: "#78dcca",
       },
     },
   },
