@@ -251,6 +251,8 @@
    -o-border-radius: 20px;
 }
 
- #inprogress:hover {
-   cursor:none;
+
+ .links{
+    color: #FFD369;
+    text-decoration: underline;
  }
