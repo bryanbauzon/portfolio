@@ -13,7 +13,7 @@ export default function Home() {
           A <Link href="https://www.linkedin.com/in/bryanbauzon/" className="links" target="_blank">Software Engineer</Link> by profession with 4+ years work experience based in
           the Philippines.
           <br/>
-          Also, a passionate <Link href="https://www.facebook.com/brynbzn.films"  className="links">Photographer</Link> and <Link  href="https://www.youtube.com/channel/UCHKE9izs5Z7N9yLWQDFVAlg"  className="links" target="_blank">Filmmaker.</Link>
+          Also, a passionate <Link href="https://www.facebook.com/brynbzn.films" target="_blank" className="links">Photographer</Link> and <Link  href="https://www.youtube.com/channel/UCHKE9izs5Z7N9yLWQDFVAlg"  className="links" target="_blank">Filmmaker.</Link>
         </h3>
       </div>
     </section>
