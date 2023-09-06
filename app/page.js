@@ -10,7 +10,6 @@ export default async function Page() {
     <>
       <Navbar />
       <Home />
-      <div className="h-screen bg-pages">ABOUT</div>
       <Services />
       <div className="h-screen bg-pages">CONTACT</div>
       <Footer />

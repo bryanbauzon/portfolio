@@ -12,14 +12,8 @@
 .nongradient {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.philippines {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background: linear-gradient(90deg, #64c5ff, #ff2020);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.nav {
+
+.nav{
   /* From https://css.glass */
   background: rgba(31, 31, 31, 0.45);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -27,3 +21,9 @@
   -webkit-backdrop-filter: blur(5px);
 }
 
+.about{
+  color: white;
+  font-family: monospace;
+  background: linear-gradient(to right, #79eeff, #ff7c00);
+  
+}

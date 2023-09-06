@@ -7,8 +7,8 @@ export default function Navbar() {
     <>
       <nav className="p-6 w-full mx-auto bg-navbar nav z-20 fixed flex items-center space-x-4">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <Link href="/" className="flex items-center flex-shrink-0 mr-6">
-            <div className="text-md text-white">@bryanbauzon</div>
+          <Link href="#home" className="flex items-center flex-shrink-0 mr-6 text-md text-white font-mono">
+            @bryanbauzon
           </Link>
         </div>
         <div className="flex w-full justify-end">
@@ -19,7 +19,7 @@ export default function Navbar() {
               transition: { duration: 1 },
             }}
             whileTap={{ scale: 0.9 }}
-            className="sm:text-lg"
+            className="text-smfont-mono about p-2 rounded-full"
           >Get in touch</motion.a>
         </div>
       </nav>
