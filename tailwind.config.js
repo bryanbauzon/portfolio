@@ -32,7 +32,8 @@ module.exports = {
         footer: "#222831",
         links:'#78dcca',
         'bermuda': "#78dcca",
-        white:'#fff'
+        white:'#fff',
+        dark: "#1f1f1f",
       },
     },
   },
