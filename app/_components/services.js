@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 export default function Services() {
   return (
-    <div className="h-[124vh] p-3 md:h-[60vh] lg:h-[65vh] bg-pages ">
-      <h1 className="p-10 lg:pt-20 lg:text-[3.1rem] md:text-[3.1rem] text-[2rem] text-center pt-10 gradient text-white">
+    <div className="h-[130vh] p-3 md:h-[60vh] lg:h-[65vh] bg-pages ">
+      <h1 className="p-10 lg:pt-20 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center pt-10 gradient text-white">
         SERVICES OFFERED
       </h1>
 

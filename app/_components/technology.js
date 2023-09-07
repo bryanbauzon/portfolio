@@ -4,7 +4,7 @@ import { motion, useScroll } from "framer-motion";
 export default function Technology() {
   return (
     <div className=" lg:h-[70vh] md:h-[70vh] h-[100vh]  backgroundGradient pt-20" id="tech">
-      <h1 className="p-4 lg:text-[3.1rem] md:text-[3.1rem] text-[2rem] text-center nongradient text-dark">
+      <h1 className="p-4 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center nongradient text-dark">
         TECHNOLOGY USED
       </h1>
       <div className="grid grid-cols-3 lg:p-2 p-5 md:grid-cols-3 justify-center lg:grid-cols-5 gap-5 items-center">

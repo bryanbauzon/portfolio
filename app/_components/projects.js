@@ -4,7 +4,7 @@ import { motion, useScroll } from "framer-motion";
 export default function Projects() {
   return (
     <div className="  h-screen md:h-[65vh] backgroundGradient">
-      <h1 className="p-10 lg:text-[3.1rem] md:text-[3.1rem] text-[2rem] text-center nongradient text-dark">
+      <h1 className="p-10 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center nongradient text-dark">
         PERSONAL PROJECTS
       </h1>
       <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-10 gap-6">
