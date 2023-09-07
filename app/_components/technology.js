@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 export default function Technology() {
   return (
-    <div className=" lg:h-screen md:h-[70vh] h-[150vh] backgroundGradient pt-20" id="tech">
+    <div className=" lg:h-screen md:h-[70vh] h-[130vh] backgroundGradient pt-20" id="tech">
       <h1 className="p-4 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center nongradient text-dark">
         TECHNOLOGY USED
       </h1>
