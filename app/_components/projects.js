@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 export default function Projects() {
   return (
-    <div className="  h-screen md:h-[65vh] backgroundGradient">
+    <div className="  h-[120vh] lg:h-90vh md:h-[65vh] backgroundGradient">
       <h1 className="p-10 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center nongradient text-dark">
         PERSONAL PROJECTS
       </h1>
