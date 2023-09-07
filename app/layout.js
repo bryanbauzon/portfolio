@@ -5,7 +5,8 @@ export const metadata = {
   description: "Photography and Videography",
 };
 
-export default function RootLayout({ analytics, teams, children }) {
+export default function RootLayout({ children }) {
+
   return (
     <>
       <html lang="en" className="scroll-smooth">
