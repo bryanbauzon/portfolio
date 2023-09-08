@@ -15,7 +15,7 @@ export default function Services() {
               {" "}
               <Image
                 className="object-cover services"
-                src="/mobiledev.png"
+                src="/services/mobiledev.png"
                 alt="Mobile Development"
                 width={80}
                 height={80}
@@ -36,7 +36,7 @@ export default function Services() {
             <motion.div whileHover={{ scale: 1.5 }}>
               <Image
                 className="object-cover services"
-                src="/webdev.png"
+                src="/services/webdev.png"
                 width={80}
                 height={80}
                 alt="Web Development"
@@ -57,7 +57,7 @@ export default function Services() {
             <motion.div whileHover={{ scale: 1.5 }}>
               <Image
                 className="object-cover services"
-                src="/videoediting.png"
+                src="/services/videoediting.png"
                 width={80}
                 height={80}
                 alt="Video Editing"

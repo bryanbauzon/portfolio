@@ -34,7 +34,7 @@ export default function Projects() {
               
             </div>
             <div className="flex p-1">
-              <Image src="/portfolio.png" alt="Portfolio Website" width={100} height={120}/>
+              <Image src="/projects/portfolio.png" alt="Portfolio Website" width={100} height={120}/>
             </div>
           </div>
         </motion.div>
@@ -62,7 +62,7 @@ export default function Projects() {
               </Link>
             </div>
             <div className="flex p-1">
-              <Image src="/anda.png" alt="Portfolio Website" width={100} height={120}/>
+              <Image src="/projects/anda.png" alt="Portfolio Website" width={100} height={120}/>
             </div>
           </div>
          
@@ -92,16 +92,16 @@ export default function Projects() {
             </div>
             <div className="flex p-1">
               <div className="p-2">
-                <Image src="/JobFinder.png" alt="Job Finder" height={50} width={50} />
+                <Image src="/projects/JobFinder.png" alt="Job Finder" height={50} width={50} />
               </div>
               <div className="p-2">
-                <Image src="/jf2.png" alt="Job Finder" height={50} width={50} />
+                <Image src="/projects/jf2.png" alt="Job Finder" height={50} width={50} />
               </div>
               <div className="p-2">
-                <Image src="/jf3.png" alt="Job Finder" height={50} width={50} />
+                <Image src="/projects/jf3.png" alt="Job Finder" height={50} width={50} />
               </div>
               <div className="p-2">
-                <Image src="/jf4.png" alt="Job Finder" height={50} width={50} />
+                <Image src="/projects/jf4.png" alt="Job Finder" height={50} width={50} />
               </div>
               
             </div>
