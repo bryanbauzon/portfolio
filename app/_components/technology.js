@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 export default function Technology() {
   return (
-    <div className=" lg:h-screen md:h-[70vh] h-[130vh] backgroundGradient pt-20" id="tech">
+    <div className=" lg:h-screen md:h-[90vh] h-[130vh] backgroundGradient pt-20" id="tech">
       <h1 className="p-4 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center nongradient text-dark">
         TECHNOLOGY USED
       </h1>
-      <div className="grid grid-cols-3 lg:p-2 p-5 md:grid-cols-3 justify-center lg:grid-cols-4 gap-6 items-center">
+      <div className="grid grid-cols-3 lg:p-2 p-5 md:grid-cols-4 justify-center lg:grid-cols-4 gap-6 items-center">
         <div className=" flex justify-center">
           <motion.div href="" whileHover={{ scale: 1.2 }}>
             <Image src="/technologies/html.svg" width={100} height={100} title="HTML5" className="tech" alt="HTML"/>

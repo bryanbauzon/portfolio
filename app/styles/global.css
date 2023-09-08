@@ -51,3 +51,16 @@
 .year,source{
   font-family: 'Courier New', Courier, monospace;
 }
+.cert{
+  font-size: 0.8rem;
+  color:#1f1f1f
+}
+.banner{
+  background-image: url("/salesforce/bg/bg.jpeg");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
