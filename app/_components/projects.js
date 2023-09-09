@@ -33,9 +33,9 @@ export default function Projects() {
               </Link>
               
             </div>
-            <div className="flex p-1">
+            {/* <div className="flex p-1">
               <Image src="/projects/portfolio.png" alt="Portfolio Website" width={100} height={120}/>
-            </div>
+            </div> */}
           </div>
         </motion.div>
 
@@ -61,9 +61,9 @@ export default function Projects() {
                 Youtube
               </Link>
             </div>
-            <div className="flex p-1">
+            {/* <div className="flex p-1">
               <Image src="/projects/anda.png" alt="Portfolio Website" width={100} height={120}/>
-            </div>
+            </div> */}
           </div>
          
         </motion.div>
@@ -90,7 +90,7 @@ export default function Projects() {
                 Source Code
               </Link>
             </div>
-            <div className="flex p-1">
+            {/* <div className="flex p-1">
               <div className="p-2">
                 <Image src="/projects/JobFinder.png" alt="Job Finder" height={50} width={50} />
               </div>
@@ -103,8 +103,7 @@ export default function Projects() {
               <div className="p-2">
                 <Image src="/projects/jf4.png" alt="Job Finder" height={50} width={50} />
               </div>
-              
-            </div>
+            </div> */}
           </div>
         </motion.div>
       </div>

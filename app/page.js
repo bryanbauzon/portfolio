@@ -8,6 +8,8 @@ import Home from "./_components/home";
 import Technology from "./_components/technology";
 import Projects from "./_components/projects";
 import Certificates from "./_components/certificates";
+
+
 export default async function Page() {
   return (
     <>

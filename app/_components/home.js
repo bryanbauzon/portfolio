@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className="h-screen bg-pages" id="home">
+    <div className="h-screen bg-pages " id="home" >
       <div className="grid grid-cols-1 p-5 lg:p-20 pt-10 md:pt-70 lg:pt-2 md:grid-cols-1 lg:grid-cols-2 gap-1">
           <div className="text-white lg:text-[1.4rem] font-mono text-[1.3rem] flex flex-col justify-center items-left lg:h-[80vh] h-[80vh] ">
             <span className="text-[1rem] font-mono">
