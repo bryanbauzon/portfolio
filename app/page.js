@@ -13,11 +13,11 @@ import Certificates from "./_components/certificates";
 export default async function Page() {
   return (
     <>
-      <Navbar />
+     <Navbar />
       <Home />
       <Technology />
-      <Services />
-      <Projects />
+      <Services /> 
+      {/* <Projects /> */}
       <Certificates />
       <Footer />
     </>

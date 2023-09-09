@@ -57,7 +57,7 @@ export default function Technology() {
         </div>
         <div className=" flex justify-center">
           <motion.div href="" whileHover={{ scale: 1.2 }}>
-            <Image src="/technologies/sql.svg" width={100} height={100} title="SQL"className="tech" alt="SQL"/>
+            <Image src="/technologies/sql.png" width={100} height={100} title="SQL"className="tech" alt="SQL"/>
           </motion.div>
         </div>
         <div className=" flex justify-center">
