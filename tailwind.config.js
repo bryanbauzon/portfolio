@@ -25,7 +25,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        pages: "#1f1f1f",
+        pages: "#F0F0F0",
         navbar: "#222831",
         name: "#DDE6ED",
         role: "#EEEEEE",
@@ -33,7 +33,8 @@ module.exports = {
         links:'#ff7c00',
         'bermuda': "#78dcca",
         white:'#fff',
-        dark: "#1f1f1f",
+        dark: "#213555",
+        blue:"#4F709C",
         debug:'#ff7c00',
       },
     },

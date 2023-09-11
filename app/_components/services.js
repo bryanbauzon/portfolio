@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 export default function Services() {
   return (
-    <div className="h-[140vh] sm:h-[145vh] p-3 md:h-[60vh] lg:h-[65vh] bg-pages ">
-      <h1 className="p-10 lg:pt-20 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center pt-10 gradient text-white">
+    <div className="p-3 bg-pages h-min">
+      <h1 className="p-10 lg:pt-20 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center pt-10 text-dark services">
         SERVICES OFFERED
       </h1>
 
@@ -22,10 +22,10 @@ export default function Services() {
               />
             </motion.div>
           </div>
-          <p className="text-center text-white text-lg font-bold">
+          <p className="text-center text-lg font-bold text-dark">
             Mobile Development
           </p>
-          <p className="text-white text-center">
+          <p className="text-center text-blue">
             Specializing in creating high-performance mobile apps for iOS and
             Android, we turn your ideas into reality with precision and
             innovation.
@@ -43,10 +43,10 @@ export default function Services() {
               />
             </motion.div>
           </div>
-          <p className="text-center text-white  text-lg font-bold">
+          <p className="text-center text-dark  text-lg font-bold">
             Web Development
           </p>
-          <p className="text-white text-center">
+          <p className="text-blue text-center">
             We craft exceptional websites tailored to your needs, from stunning
             custom designs to e-commerce solutions. Elevate your online presence
             with our professional web development services.
@@ -64,10 +64,10 @@ export default function Services() {
               />
             </motion.div>
           </div>
-          <p className="text-center text-white  text-lg font-bold">
+          <p className="text-center text-dark  text-lg font-bold">
             Video Editing
           </p>
-          <p className="text-white text-center">
+          <p className="text-blue text-center">
             We specialize in professional video editing services, transforming
             your raw footage into polished, engaging content that captivates
             your audience.
