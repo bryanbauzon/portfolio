@@ -12,7 +12,11 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="flex w-full justify-end">
-          <motion.a
+          <motion.div  whileHover={{ scale: 1.2, rotate: [0, 0, 10, 10, 0] }}
+            whileTap={{ scale: 0.5 }}>
+            <span className="underdev p-2 rounded-full">Under Development</span>
+          </motion.div>
+          {/* <motion.a
           href="mailto:mrbryanbauzon@gmail.com"
             whileHover={{
               scale: 1.2,
@@ -20,7 +24,7 @@ export default function Navbar() {
             }}
             whileTap={{ scale: 0.9 }}
             className="text-smfont-mono about p-2 rounded-full"
-          >Get in touch</motion.a>
+          >Get in touch</motion.a> */}
         </div>
       </nav>
     </>

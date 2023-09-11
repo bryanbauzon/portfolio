@@ -45,10 +45,11 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.about {
+.about, .underdev {
   color: white;
   font-family: monospace;
   background-color: #213555;
+  cursor: pointer;
 }
 
 .tech,
