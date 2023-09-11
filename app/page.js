@@ -15,12 +15,13 @@ export default async function Page() {
     <>
      <Navbar />
       <Home />
+      <Certificates />
       <Experience/>
       <Services /> 
       <Skills />
       
       {/* <Projects /> */}
-      <Certificates />
+    
       <Footer />
     </>
   );

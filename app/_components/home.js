@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       <div className=" flex justify-center items-center">
        <div className="animate-bounce">
-        <Link href="#experience"> <svg
+        <Link href="#certificates"> <svg
           color="#213555"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

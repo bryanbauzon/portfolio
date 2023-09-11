@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 export default function Certificates() {
   return (
-    <div className="h-min bg-pages p-20">
+    <div className="h-min bg-pages p-20" id="certificates">
       <div className="flex flex-col justify-center">
         <h1 className="p-10 lg:p-20 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center p-10 text-dark nongradient">
           3X SALESFORCE CERTIFIED
