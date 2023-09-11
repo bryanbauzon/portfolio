@@ -1,5 +1,6 @@
 import Link from "next/link";
 import './styles/global.css'
+import Analytics from '@vercel/analytics'
 export const metadata = {
   title: "Bryan Bauzon - Portfolio",
   description: "Photography and Videography",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
           <div> {children}</div>
         </body>
       </html>
+      <Analytics/>
     </>
   );
 }
