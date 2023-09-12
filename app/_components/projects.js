@@ -137,7 +137,7 @@ export default function Projects() {
               <br />
               Recently, this year, 2023, I made a promotional video for my
               hometown, Anda, Pangasinan, focusing mainly on our tourist
-              attraction, the Tondol White Sand Beach - the little Boracay of
+              attraction, the Tondol White Sand Beach - little Boracay of
               the North. To watch this video, click{" "}
               <Link
                 href={"https://www.youtube.com/watch?v=8iBvhVrAnRQ"}
