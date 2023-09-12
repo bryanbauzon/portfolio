@@ -11,12 +11,12 @@ import Experience from "./_components/experience";
 export default async function Page() {
   return (
     <>
-     <Navbar />
+     {/* <Navbar />
       <Home />
       <Certificates />
-      <Experience/> 
+      <Experience/>  */}
       <Services /> 
-     <Skills /> 
+     {/* <Skills />  */}
       
       {/* <Projects /> */}
     

@@ -119,15 +119,15 @@ export default function Services() {
             with our professional web development services.
           </p>
           <div className="p-5">
-            <div className=" flex flex-col">
-              <div className="grid grid-cols-1 gap-1">
+            <div className=" ">
+              <div className="flex justify-center w-full ">
               <motion.div
                   whileHover={{ scale: 1.3 }}
                   whileTap={{ scale: 0.8 }}
                 >
                 <Image
                   src={"/projects/portfolio.png"}
-                  className="object-cover webdev p-2"
+                  className=" webdev p-2"
                   height={150}
                   width={250}
                   quality={100}
@@ -187,8 +187,9 @@ export default function Services() {
             your audience.
           </p>
           <div className="p-5">
-            <div className=" flex flex-col">
-              <div className="grid grid-cols-1 gap-1">
+            <div className="">
+            <div className="flex justify-center w-full ">
+
               <motion.div
                   whileHover={{ scale: 1.3 }}
                   whileTap={{ scale: 0.8 }}
