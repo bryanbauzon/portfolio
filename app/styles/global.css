@@ -9,8 +9,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.currentPosition,.basedCountry,.services{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+.defaultFont {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.subFont {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .backgroundGradient {
@@ -27,12 +32,12 @@
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.nav,.footer{
+.nav{
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(35, 41, 49, 0.37);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.5px);
-  -webkit-backdrop-filter: blur(8.5px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .glasseffect {
@@ -45,10 +50,11 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.about {
+.about,
+.underdev {
   color: white;
-  font-family: monospace;
-  background-color: #213555;
+  background-color: #4ECCA3;
+  cursor: pointer;
 }
 
 .tech,
@@ -79,10 +85,19 @@ source {
   font-size: 0.8rem;
 }
 
-.job-title {
-  color: #213555;
+.mobdev,.webdev,.videoediting{
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
 }
 
-.job-details {
-  color: #4F709C;
+.sampleWorks{
+  background: rgba(35, 41, 49, 0.37);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 0;
+}
+.tech{
+  cursor: pointer;
 }
