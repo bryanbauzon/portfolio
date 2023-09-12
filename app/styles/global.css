@@ -82,7 +82,7 @@ source {
 }
 
 
-.mobdev,.webdev,.videoediting{
+.services{
   height: fit-content;
   width: fit-content;
   cursor: pointer;
