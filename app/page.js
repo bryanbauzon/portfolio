@@ -2,8 +2,6 @@
 import Navbar from "./_components/navbar";
 import Footer from "./_components/footer";
 import Services from "./_components/services";
-import { useState, useEffect } from "react";
-import { motion, useScroll } from "framer-motion";
 import Home from "./_components/home";
 import Skills from "./_components/skills";
 import Projects from "./_components/projects";
@@ -16,9 +14,9 @@ export default async function Page() {
      <Navbar />
       <Home />
       <Certificates />
-      <Experience/>
+      <Experience/> 
       <Services /> 
-      <Skills />
+     <Skills /> 
       
       {/* <Projects /> */}
     

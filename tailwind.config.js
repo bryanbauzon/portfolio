@@ -25,17 +25,19 @@ module.exports = {
     },
     extend: {
       colors: {
-        pages: "#F0F0F0",
-        navbar: "#222831",
+        pages: "#232931",
+        navbar: "#232931",
         name: "#DDE6ED",
         role: "#EEEEEE",
         footer: "#222831",
         links:'#ff7c00',
         'bermuda': "#78dcca",
-        white:'#fff',
-        dark: "#213555",
+        white:'#EEEEEE',
+        dark: "#F0F0F0",
         blue:"#4F709C",
         debug:'#ff7c00',
+        highlights:'#F0F0F0'
+        // "#F0F0F0",
       },
     },
   },

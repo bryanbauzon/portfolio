@@ -2,12 +2,12 @@ import Link from "next/link";
 export default function Footer() {
   let year = new Date().getFullYear();
   return (
-    <footer className="h-[25vh] footer flex">
+    <footer className="h-[25vh] bg-footer flex">
       <div className="flex p-4 w-full justify-center items-center">
         <div className="grid grid-cols-3 gap-2">
           <div>
             <Link
-              href="mailto:mrbryanbauzon@gmail.com"
+              href="mailto:mrbryanbauzon@gmail.com?subject=Sample Email"
               className="underline text-dark text-xs"
             >
               hi@bryanbauzon.com

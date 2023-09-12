@@ -5,193 +5,193 @@ export default function Technology() {
   return (
     <div
       className=" h-min bg-pages pt-20 p-20"
-      id="tech"
+      id="text-white"
     >
-      <h1 className="p-4 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center nongradient text-dark">
+      <h1 className="p-4 text-3xl text-center defaultFont text-white">
         SKILLS
       </h1>
-      <div className="grid grid-cols-3 lg:p-2 p-10  md:grid-cols-4 justify-center lg:grid-cols-4 gap-6 items-center">
+      <div className="grid grid-cols-3 lg:p-2 p-5  md:grid-cols-4 justify-center lg:grid-cols-4 gap-6 items-center">
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">HTML</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">HTML</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">CSS</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">CSS</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">TailwindCSS</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">TailwindCSS</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">Bootstrap</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">Bootstrap</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">Javascript</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">Javascript</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">NextJS</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">NextJS</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">JQuery</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">JQuery</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">Flutter</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">Flutter</h1>
           </motion.div>
         </div>
 
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">Java</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">Java</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">SQL</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">SQL</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">git</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">git</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">Github</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">Github</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">Bitbucket</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">Bitbucket</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">Tortoise SVN</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">Tortoise SVN</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">Salesforce</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">Salesforce</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">
-              Lightning Web Component
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">
+              LWC
             </h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">Apex</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">Apex</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">Flows</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">Flows</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">Validation Rules</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">Validation Rules</h1>
           </motion.div>
         </div>
         <div className=" flex justify-center">
           <motion.div
-            className="hover:underline"
+            className="hover:underline text-white"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.5 }}
           >
-            <h1 className="font-mono hover:font-bold tech">Formula</h1>
+            <h1 className="subFont text-md   tech  hover:font-bold text-white">Formula</h1>
           </motion.div>
         </div>
       </div>

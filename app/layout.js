@@ -2,8 +2,8 @@ import Link from "next/link";
 import './styles/global.css'
 import { Analytics } from '@vercel/analytics/react';
 export const metadata = {
-  title: "Bryan Bauzon - Portfolio",
-  description: "Photography and Videography",
+  title: "Bryan Bauzon - Software Developer",
+  description: "My online space that shows my interests and passion in software technologies and other stuffs.",
 };
 
 export default function RootLayout({ children }) {

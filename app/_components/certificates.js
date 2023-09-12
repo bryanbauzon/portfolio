@@ -5,9 +5,9 @@ export default function Certificates() {
   return (
     <div className="h-min bg-pages p-20" id="certificates">
       <div className="flex flex-col justify-center">
-        <h1 className="p-10 lg:p-20 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center p-10 text-dark nongradient">
+        <h1 className="p-10 lg:p-20 text-3xl text-center p-10 text-dark defaultFont">
           3X SALESFORCE CERTIFIED
-          <p className="font-mono cert font-dark underline">
+          <p className="subFont font-light cert text-white underline">
             Click badge to view certificate.
           </p>
         </h1>
