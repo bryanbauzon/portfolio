@@ -4,108 +4,163 @@ import { motion, useScroll } from "framer-motion";
 import Image from "next/image";
 export default function Projects() {
   return (
-    <div className="  h-[160vh] lg:h-90vh md:h-[90vh] backgroundGradient">
-      <h1 className="p-10 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center nongradient text-dark">
+    <div className="  h-min bg-pages">
+      <h1 className="p-10 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center defaultFont text-white">
         PERSONAL PROJECTS
       </h1>
-      <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-10 gap-6">
-       
-
-        <motion.div whileHover={{ scale: 1.1 }}>
-          <div className=" p-2 rounded-md glasseffect">
-            <div className="grid grid-cols-3 gap-1">
-              <h1 className="text-white p-2 text-left col-span-2">
-                Portfolio Website <span className="year">09.2023</span>
-              </h1>
+      <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-3 gap-6">
+        <div className="p-0">
+          <div className=" flex flex-col">
+            <div className="sampleWorks p-5">
+              <div className="font-bold text-white p-2 text-2xl defaultFont">
+                Job Finder Prototype
+              </div>
+              <div className="subFont text-white p-2">
+                In 2020, I joined the UI Challenge managed by{" "}
+                <Link
+                  href={"https://www.facebook.com/groups/817188595285196"}
+                  target="_blank"
+                  className="text-white font-bold underline"
+                >
+                  Flutter Philippines
+                </Link>
+                —a mini prototyping challenge made for the community. The main
+                goal of this challenge is to create a working prototype, a
+                minimum of 1 screen, on any platform that Flutter supports. For
+                more information, click{" "}
+                <Link
+                  href="https://medium.com/flutterphilippines/flutter-philippines-uichallenge-september-2020-82f1549503b4"
+                  target={"_blank"}
+                  className="text-white subFont font-bold underline"
+                >
+                  here
+                </Link>
+                .
+              </div>
+              <div className="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-3 gap-2">
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.8 }}
+                >
+                  <Image
+                    src={"/projects/jobFinder.png"}
+                    className="mobdev p-2"
+                    height={120}
+                    width={90}
+                  />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.8 }}
+                >
+                  <Image
+                    src={"/projects/jf2.png"}
+                    className="mobdev p-2"
+                    height={120}
+                    width={90}
+                  />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.8 }}
+                >
+                  {" "}
+                  <Image
+                    src={"/projects/jf3.png"}
+                    className="mobdev p-2"
+                    height={120}
+                    width={90}
+                  />
+                </motion.div>
+              </div>
+              {/* here */}
             </div>
-            <h3 className="text-white p-2">
-              My online space that shows my creativity, interest, and passion in
-              technology and videography.
-            </h3>
-            <div className="flex">
-              <Link href="https://nextjs.org/" target={"_blank"}>
-                <h6 className="text-white font-bold p-2 underline">NextJS</h6>
-              </Link>
-              <Link href="https://tailwindcss.com/" target={"_blank"}>
-                <h6 className="text-white font-bold p-2 underline">
-                  TailwindCss
-                </h6>
-              </Link>
-              
-            </div>
-            {/* <div className="flex p-1">
-              <Image src="/projects/portfolio.png" alt="Portfolio Website" width={100} height={120}/>
-            </div> */}
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div whileHover={{ scale: 1.1 }}>
-          <div className=" p-2 rounded-md glasseffect">
-            <div className="grid grid-cols-3 gap-1">
-              <h1 className="text-white p-2 text-left col-span-2">
-                My Hometown <span className="year">08.2023</span>
-              </h1>
+        <div className="p-0">
+          <div className="sampleWorks p-5">
+            <div className="font-bold text-white p-2  text-2xl  defaultFont">
+              Portfolio Website
             </div>
-            <h3 className="text-white p-2">
-              Explore the natural beauty of my hometown - Anda, Pangasinan!
-            </h3>
-            <div className="flex">
-              <Link href="https://www.capcut.com/" target={"_blank"}>
-                <h6 className="text-white font-bold p-2 underline">Capcut</h6>
-              </Link>
+            <div className="subFont text-white p-2">
+              As a college student, I planned to create a website showcasing my
+              skills and interests in programming and other kinds of stuff. My
+              previous website project was unfinished because of schoolwork and
+              a need for more resources. 7+ years have passed, and I decided to
+              build a portfolio step-by-step; now, it's accessible online. I
+              used{" "}
               <Link
-                href="https://youtu.be/8iBvhVrAnRQ"
-                className=" font-bold underline text-white p-2 flex items-end "
+                href={"https://nextjs.org/"}
                 target="_blank"
+                className="text-white font-bold subFont underline"
               >
-                Youtube
-              </Link>
-            </div>
-            {/* <div className="flex p-1">
-              <Image src="/projects/anda.png" alt="Portfolio Website" width={100} height={120}/>
-            </div> */}
-          </div>
-         
-        </motion.div>
-
-        <motion.div whileHover={{ scale: 1.1 }}>
-          <div className=" p-2 rounded-md glasseffect">
-            <div className="grid grid-cols-3 gap-1">
-              <h1 className="text-white p-2 text-left col-span-2">
-                Job Finder <span className="year">2020</span>
-              </h1>
-            </div>
-            <h3 className="text-white p-2">
-              A simple Job hunt prototype app made with Flutter
-            </h3>
-            <div className="flex">
-              <Link href="https://flutter.dev/" target={"_blank"}>
-                <h6 className="text-white font-bold p-2 underline">Flutter</h6>
-              </Link>
+                Next.js
+              </Link>{" "}
+              and{" "}
               <Link
-                href="https://github.com/bryanbauzon/Job-Finder"
-                className="font-bold underline text-white p-2 flex items-end "
+                href={"https://tailwindcss.com/"}
                 target="_blank"
+                className="text-white font-bold subFont underline"
               >
-                Source Code
-              </Link>
+                Tailwind CSS
+              </Link>{" "}
+              for responsiveness to build this website.
             </div>
-            {/* <div className="flex p-1">
-              <div className="p-2">
-                <Image src="/projects/JobFinder.png" alt="Job Finder" height={50} width={50} />
-              </div>
-              <div className="p-2">
-                <Image src="/projects/jf2.png" alt="Job Finder" height={50} width={50} />
-              </div>
-              <div className="p-2">
-                <Image src="/projects/jf3.png" alt="Job Finder" height={50} width={50} />
-              </div>
-              <div className="p-2">
-                <Image src="/projects/jf4.png" alt="Job Finder" height={50} width={50} />
-              </div>
-            </div> */}
+            <div className="flex justify-center w-full ">
+              <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.8 }}>
+                <Image
+                  src={"/projects/portfolio.png"}
+                  className=" webdev p-2"
+                  height={150}
+                  width={250}
+                  quality={100}
+                />
+              </motion.div>
+            </div>
           </div>
-        </motion.div>
+        </div>
+
+        <div className="p-0">
+          <div className="sampleWorks p-5">
+            <div className="font-bold text-white p-2  text-2xl  defaultFont">
+              Discover Anda, Pangasinan
+            </div>
+            <div className="subFont text-white p-2 sampleWorks">
+              Three years ago, I used photography to freeze time and capture
+              important moments. Eventually, I was curious about how to edit
+              stunning videos I've watched on YouTube, Facebook, and other
+              social media platforms. I remember my first video upload on my
+              Facebook page; it had a lot of glitch transitions and
+              over-saturated adjustment color, but it was a good start.
+              <br />
+              <br />
+              Recently, this year, 2023, I made a promotional video for my
+              hometown, Anda, Pangasinan, focusing mainly on our tourist
+              attraction, the Tondol White Sand Beach - the little Boracay of
+              the North. To watch this video, click{" "}
+              <Link
+                href={"https://www.youtube.com/watch?v=8iBvhVrAnRQ"}
+                target="_blank"
+                className="text-white font-bold subFont underline"
+              >
+                here
+              </Link>
+              .
+            </div>
+            <div className="flex justify-center w-full ">
+              <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.8 }}>
+                <Image
+                  src={"/projects/anda.png"}
+                  className="object-cover videoediting p-2"
+                  height={150}
+                  width={250}
+                  quality={100}
+                />
+              </motion.div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
