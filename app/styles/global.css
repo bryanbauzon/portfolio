@@ -81,9 +81,6 @@ source {
   background-size: cover;
 }
 
-.date {
-  font-size: 0.8rem;
-}
 
 .mobdev,.webdev,.videoediting{
   height: fit-content;
