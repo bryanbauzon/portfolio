@@ -1,27 +1,42 @@
 import Link from "next/link";
+import { motion,useScroll } from "framer-motion";
 export default function Home() {
+  const textDisplayConfig = {
+    hidden: {opacity:0},
+    show:{
+      opacity:1,
+      transition:{
+        delayChildren: 0.8,
+        staggerDirection: -1
+      }
+    }
+  }
   return (
     <div className="h-screen bg-pages " id="home">
       <div className="grid grid-cols-1 p-5 lg:p-20 pt-10 md:pt-70 lg:pt-2 md:grid-cols-1 lg:grid-cols-2 gap-1">
-        <div className="text-white lg:text-[1.4rem] defaultFont text-[1.3rem] flex flex-col justify-center items-left lg:h-[80vh] h-[80vh] ">
-          <span className="text-2xl text-white">Hi I'm Max Bryan Bauzon,</span>
-          <span className="defaultFont text-[2.5rem] lg:text-[3rem]">
-            A Software Developer
-          </span>
-          <span className="text-white defaultFont text-2xl">
-            by profession with 4+ years of work experience based in the
-          </span>
-          <div className="basedCountry text-[3rem] text-highlights lg:text-[5rem]">
-            PHILIPPINES.
+        <motion.div variants={textDisplayConfig} initial="hidden" animate="show">
+          <div className="text-white lg:text-[1.4rem] defaultFont text-[1.3rem] flex flex-col justify-center items-left lg:h-[80vh] h-[80vh] ">
+            <span className="text-2xl text-white">
+              Hi I'm Max Bryan Bauzon,
+            </span>
+            <span className="defaultFont text-[2.5rem] lg:text-[3rem]">
+              A Software Developer
+            </span>
+            <span className="text-white defaultFont text-2xl">
+              by profession with 4+ years of work experience based in the
+            </span>
+            <div className="basedCountry text-[3rem] text-highlights lg:text-[5rem]">
+              PHILIPPINES.
+            </div>
+            <span className="subFont text-highlights text-sm">
+              I am a passionate software developer who is continuously learning
+              and improving my skills in everyday life. Reading various
+              philosophy books helps me think positively and see life much
+              better. I am also interested in Photography and videography to
+              freeze time and capture moments.
+            </span>
           </div>
-          <span className="subFont text-highlights text-sm">
-            I am a passionate software developer who is continuously learning
-            and improving my skills in everyday life. Reading various philosophy
-            books helps me think positively and see life much better. I am also
-            interested in Photography and videography to freeze time and capture
-            moments.
-          </span>
-        </div>
+        </motion.div>
         <div className="flex flex-col justify-center  items-center lg:h-[80vh] h-[2vh] "></div>
       </div>
       <div className=" flex justify-center items-center">

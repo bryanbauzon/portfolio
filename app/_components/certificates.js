@@ -5,7 +5,7 @@ export default function Certificates() {
   return (
     <div className="h-min bg-pages p-20" id="certificates">
       <div className="flex flex-col justify-center">
-        <h1 className="p-10 lg:p-20 text-3xl text-center p-10 text-dark defaultFont">
+        <h1 className="p-10 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center defaultFont text-white">
           3X SALESFORCE CERTIFIED
           <p className="subFont font-light cert text-white underline">
             Click badge to view certificate.
@@ -25,6 +25,7 @@ export default function Certificates() {
               src={"/salesforce/badges/sfadmin.png"}
               height={100}
               width={100}
+              alt="Salesforce Administrator"
             />
           </motion.a>
         </div>
@@ -40,6 +41,7 @@ export default function Certificates() {
               src={"/salesforce/badges/sfpd1.png"}
               height={100}
               width={100}
+              alt="Salesforce Platform Developer 1"
             />
           </motion.a>
         </div>
@@ -55,6 +57,7 @@ export default function Certificates() {
               src={"/salesforce/badges/sfassoc.png"}
               height={100}
               width={100}
+              alt="Salesforce Associate"
             />
           </motion.a>
         </div>

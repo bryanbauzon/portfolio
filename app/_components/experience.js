@@ -5,7 +5,7 @@ export default function Experience() {
       className="h-min bg-pages pt-20"
       id="experience"
     >
-      <h1 className="p-2 text-3xl text-center defaultFont text-highlights">
+      <h1 className="p-10 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center defaultFont text-white">
         EXPERIENCE
       </h1>
      <div className="flex justify-center p-5">
