@@ -24,7 +24,7 @@ export default function Experience() {
           />
           {/* Junior Application Programmer */}
           <ExperienceComponents 
-            title=" Junior Application Programmer"
+            title=" Junior Programmer"
             website="https://www.nova-hub.com/"
             company="NovaSolutions (Philippines) Inc."
             type="Full Time"
