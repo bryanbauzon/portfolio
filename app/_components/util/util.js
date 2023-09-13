@@ -90,15 +90,22 @@ export const ProjectComponents = (props) => {
         <div className=" flex flex-col">
           <div className="sampleWorks p-5">
             <div className="font-bold text-white p-2 text-2xl defaultFont">
-              {props.title}
+              {props.title.toUpperCase()}
             </div>
             <div className="subFont text-white p-2">
               {props.description}
 
-              <Link href={`${props.href}`} className="underline font-bold subFont" target={"_blank"}>{props.toLink}</Link>
+              <Link
+                href={`${props.href}`}
+                className="underline font-bold subFont projectLink"
+                target={"_blank"}
+              >
+                {props.toLink}
+              </Link>
             </div>
             {props.isMobile ? (
-              <div className="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-3 gap-2">
+             <div>
+                 <div className="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-3 gap-2">
                 {props.src.map((i) => {
                   return (
                     <>
@@ -117,19 +124,39 @@ export const ProjectComponents = (props) => {
                   );
                 })}
               </div>
-            ) : (
-              <div className="flex justify-center w-full ">
-                <motion.div
-                  whileHover={{ scale: 1.3 }}
-                  whileTap={{ scale: 0.8 }}
-                >
-                  <Image
-                    src={props.src}
-                    className="services p-2"
-                    height={150}
-                    width={250}
+              <div className="p-5">
+                  <img
+                    alt={props.badgeAltText}
+                    src={props.badgeSrc}
+                    width={70}
+                    height={20}
                   />
-                </motion.div>
+                </div>
+             </div>
+
+            ) : (
+              <div>
+                <div className=" flex justify-center items-center flex-column ">
+                  <motion.div
+                    whileHover={{ scale: 1.3 }}
+                    whileTap={{ scale: 0.8 }}
+                  >
+                    <Image
+                      src={props.src}
+                      className="services p-2"
+                      height={150}
+                      width={250}
+                    />
+                  </motion.div>
+                </div>
+                <div className="p-5">
+                  <img
+                    alt={props.badgeAltText}
+                    src={props.badgeSrc}
+                    width={70}
+                    height={40}
+                  />
+                </div>
               </div>
             )}
           </div>

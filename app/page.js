@@ -7,7 +7,6 @@ import Skills from "./_components/skills";
 import Projects from "./_components/projects";
 import Experience from "./_components/experience";
 import Achievements from "./_components/achievements";
-import Testing from "./_components/testing";
 export default async function Page() {
   return (
     <>
@@ -16,11 +15,10 @@ export default async function Page() {
       <Achievements />
       <Experience />
       <Services />
-      {/* <Skills /> */}
-
       <Projects />
-
       <Footer />
+
+      {/* <Skills /> */}
     </>
   );
 }

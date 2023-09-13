@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ProjectComponents } from "./util/util";
 export default function Projects() {
@@ -24,6 +25,8 @@ export default function Projects() {
             "/projects/jf2.png",
             "/projects/jf3.png",
           ]}
+          badgeSrc={"https://img.shields.io/github/stars/bryanbauzon/Job-Finder"}
+          badgeAltText={"GitHub Repo stars"}
         />
         <ProjectComponents
           title="Portfolio Website"
@@ -32,9 +35,13 @@ export default function Projects() {
           previous website project was unfinished because of schoolwork and
           a need for more resources. 7+ years have passed, and I decided to
           build a portfolio step-by-step; now, it's accessible online. I
-          used Next.js and Tailwind CSS for responsiveness to build this website.`}
+          used Next.js and Tailwind CSS for responsiveness to build this website. `}
           isMobile={false}
           src={"/projects/portfolio.png"}
+          badgeSrc={"https://img.shields.io/github/v/release/bryanbauzon/portfolio"}
+          badgeAltText={"Release"}
+          href={"https://github.com/bryanbauzon/portfolio"}
+          toLink="View Repository"
         />
         <ProjectComponents
           title=" Discover Anda, Pangasinan"
@@ -52,7 +59,11 @@ export default function Projects() {
           toLink="here."
           isMobile={false}
           src={"/projects/anda.png"}
+          badgeSrc={"https://img.shields.io/youtube/views/8iBvhVrAnRQ"}
+          badgeAltText={"Youtube Video Views"}
         />
+     
+
       </div>
     </div>
   );
