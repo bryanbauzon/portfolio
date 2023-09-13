@@ -7,7 +7,7 @@ export default function Projects() {
       <h1 className="p-10 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center defaultFont text-white">
         PERSONAL PROJECTS
       </h1>
-      <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-3 gap-6">
+      <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-5 gap-6">
         <ProjectComponents
           title="Job Finder Prototype"
           description={`In 2020, I joined the UI Challenge managed by 
@@ -61,7 +61,7 @@ export default function Projects() {
           badgeSrc={"https://img.shields.io/youtube/views/8iBvhVrAnRQ"}
           badgeAltText={"Youtube Video Views"}
         />
-     
+      
 
       </div>
     </div>

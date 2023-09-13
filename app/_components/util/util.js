@@ -89,42 +89,28 @@ export const ProjectComponents = (props) => {
       <div className="p-0">
         <div className=" flex flex-col">
           <div className="sampleWorks p-5">
-            <div className="font-bold text-white p-2 text-2xl defaultFont">
-              {props.title.toUpperCase()}
-            </div>
-            <div className="subFont text-white p-2">
-              {props.description}
-
-              <Link
-                href={`${props.href}`}
-                className="underline font-bold subFont projectLink"
-                target={"_blank"}
-              >
-                {props.toLink}
-              </Link>
-            </div>
             {props.isMobile ? (
-             <div>
-                 <div className="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-3 gap-2">
-                {props.src.map((i) => {
-                  return (
-                    <>
-                      <motion.div
-                        whileHover={{ scale: 1.3 }}
-                        whileTap={{ scale: 0.8 }}
-                      >
-                        <Image
-                          src={i}
-                          className="services p-2"
-                          height={120}
-                          width={90}
-                        />
-                      </motion.div>
-                    </>
-                  );
-                })}
-              </div>
-              <div className="p-5">
+              <div>
+                <div className="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-3 ">
+                  {props.src.map((i) => {
+                    return (
+                      <>
+                        <motion.div
+                          whileHover={{ scale: 1.3 }}
+                          whileTap={{ scale: 0.8 }}
+                        >
+                          <Image
+                            src={i}
+                            className="services p-2"
+                            height={120}
+                            width={90}
+                          />
+                        </motion.div>
+                      </>
+                    );
+                  })}
+                </div>
+                <div className="p-5">
                   <img
                     alt={props.badgeAltText}
                     src={props.badgeSrc}
@@ -132,11 +118,10 @@ export const ProjectComponents = (props) => {
                     height={20}
                   />
                 </div>
-             </div>
-
+              </div>
             ) : (
               <div>
-                <div className=" flex justify-center items-center flex-column ">
+                <div className=" flex justify-start items-start flex-column ">
                   <motion.div
                     whileHover={{ scale: 1.3 }}
                     whileTap={{ scale: 0.8 }}
@@ -145,7 +130,7 @@ export const ProjectComponents = (props) => {
                       src={props.src}
                       className="services p-2"
                       height={150}
-                      width={250}
+                      width={280}
                     />
                   </motion.div>
                 </div>
@@ -159,6 +144,20 @@ export const ProjectComponents = (props) => {
                 </div>
               </div>
             )}
+            <div className="font-bold text-white text-2xl defaultFont">
+              {props.title.toUpperCase()}
+            </div>
+            <div className="subFont text-white pt-4">
+              {props.description}
+
+              <Link
+                href={`${props.href}`}
+                className="underline font-bold subFont projectLink"
+                target={"_blank"}
+              >
+                {props.toLink}
+              </Link>
+            </div>
           </div>
         </div>
       </div>
