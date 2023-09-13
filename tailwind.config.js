@@ -36,7 +36,8 @@ module.exports = {
         dark: "#F0F0F0",
         blue:"#4F709C",
         debug:'#ff7c00',
-        highlights:'#F0F0F0'
+        highlights:'#F0F0F0',
+        theme:'#4ECCA3'
         // "#F0F0F0",
       },
     },
