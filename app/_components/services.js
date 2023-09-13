@@ -2,7 +2,7 @@ import { ServicesComponents } from "./util/util";
 export default function Services() {
   return (
     <div className="p-3 bg-pages h-min">
-      <h1 className="p-10 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center defaultFont text-white">
+      <h1 className="p-10 hover:text-theme lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center defaultFont text-white">
         SERVICES OFFERED
       </h1>
 

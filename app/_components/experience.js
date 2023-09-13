@@ -3,7 +3,7 @@ import { ExperienceComponents } from "./util/util";
 export default function Experience() {
   return (
     <div className="h-min bg-pages pt-20" id="experience">
-      <h1 className="p-10 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center defaultFont text-white">
+      <h1 className="p-10 lg:text-[3.1rem] hover:text-theme md:text-[3.1rem] text-[1.8rem] text-center defaultFont text-white">
         EXPERIENCE
       </h1>
       <div className="flex justify-center p-3">

@@ -31,7 +31,7 @@ export const ExperienceComponents = (props) => {
     <>
      <div className="flex flex-col p-10">
        <div>
-       <h1 className="defaultFont text-3xl text-white font-bold ">
+       <h1 className="defaultFont text-3xl text-white hover:text-theme font-bold ">
        {props.title.toUpperCase()}
         </h1>
        </div>
