@@ -110,3 +110,6 @@ source {
   background: var(--red);
   transform-origin: 0%;
 }
+a:hover{
+  color:#4ECCA3
+}
