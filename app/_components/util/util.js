@@ -31,7 +31,7 @@ export const ExperienceComponents = (props) => {
     <>
       <div className="text-highlights">
         <h1 className="defaultFont text-3xl font-bold lg:text-right md:text-right">
-          {props.title}
+          {props.title.toUpperCase()}
         </h1>
       </div>
       <div className="text-white pb-5 subFont">
@@ -95,9 +95,11 @@ export const ProjectComponents = (props) => {
                   {props.src.map((i) => {
                     return (
                       <>
-                        <motion.div
+                        <motion.a
                           whileHover={{ scale: 1.3 }}
                           whileTap={{ scale: 0.8 }}
+                          href={`${props.href}`}
+                          target={"_blank"}
                         >
                           <Image
                             src={i}
@@ -105,26 +107,27 @@ export const ProjectComponents = (props) => {
                             height={120}
                             width={90}
                           />
-                        </motion.div>
+                        </motion.a>
                       </>
                     );
                   })}
                 </div>
-                <div className="p-5">
-                  <img
-                    alt={props.badgeAltText}
-                    src={props.badgeSrc}
-                    width={70}
-                    height={20}
-                  />
+                <div className="p-2 flex">
+                  <img alt={props.badgeAltText} src={props.badgeSrc} />
+
+                  <Link href={`${props.href}`} className="ml-2" target={"_blank"}>
+                    <img alt="Source" src={props.repo} />
+                  </Link>
                 </div>
               </div>
             ) : (
               <div>
-                <div className=" flex justify-start items-start flex-column ">
-                  <motion.div
+                <div className=" flex justify-center items-center flex-column ">
+                  <motion.a
                     whileHover={{ scale: 1.3 }}
                     whileTap={{ scale: 0.8 }}
+                    href={`${props.href}`}
+                    target={"_blank"}
                   >
                     <Image
                       src={props.src}
@@ -132,32 +135,20 @@ export const ProjectComponents = (props) => {
                       height={150}
                       width={280}
                     />
-                  </motion.div>
+                  </motion.a>
                 </div>
-                <div className="p-5">
-                  <img
-                    alt={props.badgeAltText}
-                    src={props.badgeSrc}
-                    width={70}
-                    height={40}
-                  />
+                <div className="p-2 flex">
+                  <img alt={props.badgeAltText} src={props.badgeSrc} />
+                  <Link href={`${props.href}`}  className="ml-2" target={"_blank"}>
+                    <img alt="Source" src={props.repo} />
+                  </Link>
                 </div>
               </div>
             )}
             <div className="font-bold text-white text-2xl defaultFont">
               {props.title.toUpperCase()}
             </div>
-            <div className="subFont text-white pt-4">
-              {props.description}
-
-              <Link
-                href={`${props.href}`}
-                className="underline font-bold subFont projectLink"
-                target={"_blank"}
-              >
-                {props.toLink}
-              </Link>
-            </div>
+            <div className="subFont text-white pt-4">{props.description}</div>
           </div>
         </div>
       </div>

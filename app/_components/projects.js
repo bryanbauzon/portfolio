@@ -12,11 +12,9 @@ export default function Projects() {
           title="Job Finder Prototype"
           description={`In 2020, I joined the UI Challenge managed by 
             Flutter Philippines
-             
           —a mini prototyping challenge made for the community. The main
           goal of this challenge is to create a working prototype, a
           minimum of 1 screen, on any platform that Flutter supports. `}
-          toLink="View Repository"
           href="https://github.com/bryanbauzon/Job-Finder"
           isMobile={true}
           src={[
@@ -24,8 +22,11 @@ export default function Projects() {
             "/projects/jf2.png",
             "/projects/jf3.png",
           ]}
-          badgeSrc={"https://img.shields.io/github/stars/bryanbauzon/Job-Finder"}
+          badgeSrc={
+            "https://img.shields.io/github/stars/bryanbauzon/Job-Finder?style=for-the-badge&color=%234ECCA3"
+          }
           badgeAltText={"GitHub Repo stars"}
+          repo="https://img.shields.io/badge/Github-white?style=for-the-badge&logo=github&logoColor=black&color=white"
         />
         <ProjectComponents
           title="Portfolio Website"
@@ -37,10 +38,12 @@ export default function Projects() {
           used Next.js and Tailwind CSS for responsiveness to build this website. `}
           isMobile={false}
           src={"/projects/portfolio.png"}
-          badgeSrc={"https://img.shields.io/github/v/release/bryanbauzon/portfolio"}
+          badgeSrc={
+            "https://img.shields.io/github/v/release/bryanbauzon/portfolio?style=for-the-badge&color=%234ECCA3"
+          }
           badgeAltText={"Release"}
           href={"https://github.com/bryanbauzon/portfolio"}
-          toLink="View Repository"
+          repo="https://img.shields.io/badge/Github-white?style=for-the-badge&logo=github&logoColor=black&color=white"
         />
         <ProjectComponents
           title=" Discover Anda, Pangasinan"
@@ -53,16 +56,26 @@ export default function Projects() {
           Recently, this year, 2023, I made a promotional video for my
           hometown, Anda, Pangasinan, focusing mainly on our tourist
           attraction, the Tondol White Sand Beach - Little Boracay of
-          the North. To watch this video, click `}
+          the North.`}
           href="https://www.youtube.com/watch?v=8iBvhVrAnRQ"
-          toLink="here."
           isMobile={false}
           src={"/projects/anda.png"}
-          badgeSrc={"https://img.shields.io/youtube/views/8iBvhVrAnRQ"}
+          badgeSrc={"https://img.shields.io/youtube/views/8iBvhVrAnRQ?style=for-the-badge&color=%234ECCA3"}
           badgeAltText={"Youtube Video Views"}
+          repo="https://img.shields.io/badge/Youtube-white?style=for-the-badge&logo=youtube&logoColor=red&color=white"
         />
-      
 
+        <ProjectComponents
+          title=" Celebrating Pista'y Dayat 2023!"
+          description={`Theme: "Bridging our Noble Past to a Great Picture through Thanksgiving and Unity: Arangkada ANDA! - May 2, 2023`}
+          href="https://youtu.be/BZCwppetjw4"
+          isMobile={false}
+          src={"/projects/pistayDayat2023.png"}
+          badgeSrc={"https://img.shields.io/youtube/views/BZCwppetjw4?style=for-the-badge&color=%234ECCA3"}
+          badgeAltText={"Youtube Video Views"}
+          repo="https://img.shields.io/badge/Youtube-white?style=for-the-badge&logo=youtube&logoColor=red&color=white"
+
+        />
       </div>
     </div>
   );
