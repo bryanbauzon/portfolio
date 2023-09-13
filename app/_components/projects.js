@@ -15,10 +15,9 @@ export default function Projects() {
              
           —a mini prototyping challenge made for the community. The main
           goal of this challenge is to create a working prototype, a
-          minimum of 1 screen, on any platform that Flutter supports. For
-          more information, click `}
-          toLink="here"
-          href="https://medium.com/flutterphilippines/flutter-philippines-uichallenge-september-2020-82f1549503b4"
+          minimum of 1 screen, on any platform that Flutter supports. `}
+          toLink="View Repository"
+          href="https://github.com/bryanbauzon/Job-Finder"
           isMobile={true}
           src={[
             "/projects/jobFinder.png",
