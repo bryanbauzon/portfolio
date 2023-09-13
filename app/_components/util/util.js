@@ -29,13 +29,15 @@ export const BadgeComponents = (props) => {
 export const ExperienceComponents = (props) => {
   return (
     <>
-      <div className="text-highlights">
-        <h1 className="defaultFont text-3xl font-bold lg:text-right md:text-right">
-          {props.title.toUpperCase()}
+     <div className="flex flex-col p-10">
+       <div>
+       <h1 className="defaultFont text-3xl text-white font-bold ">
+       {props.title.toUpperCase()}
         </h1>
-      </div>
+       </div>
       <div className="text-white pb-5 subFont">
         <h1 className="company">
+      
           <Link
             href={props.website}
             className="underline font-bold"
@@ -55,6 +57,7 @@ export const ExperienceComponents = (props) => {
         <h2 className="font-bold">Technology Used:</h2>
         <li>{props.tech}</li>
       </div>
+     </div>
     </>
   );
 };
