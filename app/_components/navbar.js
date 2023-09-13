@@ -12,19 +12,10 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="flex w-full justify-end">
-          <motion.div  whileHover={{ scale: 1.2, rotate: [0, 0, 10, 10, 0] }}
-            whileTap={{ scale: 0.5 }}>
-            <h6 className="underdev p-2 text-xs rounded-full subFont">Development</h6>
-          </motion.div>
-          {/* <motion.a
-          href="mailto:mrbryanbauzon@gmail.com"
-            whileHover={{
-              scale: 1.2,
-              transition: { duration: 1 },
-            }}
-            whileTap={{ scale: 0.9 }}
-            className="text-smfont-mono about p-2 rounded-full"
-          >Get in touch</motion.a> */}
+          <motion.a  whileHover={{ scale: 1.2, rotate: [0, 0, 10, 10, 0] }}
+            whileTap={{ scale: 0.5 }}  href="mailto:mrbryanbauzon@gmail.com">
+            <h6 className="underdev p-2 text-xs rounded-full subFont">Hire Me</h6>
+          </motion.a>
         </div>
       </nav>
     </>

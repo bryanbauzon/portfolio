@@ -56,6 +56,9 @@
   background-color: #4ECCA3;
   cursor: pointer;
 }
+.projectLink{
+  color:#4ECCA3
+}
 
 .tech,
 .services {
