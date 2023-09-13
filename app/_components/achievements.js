@@ -6,7 +6,7 @@ export default function Achievements(){
     return(<>
          <div className="h-min bg-pages p-20" id="certificates">
       <div className="flex flex-col justify-center">
-        <h1 className="p-10 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center defaultFont text-white">
+        <h1 className="p-10 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center defaultFont hover:text-theme text-white">
           3X SALESFORCE CERTIFIED
           <p className="subFont font-light cert text-white underline">
             Click badge to view certificate.
