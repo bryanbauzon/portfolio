@@ -127,15 +127,7 @@ source {
 .tech{
   cursor: pointer;
 }
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background: var(--red);
-  transform-origin: 0%;
-}
+
 a:hover{
   color:#4ECCA3
 }
@@ -154,4 +146,40 @@ a:hover{
   -ms-transition: color 1s ease-out;
   -o-transition: color 1s ease-out;
   transition: color 1s ease-out;
+}
+
+
+.coffee{
+  color: #eeee;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 1s;
+ 
+  /*add those for opera and mozilla support*/
+  -webkit-text-decoration-color: transparent;
+  -moz-text-decoration-color: transparent;
+}
+.coffee:hover{
+  text-decoration-color: #4ECCA3;;
+ 
+ /*add those for opera and mozilla support*/
+ -webkit-text-decoration-color: #4ECCA3;;
+ -moz-text-decoration-color: #4ECCA3;;
+}
+
+.qr{
+  -webkit-transition: box-shadow  1s ease-out;
+  -moz-transition: box-shadow  1s ease-out;
+  -ms-transition: box-shadow  1s ease-out;
+  -o-transition: box-shadow  1s ease-out;
+  transition: box-shadow  1s ease-out;
+ }
+ .qr:hover{
+   cursor: pointer;
+   box-shadow: 2px 7px  15px #4ECCA3;
+   transition: box-shadow 0.4s ease-in;
+   -webkit-transition: box-shadow 0.4s ease-in;
+   -moz-transition: box-shadow 0.4s ease-in;
+   -ms-transition: box-shadow 0.4s ease-in;
+   -o-transition: box-shadow 0.4s ease-in;
 }
