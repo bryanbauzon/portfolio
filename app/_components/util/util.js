@@ -2,6 +2,19 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
+
+export const Header = (props)=>{
+  return(<>
+   <div className="flex flex-col justify-center">
+        <h1 className="p-10 cursor-pointer lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center defaultFont hover:text-theme text-white">
+          {props.header.toUpperCase()}
+          <p className="subFont font-light cert text-white underline">
+            {props.subHeader != ''? props.subHeader:<></>}
+          </p>
+        </h1>
+      </div>
+  </>)
+}
 // Badge Components
 export const BadgeComponents = (props) => {
   return (
