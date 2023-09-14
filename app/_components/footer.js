@@ -6,12 +6,11 @@ export default function Footer() {
       <div className="flex p-4 w-full justify-center items-center">
         <div className="grid grid-cols-3 gap-2 p-10">
           <div>
-            <Link
-              href="/buymeacoffee"
+            <div
               className="underline text-dark text-xs subFont"
             >
-             Buy Me A Coffee
-            </Link>
+             bryanbauzon
+            </div>
           </div>
           <div >
             <h2 className="text-dark subFont text-center">{year}</h2>
