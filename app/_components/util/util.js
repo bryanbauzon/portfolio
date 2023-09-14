@@ -129,7 +129,7 @@ export const ProjectComponents = (props) => {
                   })}
                 </div>
                 <div className="p-2 flex">
-                  <img alt={props.badgeAltText} src={props.badgeSrc} />
+                  {props.badgeSrc?<><img alt={props.badgeAltText} src={props.badgeSrc} /></>:<></>}
 
                  {props.repo?<> <Link href={`${props.href}`} className="ml-2 cursor-alias" target={"_blank"}>
                     <img alt="Source" src={props.repo} />
@@ -154,7 +154,8 @@ export const ProjectComponents = (props) => {
                   </motion.div>
                 </div>
                 <div className="p-2 flex">
-                  <img alt={props.badgeAltText} src={props.badgeSrc} />
+                {props.badgeSrc?<><img alt={props.badgeAltText} src={props.badgeSrc} /></>:<></>}
+
                   {props.repo?<>
                   <Link href={`${props.href}`}  className="ml-2 cursor-alias" target={"_blank"}>
                     <img alt="Source" src={props.repo} />

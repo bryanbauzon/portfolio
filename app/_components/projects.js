@@ -37,10 +37,10 @@ export default function Projects() {
           used Next.js and Tailwind CSS for responsiveness to build this website. `}
           isMobile={false}
           src={"/projects/portfolio.png"}
-          badgeSrc={
-            "https://img.shields.io/github/v/release/bryanbauzon/portfolio?style=for-the-badge&color=%234ECCA3"
-          }
-          badgeAltText={"Release"}
+          // badgeSrc={
+          //   "https://img.shields.io/github/v/release/bryanbauzon/portfolio?style=for-the-badge&color=%234ECCA3"
+          // }
+          // badgeAltText={"Release"}
          // href={"https://github.com/bryanbauzon/portfolio"}
          // repo="https://img.shields.io/badge/Github-white?style=for-the-badge&logo=github&logoColor=black&color=white"
         />
