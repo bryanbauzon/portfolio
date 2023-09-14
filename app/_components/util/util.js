@@ -6,7 +6,7 @@ import Link from "next/link";
 export const Header = (props)=>{
   return(<>
    <div className="flex flex-col justify-center">
-        <h1 className="p-10 cursor-pointer header lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center defaultFont text-white">
+        <h1 className="p-10 cursor-pointer header text-3xl text-center defaultFont text-white">
           {props.header.toUpperCase()}
           <p className="subFont font-light cert text-white underline">
             {props.subHeader != ''? props.subHeader:<></>}
@@ -44,7 +44,7 @@ export const ExperienceComponents = (props) => {
     <>
      <div className="flex flex-col p-10">
        <div>
-       <h1 className="defaultFont text-3xl text-white hover:text-theme font-bold ">
+       <h1 className="defaultFont text-2xl text-theme font-bold ">
        {props.title.toUpperCase()}
         </h1>
        </div>
@@ -90,7 +90,7 @@ export const ServicesComponents = (props) => {
             />
           </motion.div>
         </div>
-        <p className="text-center text-lg font-bold text-highlights defaultFont">
+        <p className="text-center text-lg font-bold text-theme defaultFont">
           {props.title}
         </p>
         <p className="text-center text-white subFont">{props.description}</p>
