@@ -30,7 +30,7 @@ export default function Home(props) {
             ) : (
               <>
                 <span className="defaultFont text-[2.5rem] lg:text-[3rem]">
-                  A <span className="text-theme">Software Developer</span>
+                  A <span className="text-theme">Software Developer </span>
                 </span>
                 <span className="text-white defaultFont text-2xl">
                   by profession with 4+ years of work experience based in the
