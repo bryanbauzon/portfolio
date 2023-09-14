@@ -6,7 +6,7 @@ import Link from "next/link";
 export const Header = (props)=>{
   return(<>
    <div className="flex flex-col justify-center">
-        <h1 className="p-10 cursor-pointer header text-3xl bg-debug text-center defaultFont text-white">
+        <h1 className="p-10 cursor-pointer header text-3xl text-center defaultFont text-white">
           {props.header.toUpperCase()}
           <p className="subFont font-light cert text-white underline">
             {props.subHeader != ''? props.subHeader:<></>}
