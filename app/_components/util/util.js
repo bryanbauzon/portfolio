@@ -102,7 +102,7 @@ export const ServicesComponents = (props) => {
 export const ProjectComponents = (props) => {
   return (
     <>
-      <div className="p-0">
+      <div className="p-0 projectContainer">
         <div className=" flex flex-col">
           <div className="sampleWorks p-5">
             {props.isMobile ? (
@@ -131,7 +131,7 @@ export const ProjectComponents = (props) => {
                 <div className="p-2 flex">
                   <img alt={props.badgeAltText} src={props.badgeSrc} />
 
-                  <Link href={`${props.href}`} className="ml-2" target={"_blank"}>
+                  <Link href={`${props.href}`} className="ml-2 cursor-alias" target={"_blank"}>
                     <img alt="Source" src={props.repo} />
                   </Link>
                 </div>
@@ -155,16 +155,18 @@ export const ProjectComponents = (props) => {
                 </div>
                 <div className="p-2 flex">
                   <img alt={props.badgeAltText} src={props.badgeSrc} />
-                  <Link href={`${props.href}`}  className="ml-2" target={"_blank"}>
+                  <Link href={`${props.href}`}  className="ml-2 cursor-alias" target={"_blank"}>
                     <img alt="Source" src={props.repo} />
                   </Link>
                 </div>
               </div>
             )}
-            <div className="font-bold text-white text-2xl defaultFont">
+            <div className="projectDetails">
+            <div className="font-bold text-2xl defaultFont">
               {props.title.toUpperCase()}
             </div>
-            <div className="subFont text-white pt-4">{props.description}</div>
+            <div className="subFont pt-4">{props.description}</div>
+            </div>
           </div>
         </div>
       </div>
