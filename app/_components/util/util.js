@@ -2,6 +2,19 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
+
+export const Header = (props)=>{
+  return(<>
+   <div className="flex flex-col justify-center">
+        <h1 className="p-10 cursor-pointer header lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center defaultFont text-white">
+          {props.header.toUpperCase()}
+          <p className="subFont font-light cert text-white underline">
+            {props.subHeader != ''? props.subHeader:<></>}
+          </p>
+        </h1>
+      </div>
+  </>)
+}
 // Badge Components
 export const BadgeComponents = (props) => {
   return (
@@ -29,13 +42,15 @@ export const BadgeComponents = (props) => {
 export const ExperienceComponents = (props) => {
   return (
     <>
-      <div className="text-highlights">
-        <h1 className="defaultFont text-3xl font-bold lg:text-right md:text-right">
-          {props.title}
+     <div className="flex flex-col p-10">
+       <div>
+       <h1 className="defaultFont text-3xl text-white hover:text-theme font-bold ">
+       {props.title.toUpperCase()}
         </h1>
-      </div>
+       </div>
       <div className="text-white pb-5 subFont">
         <h1 className="company">
+      
           <Link
             href={props.website}
             className="underline font-bold"
@@ -55,6 +70,7 @@ export const ExperienceComponents = (props) => {
         <h2 className="font-bold">Technology Used:</h2>
         <li>{props.tech}</li>
       </div>
+     </div>
     </>
   );
 };
@@ -86,79 +102,71 @@ export const ServicesComponents = (props) => {
 export const ProjectComponents = (props) => {
   return (
     <>
-      <div className="p-0">
+      <div className="p-0 projectContainer">
         <div className=" flex flex-col">
           <div className="sampleWorks p-5">
-            <div className="font-bold text-white p-2 text-2xl defaultFont">
-              {props.title.toUpperCase()}
-            </div>
-            <div className="subFont text-white p-2">
-              {props.description}
-
-              <Link
-                href={`${props.href}`}
-                className="underline font-bold subFont projectLink"
-                target={"_blank"}
-              >
-                {props.toLink}
-              </Link>
-            </div>
             {props.isMobile ? (
-             <div>
-                 <div className="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-3 gap-2">
-                {props.src.map((i) => {
-                  return (
-                    <>
-                      <motion.div
-                        whileHover={{ scale: 1.3 }}
-                        whileTap={{ scale: 0.8 }}
-                      >
-                        <Image
-                          src={i}
-                          className="services p-2"
-                          height={120}
-                          width={90}
-                        />
-                      </motion.div>
-                    </>
-                  );
-                })}
-              </div>
-              <div className="p-5">
-                  <img
-                    alt={props.badgeAltText}
-                    src={props.badgeSrc}
-                    width={70}
-                    height={20}
-                  />
+              <div>
+                <div className="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-3 ">
+                  {props.src.map((i) => {
+                    return (
+                      <>
+                        <motion.a
+                          whileHover={{ scale: 1.3 }}
+                          whileTap={{ scale: 0.8 }}
+                          href={`${props.href}`}
+                          target={"_blank"}
+                        >
+                          <Image
+                            src={i}
+                            className="services p-2"
+                            height={120}
+                            width={90}
+                          />
+                        </motion.a>
+                      </>
+                    );
+                  })}
                 </div>
-             </div>
+                <div className="p-2 flex">
+                  <img alt={props.badgeAltText} src={props.badgeSrc} />
 
+                  <Link href={`${props.href}`} className="ml-2 cursor-alias" target={"_blank"}>
+                    <img alt="Source" src={props.repo} />
+                  </Link>
+                </div>
+              </div>
             ) : (
               <div>
                 <div className=" flex justify-center items-center flex-column ">
-                  <motion.div
+                  <motion.a
                     whileHover={{ scale: 1.3 }}
                     whileTap={{ scale: 0.8 }}
+                    href={`${props.href}`}
+                    target={"_blank"}
                   >
                     <Image
                       src={props.src}
                       className="services p-2"
                       height={150}
-                      width={250}
+                      width={280}
                     />
-                  </motion.div>
+                  </motion.a>
                 </div>
-                <div className="p-5">
-                  <img
-                    alt={props.badgeAltText}
-                    src={props.badgeSrc}
-                    width={70}
-                    height={40}
-                  />
+                <div className="p-2 flex">
+                  <img alt={props.badgeAltText} src={props.badgeSrc} />
+                  <Link href={`${props.href}`}  className="ml-2 cursor-alias" target={"_blank"}>
+                    <img alt="Source" src={props.repo} />
+                  </Link>
                 </div>
               </div>
             )}
+            <div className="projectDetails">
+            <div className="font-bold text-2xl defaultFont">
+              {props.title.toUpperCase()}
+            </div>
+            <div className="subFont pt-4">{props.description}</div>
+            </div>
           </div>
         </div>
       </div>

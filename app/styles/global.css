@@ -92,21 +92,94 @@ source {
 }
 
 .sampleWorks{
-  background: rgba(35, 41, 49, 0.37);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  z-index: 0;
+ -webkit-transition: box-shadow  1s ease-out;
+ -moz-transition: box-shadow  1s ease-out;
+ -ms-transition: box-shadow  1s ease-out;
+ -o-transition: box-shadow  1s ease-out;
+ transition: box-shadow  1s ease-out;
 }
+.sampleWorks:hover{
+  cursor: pointer;
+  box-shadow: 2px 2px 12px #4ECCA3;
+  transition: box-shadow 0.3s ease-in;
+  -webkit-transition: box-shadow 0.3s ease-in;
+  -moz-transition: box-shadow 0.3s ease-in;
+  -ms-transition: box-shadow 0.3s ease-in;
+  -o-transition: box-shadow 0.3s ease-in;
+}
+.sampleWorks  .projectDetails{
+  color: #EEEEEE;
+  -webkit-transition: color 1s ease-out;
+  -moz-transition: color 1s ease-out;
+  -ms-transition: color 1s ease-out;
+  -o-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+}
+.sampleWorks .projectDetails:hover{
+  color: #4ECCA3;
+  transition: color 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  -moz-transition: color 0.5s ease-in;
+  -ms-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+}
+
 .tech{
   cursor: pointer;
 }
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background: var(--red);
-  transform-origin: 0%;
+
+a:hover{
+  color:#4ECCA3
+}
+
+.header:hover{
+  color: #4ECCA3;
+  transition: color 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  -moz-transition: color 0.5s ease-in;
+  -ms-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+}
+.header{
+  -webkit-transition: color 1s ease-out;
+  -moz-transition: color 1s ease-out;
+  -ms-transition: color 1s ease-out;
+  -o-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+}
+
+
+.coffee{
+  color: #eeee;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 1s;
+ 
+  /*add those for opera and mozilla support*/
+  -webkit-text-decoration-color: transparent;
+  -moz-text-decoration-color: transparent;
+}
+.coffee:hover{
+  text-decoration-color: #4ECCA3;;
+ 
+ /*add those for opera and mozilla support*/
+ -webkit-text-decoration-color: #4ECCA3;;
+ -moz-text-decoration-color: #4ECCA3;;
+}
+
+.qr{
+  -webkit-transition: box-shadow  1s ease-out;
+  -moz-transition: box-shadow  1s ease-out;
+  -ms-transition: box-shadow  1s ease-out;
+  -o-transition: box-shadow  1s ease-out;
+  transition: box-shadow  1s ease-out;
+ }
+ .qr:hover{
+   cursor: pointer;
+   box-shadow: 2px 7px  15px #4ECCA3;
+   transition: box-shadow 0.4s ease-in;
+   -webkit-transition: box-shadow 0.4s ease-in;
+   -moz-transition: box-shadow 0.4s ease-in;
+   -ms-transition: box-shadow 0.4s ease-in;
+   -o-transition: box-shadow 0.4s ease-in;
 }

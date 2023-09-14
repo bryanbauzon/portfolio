@@ -1,13 +1,11 @@
 import Link from "next/link";
-import { ExperienceComponents } from "./util/util";
+import { ExperienceComponents,Header } from "./util/util";
 export default function Experience() {
   return (
     <div className="h-min bg-pages pt-20" id="experience">
-      <h1 className="p-10 lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center defaultFont text-white">
-        EXPERIENCE
-      </h1>
-      <div className="flex justify-center p-5">
-        <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-2 ">
+      <Header header="experience"/>
+      <div className="flex justify-center p-3">
+        <div className="grid grid-cols-1  gap-5 ">
           {/* Software Engineer */}
           <ExperienceComponents 
             title="Software Engineer"
@@ -24,7 +22,7 @@ export default function Experience() {
           />
           {/* Junior Application Programmer */}
           <ExperienceComponents 
-            title=" Junior Application Programmer"
+            title=" Junior Programmer"
             website="https://www.nova-hub.com/"
             company="NovaSolutions (Philippines) Inc."
             type="Full Time"
