@@ -28,7 +28,7 @@ export default function Home(props) {
             {props.birtday != "" ? (
               props.birtday
             ) : (
-              <div>
+              <>
                 <span className="defaultFont text-[2.5rem] lg:text-[3rem]">
                   A <span className="text-theme">Software Developer</span>
                 </span>
@@ -38,7 +38,7 @@ export default function Home(props) {
                 <div className="basedCountry text-[3rem] text-highlights lg:text-[5rem]">
                   PHILIPPINES.
                 </div>
-              </div>
+              </>
             )}
 
             <span className="subFont text-highlights text-sm">
