@@ -1,10 +1,8 @@
-import { ServicesComponents } from "./util/util";
+import { ServicesComponents,Header } from "./util/util";
 export default function Services() {
   return (
     <div className="p-3 bg-pages h-min">
-      <h1 className="p-10 hover:text-theme lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center defaultFont text-white">
-        SERVICES OFFERED
-      </h1>
+      <Header header="Services offered"/>
 
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 p-5 gap-2">
         <ServicesComponents

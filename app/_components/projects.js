@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ProjectComponents } from "./util/util";
+import { ProjectComponents,Header } from "./util/util";
 export default function Projects() {
   return (
     <div className="  h-min bg-pages">
-      <h1 className="p-10 hover:text-theme lg:text-[3.1rem] md:text-[3.1rem] text-[1.8rem] text-center defaultFont text-white">
-        PERSONAL PROJECTS
-      </h1>
+      <Header header="Personal Projects"/>
       <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-5 gap-6">
         <ProjectComponents
           title="Job Finder Prototype"
