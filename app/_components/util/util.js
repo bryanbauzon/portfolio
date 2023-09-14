@@ -111,11 +111,11 @@ export const ProjectComponents = (props) => {
                   {props.src.map((i) => {
                     return (
                       <>
-                        <motion.a
+                        <motion.div
                           whileHover={{ scale: 1.3 }}
                           whileTap={{ scale: 0.8 }}
-                          href={`${props.href}`}
-                          target={"_blank"}
+                          // href={`${props.href}`}
+                          // target={"_blank"}
                         >
                           <Image
                             src={i}
@@ -123,7 +123,7 @@ export const ProjectComponents = (props) => {
                             height={120}
                             width={90}
                           />
-                        </motion.a>
+                        </motion.div>
                       </>
                     );
                   })}
@@ -131,19 +131,19 @@ export const ProjectComponents = (props) => {
                 <div className="p-2 flex">
                   <img alt={props.badgeAltText} src={props.badgeSrc} />
 
-                  <Link href={`${props.href}`} className="ml-2 cursor-alias" target={"_blank"}>
+                 {props.repo?<> <Link href={`${props.href}`} className="ml-2 cursor-alias" target={"_blank"}>
                     <img alt="Source" src={props.repo} />
-                  </Link>
+                  </Link></>:<></>}
                 </div>
               </div>
             ) : (
               <div>
                 <div className=" flex justify-center items-center flex-column ">
-                  <motion.a
+                  <motion.div
                     whileHover={{ scale: 1.3 }}
                     whileTap={{ scale: 0.8 }}
-                    href={`${props.href}`}
-                    target={"_blank"}
+                    // href={`${props.href}`}
+                    // target={"_blank"}
                   >
                     <Image
                       src={props.src}
@@ -151,13 +151,16 @@ export const ProjectComponents = (props) => {
                       height={150}
                       width={280}
                     />
-                  </motion.a>
+                  </motion.div>
                 </div>
                 <div className="p-2 flex">
                   <img alt={props.badgeAltText} src={props.badgeSrc} />
+                  {props.repo?<>
                   <Link href={`${props.href}`}  className="ml-2 cursor-alias" target={"_blank"}>
                     <img alt="Source" src={props.repo} />
                   </Link>
+                  </>:<></>}
+                  
                 </div>
               </div>
             )}

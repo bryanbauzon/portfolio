@@ -14,7 +14,6 @@ export default function Projects() {
           goal of this challenge is to create a working prototype, a
           minimum of 1 screen, on any platform that Flutter supports. `}
 
-          href="https://github.com/bryanbauzon/Job-Finder"
           isMobile={true}
           src={[
             "/projects/jobFinder.png",
@@ -25,7 +24,8 @@ export default function Projects() {
             "https://img.shields.io/github/stars/bryanbauzon/Job-Finder?style=for-the-badge&color=%234ECCA3"
           }
           badgeAltText={"GitHub Repo stars"}
-          repo="https://img.shields.io/badge/Github-white?style=for-the-badge&logo=github&logoColor=black&color=white"
+         // href="https://github.com/bryanbauzon/Job-Finder"
+         // repo="https://img.shields.io/badge/Github-white?style=for-the-badge&logo=github&logoColor=black&color=white"
         />
         <ProjectComponents
           title="Portfolio Website"
@@ -41,8 +41,8 @@ export default function Projects() {
             "https://img.shields.io/github/v/release/bryanbauzon/portfolio?style=for-the-badge&color=%234ECCA3"
           }
           badgeAltText={"Release"}
-          href={"https://github.com/bryanbauzon/portfolio"}
-          repo="https://img.shields.io/badge/Github-white?style=for-the-badge&logo=github&logoColor=black&color=white"
+         // href={"https://github.com/bryanbauzon/portfolio"}
+         // repo="https://img.shields.io/badge/Github-white?style=for-the-badge&logo=github&logoColor=black&color=white"
         />
         <ProjectComponents
           title=" Discover Anda, Pangasinan"
