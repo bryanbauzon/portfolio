@@ -7,10 +7,10 @@ export default function Footer() {
         <div className="grid grid-cols-3 gap-2 p-10">
           <div>
             <Link
-              href="mailto:mrbryanbauzon@gmail.com?subject=<Subject>"
+              href="/buymeacoffee"
               className="underline text-dark text-xs subFont"
             >
-              hi@bryanbauzon.com
+             Buy Me A Coffee
             </Link>
           </div>
           <div >
