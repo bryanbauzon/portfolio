@@ -30,6 +30,7 @@ export default function BuyMeACoffee() {
             className="cursor-pointer"
             height={400}
             width={300}
+            loading={"eager"}
           />
         </motion.a>
         <Link
