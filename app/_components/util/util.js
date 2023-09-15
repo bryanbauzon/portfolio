@@ -31,6 +31,8 @@ export const BadgeComponents = (props) => {
             height={props.size}
             width={props.size}
             alt={props.alt}
+            loading={"eager"}
+
           ></Image>
         </motion.a>
       </div>
@@ -87,6 +89,7 @@ export const ServicesComponents = (props) => {
               alt={props.alt}
               width={80}
               height={80}
+              loading={"eager"}
             />
           </motion.div>
         </div>
@@ -123,6 +126,7 @@ export const ProjectComponents = (props) => {
                             height={120}
                             width={90}
                             alt={props.title.toUpperCase()}
+                            loading={"eager"}
                           />
                         </motion.div>
                       </>
@@ -152,6 +156,7 @@ export const ProjectComponents = (props) => {
                       height={150}
                       width={280}
                       alt={props.title.toUpperCase()}
+                      loading={"eager"}
                     />
                   </motion.div>
                 </div>
