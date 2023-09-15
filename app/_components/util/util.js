@@ -48,7 +48,7 @@ export const ExperienceComponents = (props) => {
        {props.title.toUpperCase()}
         </h1>
        </div>
-      <div className="text-white p-5 subFont">
+      <div className="text-white lg:p-5 md:p-5 subFont">
         <h1 className="company">
       
           <Link
