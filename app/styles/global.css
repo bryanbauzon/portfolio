@@ -201,7 +201,7 @@ a:hover{
    -o-transition: box-shadow 0.3s ease-in;
  }
 
- .footerLink{
+ .footerLink,.emailLink{
   color: #eeee;
   text-decoration: underline;
   text-decoration-color: transparent;
@@ -217,4 +217,11 @@ a:hover{
  /*add those for opera and mozilla support*/
  -webkit-text-decoration-color: #4ECCA3;;
  -moz-text-decoration-color: #4ECCA3;;
+}
+.emailLink:hover{
+  text-decoration-color: #4ECCA3;;
+ 
+  /*add those for opera and mozilla support*/
+  -webkit-text-decoration-color: #4ECCA3;;
+  -moz-text-decoration-color: #4ECCA3;;
 }

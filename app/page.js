@@ -7,6 +7,7 @@ import Skills from "./_components/skills";
 import Projects from "./_components/projects";
 import Experience from "./_components/experience";
 import Achievements from "./_components/achievements";
+import Contact from "./_components/contact";
 export default async function Page() {
   
   let date = new Date();
@@ -37,7 +38,9 @@ export default async function Page() {
         </>
       ) : (
         <></>
-      )}
+      )} 
+
+      <Contact/>
 
       <Footer />
 
