@@ -23,17 +23,17 @@ export default function Home(props) {
         >
           <div className="text-white lg:text-[1.4rem] defaultFont text-[1.3rem] flex flex-col justify-center items-left lg:h-[80vh] h-[70vh] ">
             <span className="text-2xl text-white">
-              Hi! I'm Max Bryan Bauzon,
+              Hi! I'm MAX BRYAN BAUZON,
             </span>
             {props.birthday != "" ? (
               props.birthday
             ) : (
               <>
                 <span className="defaultFont text-[2.5rem] lg:text-[3rem]">
-                  A <span className="text-theme">Software Developer </span>
+                  A <span className="text-theme">SOFTWARE DEVELOPER </span>
                 </span>
                 <span className="text-white defaultFont text-2xl">
-                  by profession with 4+ years of work experience based in the
+                  by profession with {props.year - 2019} years {props.month - 6} months of work experience based in the
                 </span>
                 <div className="basedCountry text-[3rem] text-highlights lg:text-[5rem]">
                   PHILIPPINES.
