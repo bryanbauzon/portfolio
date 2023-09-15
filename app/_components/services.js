@@ -23,7 +23,7 @@ export default function Services() {
         />
         <ServicesComponents
           src="/services/videoediting.png"
-          alt="Vide Editing"
+          alt="Video Editing"
           title="VIDE EDITING"
           description=" We specialize in professional video editing services, transforming
       your raw footage into polished, engaging content that captivates
