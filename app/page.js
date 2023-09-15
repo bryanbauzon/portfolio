@@ -13,10 +13,10 @@ export default async function Page() {
   let month = date.getMonth() + 1;
   let day = date.getDate();
 
-  let birtday = "";
+  let birthday = "";
 
   if (month == 10 && day == 8) {
-    birtday = (
+    birthday = (
       <div className="text-bold text-[5rem] defaultFont">
         AND TODAY IS MY <span className="text-theme">BIRTHDAY</span>!🥳🎉🎊
       </div>
@@ -25,9 +25,9 @@ export default async function Page() {
 
   return (
     <>
-      <Navbar />
-      <Home birtday={birtday} />
-      {birtday == "" ? (
+      <Navbar  birthday={birthday} />
+      <Home birthday={birthday} />
+      {birthday == "" ? (
         <>
           {" "}
           <Achievements />

@@ -6,21 +6,46 @@ export default function Footer() {
       <div className="flex p-4 w-full justify-center items-center">
         <div className="grid grid-cols-3 gap-2 p-10">
           <div>
-            <div
-              className="underline text-dark text-xs subFont"
-            >
-             bryanbauzon
-            </div>
+            <div className="text-white subFont cursor-default">©bryanbauzon.{year}</div>
           </div>
-          <div >
-            <h2 className="text-dark subFont text-center">{year}</h2>
+          <div>
+            <h2 className="text-white subFont text-center">
+              <Link href={"#home"}
+              className="p-2 cursor-n-resize text-white footerLink hover:underline ml-2 subFont"
+              
+              >Back to Top</Link>
+            </h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-1 md:grid-cols-2">
-            <Link href={"https://www.linkedin.com/in/bryanbauzon/"} className="text-dark hover:underline ml-2 subFont" target="_blank">LinkedIn</Link> 
-            <Link href={"https://www.salesforce.com/trailblazer/bryanbauzon"} className="text-dark hover:underline ml-2 subFont" target="_blank">Salesforce</Link> 
-            {/* <Link href={"https://github.com/bryanbauzon"} className="text-dark hover:underline ml-2 subFont" target="_blank">Github</Link> */}
-            <Link href={"https://www.youtube.com/channel/UCHKE9izs5Z7N9yLWQDFVAlg"} className="text-dark hover:underline ml-2 subFont" target="_blank">Youtube</Link> 
-            <Link href={"https://www.facebook.com/brynbzn.films"} className="text-dark hover:underline ml-2 subFont" target="_blank">Facebook</Link> 
+            <Link
+              href={"https://www.linkedin.com/in/bryanbauzon/"}
+              className="cursor-alias text-white hover:underline footerLink ml-2 subFont"
+              target="_blank"
+            >
+              LinkedIn
+            </Link>
+            <Link
+              href={"https://www.salesforce.com/trailblazer/bryanbauzon"}
+              className="cursor-alias text-white hover:underline footerLink ml-2 subFont"
+              target="_blank"
+            >
+              Salesforce
+            </Link>
+            {/* <Link href={"https://github.com/bryanbauzon"} className="text-white hover:underline ml-2 subFont" target="_blank">Github</Link> */}
+            <Link
+              href={"https://www.youtube.com/channel/UCHKE9izs5Z7N9yLWQDFVAlg"}
+              className="cursor-alias text-white hover:underline footerLink ml-2 subFont"
+              target="_blank"
+            >
+              Youtube
+            </Link>
+            <Link
+              href={"https://www.facebook.com/brynbzn.films"}
+              className="cursor-alias text-white hover:underline footerLink ml-2 subFont"
+              target="_blank"
+            >
+              Facebook
+            </Link>
           </div>
         </div>
       </div>

@@ -1,13 +1,13 @@
 import Link from "next/link";
-import { ExperienceComponents,Header } from "./util/util";
+import { ExperienceComponents, Header } from "./util/util";
 export default function Experience() {
   return (
     <div className="h-min bg-pages pt-20" id="experience">
-      <Header header="experience"/>
+      <Header header="experience" />
       <div className="flex justify-center p-3">
-        <div className="grid grid-cols-1  gap-5 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-5 p-5">
           {/* Software Engineer */}
-          <ExperienceComponents 
+          <ExperienceComponents
             title="Software Engineer"
             website="https://www.techmahindra.com/en-in/"
             company="Tech Mahindra"
@@ -21,7 +21,7 @@ export default function Experience() {
             tech="Java Enterprise Edition/ Vaadin/ Oracle SQL Developer/ Bitbucket/ Eclipse"
           />
           {/* Junior Application Programmer */}
-          <ExperienceComponents 
+          <ExperienceComponents
             title=" Junior Programmer"
             website="https://www.nova-hub.com/"
             company="NovaSolutions (Philippines) Inc."

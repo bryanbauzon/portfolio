@@ -25,8 +25,8 @@ export default function Home(props) {
             <span className="text-2xl text-white">
               Hi! I'm Max Bryan Bauzon,
             </span>
-            {props.birtday != "" ? (
-              props.birtday
+            {props.birthday != "" ? (
+              props.birthday
             ) : (
               <>
                 <span className="defaultFont text-[2.5rem] lg:text-[3rem]">
@@ -51,12 +51,12 @@ export default function Home(props) {
           </div>
         </motion.div>
         <div className="flex flex-col justify-center  items-center md:h-screen lg:h-[80vh] h-[10vh] ">
-          {props.birtday != "" ? (
+          {props.birthday != "" ? (
             <motion.div
               variants={textDisplayConfig}
               initial="hidden"
               animate="show"
-              whileHover={{ scale: 1.2, rotate: [0, 0, 20, 20, 0] }}
+              whileHover={{ scale: 1.2}}
               whileTap={{scale: 0.9}}
             >
               <Link href={"/buymeacoffee"} className="defaultFont coffee text-[3rem]">
@@ -68,10 +68,10 @@ export default function Home(props) {
           )}
         </div>
       </div>
-      {props.birtday == "" ? (
+      {props.birthday == "" ? (
         <div className=" flex justify-center items-center">
           <div className="animate-bounce">
-            <Link href="#certificates">
+            <Link href="#achievements">
               <svg
                 color="#ffff"
                 xmlns="http://www.w3.org/2000/svg"
