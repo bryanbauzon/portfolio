@@ -6,7 +6,7 @@ import Link from "next/link";
 export const Header = (props)=>{
   return(<>
    <div className="flex flex-col justify-center">
-        <h1 className="p-5 cursor-pointer header text-3xl text-center defaultFont text-white">
+        <h1 className="p-5 cursor-pointer header text-3xl  text-center defaultFont text-white">
           {props.header.toUpperCase()}
           <p className="subFont font-light cert text-white underline">
             {props.subHeader != ''? props.subHeader:<></>}
@@ -105,7 +105,7 @@ export const ServicesComponents = (props) => {
 export const ProjectComponents = (props) => {
   return (
     <>
-      <div className="p-0 projectContainer">
+      <div className="p-0 projectContainer" id={props.id}>
         <div className=" flex flex-col">
           <div className="sampleWorks p-5">
             {props.isMobile ? (
