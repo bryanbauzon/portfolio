@@ -13,6 +13,7 @@ export default async function Page() {
   let date = new Date();
   let month = date.getMonth() + 1;
   let day = date.getDate();
+  let year = date.getFullYear();
 
   let birthday = "";
 
@@ -27,7 +28,7 @@ export default async function Page() {
   return (
     <>
       <Navbar  birthday={birthday} />
-      <Home birthday={birthday} />
+      <Home birthday={birthday} month={month} year={year}/>
       {birthday == "" ? (
         <>
           {" "}

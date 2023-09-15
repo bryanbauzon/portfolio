@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ProjectComponents,Header } from "./util/util";
 export default function Projects() {
   return (
-    <div className="  h-min bg-pages">
+    <div className="  h-min bg-pages ">
       <Header header="Personal Projects"/>
       <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-5 gap-6">
         <ProjectComponents
@@ -24,6 +24,7 @@ export default function Projects() {
             "https://img.shields.io/github/stars/bryanbauzon/Job-Finder?style=for-the-badge&color=%234ECCA3"
           }
           badgeAltText={"GitHub Repo stars"}
+          id="jobFinder"
          // href="https://github.com/bryanbauzon/Job-Finder"
          // repo="https://img.shields.io/badge/Github-white?style=for-the-badge&logo=github&logoColor=black&color=white"
         />
@@ -37,6 +38,7 @@ export default function Projects() {
           used Next.js and Tailwind CSS for responsiveness to build this website. `}
           isMobile={false}
           src={"/projects/portfolio.png"}
+          id="portfolioWebsite"
           // badgeSrc={
           //   "https://img.shields.io/github/v/release/bryanbauzon/portfolio?style=for-the-badge&color=%234ECCA3"
           // }
@@ -62,6 +64,7 @@ export default function Projects() {
           badgeSrc={"https://img.shields.io/youtube/views/8iBvhVrAnRQ?style=for-the-badge&color=%234ECCA3"}
           badgeAltText={"Youtube Video Views"}
           repo="https://img.shields.io/badge/Youtube-white?style=for-the-badge&logo=youtube&logoColor=red&color=white"
+          id="discoverAnda"
         />
 
         <ProjectComponents
@@ -73,7 +76,7 @@ export default function Projects() {
           badgeSrc={"https://img.shields.io/youtube/views/BZCwppetjw4?style=for-the-badge&color=%234ECCA3"}
           badgeAltText={"Youtube Video Views"}
           repo="https://img.shields.io/badge/Youtube-white?style=for-the-badge&logo=youtube&logoColor=red&color=white"
-
+          id="pistayDayat2023"
         />
       </div>
     </div>
