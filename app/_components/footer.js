@@ -3,7 +3,7 @@ export default function Footer() {
   let year = new Date().getFullYear();
   return (
     <footer className="h-[25vh] bg-footer flex">
-      <div className="flex p-4 w-full justify-center items-center">
+      <div className="flex lg:p-4 md:p-4 p-2 w-full justify-center items-center">
         <div className="grid grid-cols-3 gap-2 p-10">
           <div>
             <div className="text-white subFont cursor-default">©bryanbauzon.{year}</div>
