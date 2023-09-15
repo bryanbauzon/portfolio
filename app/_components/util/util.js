@@ -42,18 +42,18 @@ export const BadgeComponents = (props) => {
 export const ExperienceComponents = (props) => {
   return (
     <>
-     <div className="flex flex-col p-10">
+     <div className="flex flex-col p-10 experience h-min">
        <div>
        <h1 className="defaultFont text-2xl text-theme font-bold ">
        {props.title.toUpperCase()}
         </h1>
        </div>
-      <div className="text-white pb-5 subFont">
+      <div className="text-white p-5 subFont">
         <h1 className="company">
       
           <Link
             href={props.website}
-            className="underline font-bold"
+            className="underline font-bold cursor-alias"
             target={"_blank"}
           >
             {props.company}

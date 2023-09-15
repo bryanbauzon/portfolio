@@ -183,3 +183,38 @@ a:hover{
    -ms-transition: box-shadow 0.4s ease-in;
    -o-transition: box-shadow 0.4s ease-in;
 }
+
+.experience{
+  -webkit-transition: box-shadow  1s ease-out;
+  -moz-transition: box-shadow  1s ease-out;
+  -ms-transition: box-shadow  1s ease-out;
+  -o-transition: box-shadow  1s ease-out;
+  transition: box-shadow  1s ease-out;
+ }
+ .experience:hover{
+   cursor: pointer;
+   box-shadow: 2px 2px 12px #4ECCA3;
+   transition: box-shadow 0.3s ease-in;
+   -webkit-transition: box-shadow 0.3s ease-in;
+   -moz-transition: box-shadow 0.3s ease-in;
+   -ms-transition: box-shadow 0.3s ease-in;
+   -o-transition: box-shadow 0.3s ease-in;
+ }
+
+ .footerLink{
+  color: #eeee;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 1s;
+ 
+  /*add those for opera and mozilla support*/
+  -webkit-text-decoration-color: transparent;
+  -moz-text-decoration-color: transparent;
+}
+.footerLink:hover{
+  text-decoration-color: #4ECCA3;;
+ 
+ /*add those for opera and mozilla support*/
+ -webkit-text-decoration-color: #4ECCA3;;
+ -moz-text-decoration-color: #4ECCA3;;
+}

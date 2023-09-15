@@ -4,7 +4,7 @@ import { motion, useScroll } from "framer-motion";
 export default function Achievements() {
   return (
     <>
-      <div className="h-min bg-pages pt-20" id="certificates">
+      <div className="h-min bg-pages pt-20" id="achievements">
         <Header
           header="3x salesforce certified"
           subHeader="Click Badge to view the certificate"
