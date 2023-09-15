@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="h-[25vh] bg-footer flex">
       <div className="flex lg:p-4 md:p-4 p-2 w-full justify-center items-center">
-        <div className="grid grid-cols-3 gap-2 p-10">
+        <div className="grid grid-cols-3 gap-2 md:p-10 lg:p-10 p-2">
           <div>
             <div className="text-white subFont cursor-default">©bryanbauzon.{year}</div>
           </div>
