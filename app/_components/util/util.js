@@ -122,6 +122,7 @@ export const ProjectComponents = (props) => {
                             className="services p-2"
                             height={120}
                             width={90}
+                            alt={props.title.toUpperCase()}
                           />
                         </motion.div>
                       </>
@@ -150,6 +151,7 @@ export const ProjectComponents = (props) => {
                       className="services p-2"
                       height={150}
                       width={280}
+                      alt={props.title.toUpperCase()}
                     />
                   </motion.div>
                 </div>
