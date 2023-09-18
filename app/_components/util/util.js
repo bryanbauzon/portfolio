@@ -3,18 +3,20 @@ import { useState, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
 
-export const Header = (props)=>{
-  return(<>
-   <div className="flex flex-col justify-center">
+export const Header = (props) => {
+  return (
+    <>
+      <div className="flex flex-col justify-center">
         <h1 className="p-5 cursor-pointer header text-3xl  text-center defaultFont text-white">
           {props.header.toUpperCase()}
           <p className="subFont font-light cert text-white underline">
-            {props.subHeader != ''? props.subHeader:<></>}
+            {props.subHeader != "" ? props.subHeader : <></>}
           </p>
         </h1>
       </div>
-  </>)
-}
+    </>
+  );
+};
 // Badge Components
 export const BadgeComponents = (props) => {
   return (
@@ -32,7 +34,6 @@ export const BadgeComponents = (props) => {
             width={props.size}
             alt={props.alt}
             loading={"eager"}
-
           ></Image>
         </motion.a>
       </div>
@@ -44,35 +45,34 @@ export const BadgeComponents = (props) => {
 export const ExperienceComponents = (props) => {
   return (
     <>
-     <div className="flex flex-col lg:p-10 md:p-10 p-5 experience h-min">
-       <div>
-       <h1 className="defaultFont text-2xl text-theme font-bold ">
-       {props.title.toUpperCase()}
-        </h1>
-       </div>
-      <div className="text-white lg:p-5 md:p-5 subFont">
-        <h1 className="company">
-      
-          <Link
-            href={props.website}
-            className="underline font-bold cursor-alias"
-            target={"_blank"}
-          >
-            {props.company}
-          </Link>{" "}
-          - <span className="font-xs">{props.type}</span>
-        </h1>
-        <h4 className="date">{props.date}</h4>
-        <h2 className="font-bold">Roles and Responsibilities:</h2>
-        <div className="responsibilities">
-          {props.roles.map((val) => {
-            return <li>{val}</li>;
-          })}
+      <div className="flex flex-col lg:p-10 md:p-10 p-5 experience h-min">
+        <div>
+          <h1 className="defaultFont text-2xl text-theme font-bold ">
+            {props.title.toUpperCase()}
+          </h1>
         </div>
-        <h2 className="font-bold">Technology Used:</h2>
-        <li>{props.tech}</li>
+        <div className="text-white lg:p-5 md:p-5 subFont">
+          <h1 className="company">
+            <Link
+              href={props.website}
+              className="underline font-bold cursor-alias"
+              target={"_blank"}
+            >
+              {props.company}
+            </Link>{" "}
+            - <span className="font-xs">{props.type}</span>
+          </h1>
+          <h4 className="date">{props.date}</h4>
+          <h2 className="font-bold">Roles and Responsibilities:</h2>
+          <div className="responsibilities">
+            {props.roles.map((val) => {
+              return <li>{val}</li>;
+            })}
+          </div>
+          <h2 className="font-bold">Technology Used:</h2>
+          <li>{props.tech}</li>
+        </div>
       </div>
-     </div>
     </>
   );
 };
@@ -133,12 +133,33 @@ export const ProjectComponents = (props) => {
                     );
                   })}
                 </div>
-                <div className="p-2 flex">
-                  {props.badgeSrc?<><img alt={props.badgeAltText} src={props.badgeSrc} /></>:<></>}
+                <div className="p-2 flex items-center">
+                  {props.badgeSrc ? (
+                    <>
+                      <img alt={props.badgeAltText} src={props.badgeSrc} />
 
-                 {props.repo?<> <Link href={`${props.href}`} className="ml-2 cursor-alias" target={"_blank"}>
-                    <img alt="Source" src={props.repo} />
-                  </Link></>:<></>}
+                      <div className="pl-2 text-theme subFont text-xs">
+                        {props.tech != ''? props.tech.toLowerCase() : ''}
+                      </div>
+                    </>
+                  ) : (
+                    <></>
+                  )}
+
+                  {props.repo ? (
+                    <>
+                      {" "}
+                      <Link
+                        href={`${props.href}`}
+                        className="ml-2 cursor-alias"
+                        target={"_blank"}
+                      >
+                        <img alt="Source" src={props.repo} />
+                      </Link>
+                    </>
+                  ) : (
+                    <></>
+                  )}
                 </div>
               </div>
             ) : (
@@ -160,23 +181,39 @@ export const ProjectComponents = (props) => {
                     />
                   </motion.div>
                 </div>
-                <div className="p-2 flex">
-                {props.badgeSrc?<><img alt={props.badgeAltText} src={props.badgeSrc} /></>:<></>}
+                <div className="p-2 flex  items-center">
+                  {props.badgeSrc ? (
+                    <>
+                      <img alt={props.badgeAltText} src={props.badgeSrc} />
+                    </>
+                  ) : (
+                    <></>
+                  )}
 
-                  {props.repo?<>
-                  <Link href={`${props.href}`}  className="ml-2 cursor-alias" target={"_blank"}>
-                    <img alt="Source" src={props.repo} />
-                  </Link>
-                  </>:<></>}
-                  
+                  {props.repo ? (
+                    <>
+                      <Link
+                        href={`${props.href}`}
+                        className="ml-2 cursor-alias"
+                        target={"_blank"}
+                      >
+                        <img alt="Source" src={props.repo} />
+                      </Link>
+                      <div className="pl-2 text-theme subFont text-xs">
+                        {props.tech != ''? props.tech.toLowerCase() : ''}
+                      </div>
+                    </>
+                  ) : (
+                    <div className="pl-2 text-theme subFont text-xs">{props.tech != ''? props.tech.toLowerCase() : ''}</div>
+                  )}
                 </div>
               </div>
             )}
             <div className="projectDetails">
-            <div className="font-bold text-2xl defaultFont">
-              {props.title.toUpperCase()}
-            </div>
-            <div className="subFont pt-4">{props.description}</div>
+              <div className="font-bold text-2xl defaultFont">
+                {props.title.toUpperCase()}
+              </div>
+              <div className="subFont pt-4">{props.description}</div>
             </div>
           </div>
         </div>
