@@ -25,6 +25,7 @@ export default function Projects() {
           }
           badgeAltText={"GitHub Repo stars"}
           id="jobFinder"
+          tech="flutter | dart"
          // href="https://github.com/bryanbauzon/Job-Finder"
          // repo="https://img.shields.io/badge/Github-white?style=for-the-badge&logo=github&logoColor=black&color=white"
         />
@@ -39,6 +40,7 @@ export default function Projects() {
           isMobile={false}
           src={"/projects/portfolio.png"}
           id="portfolioWebsite"
+          tech="NextJS | TailwindCSS | Vercel"
           // badgeSrc={
           //   "https://img.shields.io/github/v/release/bryanbauzon/portfolio?style=for-the-badge&color=%234ECCA3"
           // }
@@ -60,6 +62,8 @@ export default function Projects() {
           the North.`}
           href="https://www.youtube.com/watch?v=8iBvhVrAnRQ"
           isMobile={false}
+          tech="capcut"
+
           src={"/projects/anda.png"}
           badgeSrc={"https://img.shields.io/youtube/views/8iBvhVrAnRQ?style=for-the-badge&color=%234ECCA3"}
           badgeAltText={"Youtube Video Views"}
@@ -77,6 +81,8 @@ export default function Projects() {
           badgeAltText={"Youtube Video Views"}
           repo="https://img.shields.io/badge/Youtube-white?style=for-the-badge&logo=youtube&logoColor=red&color=white"
           id="pistayDayat2023"
+          tech="capcut"
+
         />
       </div>
     </div>
