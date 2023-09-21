@@ -9,7 +9,7 @@ export const Header = (props) => {
       <div className="flex flex-col justify-center">
         <h1 className="p-5 cursor-pointer header text-3xl  text-center defaultFont text-white">
           {props.header.toUpperCase()}
-          <p className="subFont font-light cert text-white underline">
+          <p className="subFont font-light cert text-white">
             {props.subHeader != "" ? props.subHeader : <></>}
           </p>
         </h1>
@@ -115,7 +115,7 @@ export const ProjectComponents = (props) => {
                     return (
                       <>
                         <motion.div
-                          whileHover={{ scale: 1.3 }}
+                          // whileHover={{ scale: 1.3 }}
                           whileTap={{ scale: 0.8 }}
                           // href={`${props.href}`}
                           // target={"_blank"}
@@ -138,7 +138,7 @@ export const ProjectComponents = (props) => {
                     <>
                       <img alt={props.badgeAltText} src={props.badgeSrc} />
 
-                      <div className="pl-2 text-theme subFont text-xs">
+                      <div className="pl-2 font-bold  text-theme subFont text-xs">
                         {props.tech != ''? props.tech.toLowerCase() : ''}
                       </div>
                     </>
@@ -166,7 +166,7 @@ export const ProjectComponents = (props) => {
               <div>
                 <div className=" flex justify-center items-center flex-column ">
                   <motion.div
-                    whileHover={{ scale: 1.3 }}
+                    // whileHover={{ scale: 1.3 }}
                     whileTap={{ scale: 0.8 }}
                     // href={`${props.href}`}
                     // target={"_blank"}
@@ -199,12 +199,12 @@ export const ProjectComponents = (props) => {
                       >
                         <img alt="Source" src={props.repo} />
                       </Link>
-                      <div className="pl-2 text-theme subFont text-xs">
+                      <div className="pl-2 font-bold text-theme subFont text-xs">
                         {props.tech != ''? props.tech.toLowerCase() : ''}
                       </div>
                     </>
                   ) : (
-                    <div className="pl-2 text-theme subFont text-xs">{props.tech != ''? props.tech.toLowerCase() : ''}</div>
+                    <div className="pl-2 text-theme subFont text-xs font-bold ">{props.tech != ''? props.tech.toLowerCase() : ''}</div>
                   )}
                 </div>
               </div>
