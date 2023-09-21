@@ -89,7 +89,7 @@ export default function Projects() {
         />
          <ProjectComponents
           title="19th BINONGEY FESTIVAL 2023 - MTB CHALLENGE HIGHLIGHTS (SDE)"
-          description={`Same Day Edit`}
+          description={`Bacon ipsum dolor amet dolore et ground round quis, commodo turkey spare ribs non tongue salami cillum pariatur. Tempor commodo non drumstick aliqua. Boudin tail drumstick, cupidatat brisket sunt magna jowl shoulder frankfurter buffalo dolore culpa nostrud jerky. Aliquip irure occaecat kielbasa do exercitation quis. Brisket turducken dolor, quis in shankle labore ea occaecat dolore.`}
           href="https://youtu.be/VrrJBm4Qmgw"
           isMobile={false}
           src={"/projects/binongey2023.png"}
@@ -101,7 +101,7 @@ export default function Projects() {
         />
         <ProjectComponents
           title="'Panayunan' - Leaves by Ben&Ben"
-          description={`February 2023`}
+          description={`Bro ipsum dolor sit amet park bunny slope gondy taco mitt. Epic ski bum switch, apres ride brain bucket beater Skate roadie. Whistler crunchy hammer taco glove bowl hardtail bump huckfest air 360 gear jammer bail Bike. DH Whistler back country death cookies, jib hammerhead air avie gondy endo. Roadie stoked taco mitt pow, laps nose press grind avie greasy skid lid. Shred nose greasy, dirtbag fatty pow schwag. Tele endo grind chain ring ride titanium gondy hero snake bite misty.`}
           href="https://youtu.be/e3B8Zqu5iA4"
           isMobile={false}
           src={"/projects/panayunan2023.png"}
