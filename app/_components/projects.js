@@ -25,7 +25,7 @@ export default function Projects() {
           }
           badgeAltText={"GitHub Repo stars"}
           id="jobFinder"
-          tech="flutter | dart"
+          tech="mobile | flutter | dart"
          // href="https://github.com/bryanbauzon/Job-Finder"
          // repo="https://img.shields.io/badge/Github-white?style=for-the-badge&logo=github&logoColor=black&color=white"
         />
@@ -40,7 +40,7 @@ export default function Projects() {
           isMobile={false}
           src={"/projects/portfolio.png"}
           id="portfolioWebsite"
-          tech="NextJS | TailwindCSS | Vercel"
+          tech="Web | NextJS | TailwindCSS | Vercel"
           // badgeSrc={
           //   "https://img.shields.io/github/v/release/bryanbauzon/portfolio?style=for-the-badge&color=%234ECCA3"
           // }
@@ -48,7 +48,10 @@ export default function Projects() {
          // href={"https://github.com/bryanbauzon/portfolio"}
          // repo="https://img.shields.io/badge/Github-white?style=for-the-badge&logo=github&logoColor=black&color=white"
         />
-        <ProjectComponents
+       
+      </div>
+      <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-5 gap-6">
+      <ProjectComponents
           title=" Discover Anda, Pangasinan"
           description={` Three years ago, I used photography to freeze time and capture
           important moments. Eventually, I was curious about how to edit
@@ -62,7 +65,7 @@ export default function Projects() {
           the North.`}
           href="https://www.youtube.com/watch?v=8iBvhVrAnRQ"
           isMobile={false}
-          tech="capcut"
+          tech="dji | capcut"
 
           src={"/projects/anda.png"}
           badgeSrc={"https://img.shields.io/youtube/views/8iBvhVrAnRQ?style=for-the-badge&color=%234ECCA3"}
@@ -72,8 +75,8 @@ export default function Projects() {
         />
 
         <ProjectComponents
-          title=" Celebrating Pista'y Dayat 2023!"
-          description={`Theme: "Bridging our Noble Past to a Great Picture through Thanksgiving and Unity: Arangkada ANDA! - May 2, 2023`}
+          title="Celebrating Pista'y Dayat 2023!"
+          description={`Theme: "Bridging our Noble Past to a Great Picture through Thanksgiving and Unity: Arangkada ANDA!" - May 2, 2023. Same Day Edit`}
           href="https://youtu.be/BZCwppetjw4"
           isMobile={false}
           src={"/projects/pistayDayat2023.png"}
@@ -81,8 +84,32 @@ export default function Projects() {
           badgeAltText={"Youtube Video Views"}
           repo="https://img.shields.io/badge/Youtube-white?style=for-the-badge&logo=youtube&logoColor=red&color=white"
           id="pistayDayat2023"
-          tech="capcut"
+          tech="dji | capcut"
 
+        />
+         <ProjectComponents
+          title="19th BINONGEY FESTIVAL 2023 - MTB CHALLENGE HIGHLIGHTS (SDE)"
+          description={`Same Day Edit`}
+          href="https://youtu.be/VrrJBm4Qmgw"
+          isMobile={false}
+          src={"/projects/binongey2023.png"}
+          badgeSrc={"https://img.shields.io/youtube/views/VrrJBm4Qmgw?style=for-the-badge&color=%234ECCA3"}
+          badgeAltText={"Youtube Video Views"}
+          repo="https://img.shields.io/badge/Youtube-white?style=for-the-badge&logo=youtube&logoColor=red&color=white"
+          id="binongey2023"
+          tech="dji | capcut"
+        />
+        <ProjectComponents
+          title="'Panayunan' - Leaves by Ben&Ben"
+          description={`February 2023`}
+          href="https://youtu.be/e3B8Zqu5iA4"
+          isMobile={false}
+          src={"/projects/panayunan2023.png"}
+          badgeSrc={"https://img.shields.io/youtube/views/e3B8Zqu5iA4?style=for-the-badge&color=%234ECCA3"}
+          badgeAltText={"Youtube Video Views"}
+          repo="https://img.shields.io/badge/Youtube-white?style=for-the-badge&logo=youtube&logoColor=red&color=white"
+          id="binongey2023"
+          tech="dji | capcut"
         />
       </div>
     </div>
