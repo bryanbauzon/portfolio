@@ -225,3 +225,10 @@ a:hover{
   -webkit-text-decoration-color: #4ECCA3;;
   -moz-text-decoration-color: #4ECCA3;;
 }
+
+.status{
+  border-radius: 45px;
+  background: linear-gradient(145deg, #242b34, #1f242c);
+  box-shadow:  34px 34px 79px #0e1014,
+               -34px -34px 79px #36404e;
+}

@@ -1,6 +1,7 @@
 import { Header } from "./util/util";
 import Link from "next/link";
-
+import { useState, useEffect } from "react";
+import { motion, useScroll } from "framer-motion";
 export default function Contact() {
   return (
     <>
@@ -8,7 +9,12 @@ export default function Contact() {
         <Header header="Get in touch" />
         <div className="px-10 p-10 text-center subFont">
           I would love to hear from you. Whether it’s a project, a job
-          opportunity, or just a chat. Feel free to contact me! 👋
+          opportunity, or just a chat. Feel free to contact me!
+            
+          <motion.div whileHover={{ scale: 5,rotate: [0, 0, 20, 20, 0] }} whileTap={{scale:1}} className="cursor-pointer">
+            👋
+          </motion.div>
+            {" "}
         </div>
         <div className="animate-bounce">
           <svg
@@ -27,7 +33,10 @@ export default function Contact() {
             />
           </svg>
         </div>
-        <Link href={"mailto:mrbryanbauzon"} className="underline emailLink cursor-alias">
+        <Link
+          href={"mailto:mrbryanbauzon"}
+          className="underline emailLink cursor-alias"
+        >
           mrbryanbauzon@gmail.com
         </Link>
       </div>
