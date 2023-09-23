@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { motion, useScroll } from "framer-motion";
 import Image from "next/image";
+import { Chip } from "@nextui-org/react";
 export default function Home(props) {
   const textDisplayConfig = {
     hidden: { opacity: 0 },
@@ -48,7 +49,8 @@ export default function Home(props) {
               better. I am also interested in Photography and videography to
               freeze time and capture moments.
             </span>
-            {/* <div className="status w-fit bg-debug p-5 mt-5 text-xs text-theme font-bold">Open to work: Salesforce Developer roles</div> */}
+            <br/>
+            <Chip color="success" className="text-white" variant="dot">Open for Work</Chip>
           </div>
         </motion.div>
         <div className="flex flex-col justify-center  items-center md:h-screen lg:h-[80vh] h-[10vh] ">

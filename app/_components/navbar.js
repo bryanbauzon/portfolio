@@ -1,24 +1,68 @@
 "use client";
-import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-export default function Navbar(props) {
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarItem,
+  NavbarMenuItem,
+  Button,
+} from "@nextui-org/react";
+import { Link } from "@nextui-org/react";
+import React from "react";
+export default function NavbarComp(props) {
   return (
     <>
-      <nav className="p-6 w-full mx-auto navbar nav z-20 fixed flex items-center space-x-4">
-        <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <Link href={props.birthday == ''?"#home":"/"} className="flex items-center flex-shrink-0 mr-6 text-md text-sm text-dark subFont">
-            @bryanbauzon
-          </Link>
-        </div>
-        <div className="flex w-full justify-end">
+      <Navbar shouldHideOnScroll className="navbar nav">
+        <NavbarContent>
+          <NavbarBrand>
+            <Link className="font-bold text-white" href="#home">@bryanbauzon</Link>
+          </NavbarBrand>
+        </NavbarContent>
 
-          {props.birthday == ''?<><motion.a  whileHover={{ scale: 1.2, rotate: [0, 0, 10, 10, 0] }}
-            whileTap={{ scale: 0.5 }}  href="mailto:mrbryanbauzon@gmail.com">
-            <h6 className="underdev p-2 text-xs rounded-full subFont">Hire me</h6>
-          </motion.a></>:<></>}
-        </div>
-      </nav>
+        <NavbarContent className="hidden sm:flex gap-4" justify="center">
+          <NavbarItem>
+            <Link className="text-white" href="#home">
+              Home
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link className="text-white" href="#salesforce">
+              Salesforce
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link className="text-white" href="#experience">
+              Experience
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link className="text-white" href="#services">
+              Services
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link className="text-white" href="#projects">
+              Projects
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link className="text-white" href="#contact">
+              Contact
+            </Link>
+          </NavbarItem>
+        </NavbarContent>
+        <NavbarContent justify="end">
+          <NavbarItem>
+            <Link isBlock showAnchorIcon href="mailto:mrbryanbauzon@gmail.com" className="text-theme hireme">
+              Hire me
+            </Link>
+          </NavbarItem>
+        </NavbarContent>
+      </Navbar>
     </>
   );
 }

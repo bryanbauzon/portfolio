@@ -6,8 +6,10 @@ import Home from "./_components/home";
 import Skills from "./_components/skills";
 import Projects from "./_components/projects";
 import Experience from "./_components/experience";
-import Achievements from "./_components/achievements";
+import Salesforce from "./_components/salesforce";
 import Contact from "./_components/contact";
+import { NextUIProvider } from "@nextui-org/react";
+import NavbarComp from "./_components/navbar";
 export default async function Page() {
   
   let date = new Date();
@@ -16,6 +18,8 @@ export default async function Page() {
   let year = date.getFullYear();
 
   let birthday = "";
+
+
 
   if (month == 10 && day == 8) {
     birthday = (
@@ -27,12 +31,13 @@ export default async function Page() {
 
   return (
     <>
-      <Navbar  birthday={birthday} />
+    <NextUIProvider>
+    <NavbarComp  birthday={birthday} />
       <Home birthday={birthday} month={month} year={year}/>
       {birthday == "" ? (
         <>
           {" "}
-          <Achievements />
+          <Salesforce />
           <Experience />
           <Services />
           <Projects />
@@ -46,6 +51,7 @@ export default async function Page() {
       <Footer />
 
       {/* <Skills /> */}
+    </NextUIProvider>
     </>
   );
 }
