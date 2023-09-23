@@ -2,7 +2,6 @@ import Image from "next/image";
 import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { Divider } from "@nextui-org/react";
 import {
   Modal,
   ModalContent,
@@ -88,7 +87,6 @@ export const ExperienceComponents = (props) => {
             {props.title.toUpperCase()}
           </h1>
         </div>
-        <Divider className="bg-theme" />
         <div className="text-white lg:p-5 md:p-5 subFont">
           <h1 className="company">
             <Link
@@ -253,7 +251,6 @@ export const ProjectComponents = (props) => {
               <div className="font-bold text-2xl defaultFont">
                 {props.title.toUpperCase()}
               </div>
-              <Divider className="bg-theme" />
               <div className="subFont pt-4">{props.description}</div>
             </div>
           </div>

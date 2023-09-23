@@ -1,5 +1,5 @@
 import Link from "next/link";
-export default function Footer() {
+export default function Footer(props) {
   let year = new Date().getFullYear();
   return (
     <footer className="h-[25vh] bg-footer flex">
@@ -9,14 +9,14 @@ export default function Footer() {
             <div className="text-white subFont cursor-default">
               bryanbauzon © {year}
             </div>
-            <h2 className="text-white subFont text-center">
+            {props.birthday != ""?<></>:<h2 className="text-white subFont text-center">
               <Link
                 href={"#home"}
                 className="p-2 cursor-n-resize text-white footerLink hover:underline ml-2 subFont"
               >
                 Back to Top
               </Link>
-            </h2>
+            </h2>}
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-1 md:grid-cols-2">
             <Link
