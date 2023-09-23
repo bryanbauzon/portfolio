@@ -9,15 +9,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
   return (
-    <>
-      <html lang="en" className="scroll-smooth">
+    <> 
+     <html lang="en" className="scroll-smooth">
         {/* https://stackoverflow.com/questions/75337953/what-causes-nextjs-warning-extra-attributes-from-the-server-data-new-gr-c-s-c */}
         <body suppressHydrationWarning={true}>
           <div> {children}</div>
           <Analytics />
         </body>
       </html>
-      
     </>
   );
 }

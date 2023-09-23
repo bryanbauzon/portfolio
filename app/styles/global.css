@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body{
+background-color: #232931;
+}
 .gradient {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background: linear-gradient(45deg, #79eeff, #213555);
@@ -127,10 +130,22 @@ source {
 .tech{
   cursor: pointer;
 }
-
-a:hover{
-  color:#4ECCA3
+a{
+  -webkit-transition: color 1s ease-out;
+  -moz-transition: color 1s ease-out;
+  -ms-transition: color 1s ease-out;
+  -o-transition: color 1s ease-out;
+  transition: color 1s ease-out;
 }
+a:hover{
+  color: #4ECCA3;
+  transition: color 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  -moz-transition: color 0.5s ease-in;
+  -ms-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+}
+.hireme:hover{color: #EEEEEE;}
 
 .header:hover{
   color: #4ECCA3;

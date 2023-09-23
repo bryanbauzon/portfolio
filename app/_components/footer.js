@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-2 md:p-10 lg:p-10 p-2">
           <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-1">
             <div className="text-white subFont cursor-default">
-              ©bryanbauzon.{year}
+              bryanbauzon © {year}
             </div>
             <h2 className="text-white subFont text-center">
               <Link

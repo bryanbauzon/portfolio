@@ -1,7 +1,17 @@
 import Image from "next/image";
-import { useState, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
+import React from "react";
+import { Divider } from "@nextui-org/react";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure,
+} from "@nextui-org/react";
 
 export const Header = (props) => {
   return (
@@ -19,14 +29,17 @@ export const Header = (props) => {
 };
 // Badge Components
 export const BadgeComponents = (props) => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   return (
     <>
       <div className="flex flex-col lg:justify-center  md:justify-center justify-center items-center p-1">
-        <motion.a
-          href={props.pdf}
-          target="_blank"
-          whileHover={{ scale: 1.5, rotate: [0, 0, 20, 20, 0] }}
-          whileTap={{ scale: 0.5 }}
+        <motion.div
+          className="cursor-pointer"
+          whileHover={{ scale: 1.2 }}
+          onClick={() => {
+            onOpen();
+          }}
         >
           <Image
             src={props.image}
@@ -35,7 +48,31 @@ export const BadgeComponents = (props) => {
             alt={props.alt}
             loading={"eager"}
           ></Image>
-        </motion.a>
+        </motion.div>
+        <Modal
+          isOpen={isOpen}
+          onOpenChange={onOpenChange}
+          size="5xl"
+          backdrop="blur"
+        >
+          <ModalContent>
+            {(onClose) => (
+              <>
+                <ModalHeader className="flex flex-col gap-1">
+                  {props.title}
+                </ModalHeader>
+                <ModalBody>
+                  <img src={props.cert} />
+                </ModalBody>
+                <ModalFooter>
+                  <Button color="danger" variant="light" onPress={onClose}>
+                    Close
+                  </Button>
+                </ModalFooter>
+              </>
+            )}
+          </ModalContent>
+        </Modal>
       </div>
     </>
   );
@@ -51,6 +88,7 @@ export const ExperienceComponents = (props) => {
             {props.title.toUpperCase()}
           </h1>
         </div>
+        <Divider className="bg-theme" />
         <div className="text-white lg:p-5 md:p-5 subFont">
           <h1 className="company">
             <Link
@@ -139,7 +177,7 @@ export const ProjectComponents = (props) => {
                       <img alt={props.badgeAltText} src={props.badgeSrc} />
 
                       <div className="pl-2 font-bold  text-theme subFont text-xs">
-                        {props.tech != ''? props.tech.toLowerCase() : ''}
+                        {props.tech != "" ? props.tech.toLowerCase() : ""}
                       </div>
                     </>
                   ) : (
@@ -200,11 +238,13 @@ export const ProjectComponents = (props) => {
                         <img alt="Source" src={props.repo} />
                       </Link>
                       <div className="pl-2 font-bold text-theme subFont text-xs">
-                        {props.tech != ''? props.tech.toLowerCase() : ''}
+                        {props.tech != "" ? props.tech.toLowerCase() : ""}
                       </div>
                     </>
                   ) : (
-                    <div className="pl-2 text-theme subFont text-xs font-bold ">{props.tech != ''? props.tech.toLowerCase() : ''}</div>
+                    <div className="pl-2 text-theme subFont text-xs font-bold ">
+                      {props.tech != "" ? props.tech.toLowerCase() : ""}
+                    </div>
                   )}
                 </div>
               </div>
@@ -213,6 +253,7 @@ export const ProjectComponents = (props) => {
               <div className="font-bold text-2xl defaultFont">
                 {props.title.toUpperCase()}
               </div>
+              <Divider className="bg-theme" />
               <div className="subFont pt-4">{props.description}</div>
             </div>
           </div>

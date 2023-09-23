@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ProjectComponents,Header } from "./util/util";
 export default function Projects() {
   return (
-    <div className="  h-min bg-pages ">
+    <div className="  h-min bg-pages " id="projects">
       <Header header="Personal Projects"/>
       <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-5 gap-6">
         <ProjectComponents

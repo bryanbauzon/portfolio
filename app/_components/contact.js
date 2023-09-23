@@ -5,15 +5,13 @@ import { motion, useScroll } from "framer-motion";
 export default function Contact() {
   return (
     <>
-      <div className="h-[50vh] bg-pages justify-center items-center flex-col text-white flex">
-        <Header header="Get in touch" />
+      <div className="h-[50vh] bg-pages justify-center items-center flex-col text-white flex" id="contact">
+        <Header header="let's work together! 🚀" />
         <div className="px-10 p-10 text-center subFont">
           I would love to hear from you. Whether it’s a project, a job
           opportunity, or just a chat. Feel free to contact me!
             
-          <motion.div whileHover={{ scale: 5,rotate: [0, 0, 20, 20, 0] }} whileTap={{scale:1}} className="cursor-pointer">
             👋
-          </motion.div>
             {" "}
         </div>
         <div className="animate-bounce">
