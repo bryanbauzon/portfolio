@@ -61,7 +61,7 @@ export const BadgeComponents = (props) => {
                   {props.title}
                 </ModalHeader>
                 <ModalBody>
-                  <img src={props.cert} />
+                  <img src={props.cert} loading="eager"/>
                 </ModalBody>
                 <ModalFooter>
                   <Button color="danger" variant="light" onPress={onClose}>
