@@ -11,47 +11,50 @@ import Contact from "./_components/contact";
 import { NextUIProvider } from "@nextui-org/react";
 import NavbarComp from "./_components/navbar";
 export default async function Page() {
-  
   let date = new Date();
   let month = date.getMonth() + 1;
-  let day = date.getDate();
+  let dayNum = date.getDate();
   let year = date.getFullYear();
+  let day = date.getDay();
 
   let birthday = "";
+  let dayStatus = "";
+  if(day == 6 || day == 0){
+    dayStatus = "Enjoying the weekends!"
+  }
 
-
-
-  if (month == 10 && day == 8) {
+  if (month == 10 && dayNum == 8) {
     birthday = (
-      <div className="text-bold text-[5rem] defaultFont">
-        AND TODAY IS MY <span className="text-theme">BIRTHDAY</span>!🥳🎉🎊
+      <div className="text-bold text-[2.2rem] defaultFont">
+        CELEBRATING MY <span className="text-theme">QUARTER-CENTURY</span>
+        !<br/>🥳🎉🎊
       </div>
     );
   }
 
   return (
     <>
-    <NextUIProvider>
-    <NavbarComp  birthday={birthday} />
-      <Home birthday={birthday} month={month} year={year}/>
-      {birthday == "" ? (
-        <>
-          {" "}
-          <Salesforce />
-          <Experience />
-          <Services />
-          <Projects />
-        </>
-      ) : (
-        <></>
-      )} 
+      <NextUIProvider>
+        <NavbarComp birthday={birthday} />
+        <Home birthday={birthday} month={month} year={year} dayStatus ={dayStatus}/>
+        {birthday == "" ? (
+          <>
+            <Salesforce />
+            <Experience />
+            <Services />
+            <Projects />
+            <Contact />
+          </>
+        ) : (
+          <></>
+        )}
 
-      <Contact/>
+       
 
-      <Footer />
+        <Footer  birthday={birthday}/>
 
-      {/* <Skills /> */}
-    </NextUIProvider>
+        {/* <Skills /> */}
+      </NextUIProvider>
     </>
   );
 }

@@ -22,7 +22,7 @@ export default function Home(props) {
           initial="hidden"
           animate="show"
         >
-          <div className="text-white lg:text-[1.4rem] defaultFont text-[1.3rem] flex flex-col justify-center items-left lg:h-[80vh] h-[70vh] ">
+          <div className="text-white lg:text-[1.4rem] defaultFont text-[1.3rem] flex flex-col justify-center md:h-[50vh] items-left lg:h-[70vh] h-[70vh] ">
             <span className="text-2xl text-white">
               Hi! I'm MAX BRYAN BAUZON,
             </span>
@@ -50,19 +50,19 @@ export default function Home(props) {
               freeze time and capture moments.
             </span>
             <br/>
-            <Chip color="success" className="text-white" variant="dot">Open for Work</Chip>
+            <Chip color={props.birthday != '' || props.dayStatus != ''?"warning":"success"} className="text-white" variant="dot">{props.birthday != ""?"Celebrating":(props.dayStatus != ""?props.dayStatus :"Open for Work")}</Chip>
+        
           </div>
         </motion.div>
-        <div className="flex flex-col justify-center  items-center md:h-screen lg:h-[80vh] h-[10vh] ">
+        <div className="flex flex-col justify-center  items-center md:h-[10vh] lg:h-[70vh] h-[5vh] ">
           {props.birthday != "" ? (
             <motion.div
               variants={textDisplayConfig}
               initial="hidden"
               animate="show"
-              whileHover={{ scale: 1.2}}
               whileTap={{scale: 0.9}}
             >
-              <Link href={"/buymeacoffee"} className="defaultFont coffee text-[3rem]">
+              <Link href={"/buymeacoffee"} className="defaultFont coffee text-[2rem] cursor-alias">
                 Buy me a Coffee ☕
               </Link>
             </motion.div>

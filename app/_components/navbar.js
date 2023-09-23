@@ -22,8 +22,8 @@ export default function NavbarComp(props) {
             <Link className="font-bold text-white" href="#home">@bryanbauzon</Link>
           </NavbarBrand>
         </NavbarContent>
-
-        <NavbarContent className="hidden sm:flex gap-4" justify="center">
+       {props.birthday == ''?<>
+       <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
             <Link className="text-white" href="#home">
               Home
@@ -61,7 +61,7 @@ export default function NavbarComp(props) {
               Hire me
             </Link>
           </NavbarItem>
-        </NavbarContent>
+        </NavbarContent></>:<></>}
       </Navbar>
     </>
   );
