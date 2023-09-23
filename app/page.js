@@ -19,7 +19,7 @@ export default async function Page() {
 
   let birthday = "";
   let dayStatus = "";
-  if(day == 6 || day == 0){
+  if(!(day % 6)){
     dayStatus = "Enjoying the weekends!"
   }
 
