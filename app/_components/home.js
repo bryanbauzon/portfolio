@@ -34,7 +34,8 @@ export default function Home(props) {
                   A <span className="text-theme">SOFTWARE DEVELOPER </span>
                 </span>
                 <span className="text-white defaultFont text-2xl">
-                  by profession with {props.year - 2019} years {props.month - 6} months of work experience based in the
+                  by profession with {props.year - 2019} years {props.month - 6}{" "}
+                  months of work experience based in the
                 </span>
                 <div className="basedCountry text-[3rem] text-highlights lg:text-[5rem]">
                   PHILIPPINES.
@@ -49,9 +50,24 @@ export default function Home(props) {
               better. I am also interested in Photography and videography to
               freeze time and capture moments.
             </span>
-            <br/>
-            <Chip color={props.birthday != '' || props.dayStatus != ''?"warning":"success"} className="text-white" variant="dot">{props.birthday != ""?"Celebrating":(props.dayStatus != ""?props.dayStatus :"Open for Work")}</Chip>
-        
+            <br />
+            <Chip
+              color={
+                props.birthday != ""
+                  ? "warning"
+                  : props.dayStatus != ""
+                  ? "default"
+                  : "success"
+              }
+              className="text-white"
+              variant="dot"
+            >
+              {props.birthday != ""
+                ? "Celebrating"
+                : props.dayStatus != ""
+                ? props.dayStatus
+                : "Open for Work"}
+            </Chip>
           </div>
         </motion.div>
         <div className="flex flex-col justify-center  items-center md:h-[10vh] lg:h-[70vh] h-[5vh] ">
@@ -60,9 +76,12 @@ export default function Home(props) {
               variants={textDisplayConfig}
               initial="hidden"
               animate="show"
-              whileTap={{scale: 0.9}}
+              whileTap={{ scale: 0.9 }}
             >
-              <Link href={"/buymeacoffee"} className="defaultFont coffee text-[2rem] cursor-alias">
+              <Link
+                href={"/buymeacoffee"}
+                className="defaultFont coffee text-[2rem] cursor-alias"
+              >
                 Buy me a Coffee ☕
               </Link>
             </motion.div>
