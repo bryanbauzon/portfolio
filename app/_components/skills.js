@@ -1,10 +1,8 @@
-import Image from "next/image";
-import { useState, useEffect } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 export default function Technology() {
   return (
     <div
-      className=" h-min bg-pages pt-20 p-20"
+      className=" h-min bg-dark pt-20 p-20"
       id="text-white"
     >
       <h1 className="p-4 text-3xl text-center defaultFont text-white">

@@ -19,15 +19,16 @@ export default async function Page() {
 
   let birthday = "";
   let dayStatus = "";
-  if(!(day % 6)){
-    dayStatus = "Probably sleeping..."
+  if (!(day % 6)) {
+    dayStatus = "Probably sleeping...";
   }
 
   if (month == 10 && dayNum == 8) {
     birthday = (
       <div className="text-bold text-[2.2rem] defaultFont">
         CELEBRATING MY <span className="text-theme">QUARTER-CENTURY</span>
-        !<br/>🥳🎉🎊
+        !<br />
+        🥳🎉🎊
       </div>
     );
   }
@@ -36,7 +37,12 @@ export default async function Page() {
     <>
       <NextUIProvider>
         <NavbarComp birthday={birthday} />
-        <Home birthday={birthday} month={month} year={year} dayStatus ={dayStatus}/>
+        <Home
+          birthday={birthday}
+          month={month}
+          year={year}
+          dayStatus={dayStatus}
+        />
         {birthday == "" ? (
           <>
             <Salesforce />
@@ -49,9 +55,7 @@ export default async function Page() {
           <></>
         )}
 
-       
-
-        <Footer  birthday={birthday}/>
+        <Footer birthday={birthday} />
 
         {/* <Skills /> */}
       </NextUIProvider>

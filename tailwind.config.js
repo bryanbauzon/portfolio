@@ -28,14 +28,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        pages: "#232931",
+        darkMode: "#222831",
+        light:"#F1EFEF",
         navbar: "#232931",
         name: "#DDE6ED",
         role: "#EEEEEE",
         footer: "#222831",
         links:'#ff7c00',
         'bermuda': "#78dcca",
-        white:'#EEEEEE',
+        white:'#F1EFEF',
         dark: "#F0F0F0",
         blue:"#4F709C",
         debug:'#ff7c00',
@@ -45,6 +46,6 @@ module.exports = {
       },
     },
   },
-  darkMode:"class",
+  darkMode:["class"],
   plugins: [nextui()],
 };

@@ -1,10 +1,8 @@
 import { BadgeComponents, Header } from "./util/util";
-import { useState, useEffect } from "react";
-import { motion, useScroll } from "framer-motion";
 export default function Salesforce() {
   return (
     <>
-      <div className="h-min bg-pages pt-20" id="salesforce">
+      <div className="h-min dark:bg-darkMode pt-20" id="salesforce">
         <Header
           header="3x salesforce certified"
           subHeader="Click Badge to view the certificate"

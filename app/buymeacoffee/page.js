@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 export default function BuyMeACoffee() {
   const animationConfig = {
@@ -15,7 +15,7 @@ export default function BuyMeACoffee() {
   };
   return (
     <>
-      <div className="h-screen bg-pages flex flex-col justify-center items-center">
+      <div className="h-screen bg-white dark:bg-darkMode flex flex-col justify-center items-center">
         <motion.a
           variants={animationConfig}
           initial="hidden"
@@ -35,7 +35,7 @@ export default function BuyMeACoffee() {
         </motion.a>
         <Link
           href="/"
-          className="underline text-white subFont hover:text-theme p-3"
+          className="underline dark:text-white text-darkMode subFont hover:text-theme p-3"
         >
           Return to home
         </Link>

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { motion, useScroll } from "framer-motion";
-import Image from "next/image";
 import { Chip } from "@nextui-org/react";
 export default function Home(props) {
   const textDisplayConfig = {
@@ -15,15 +14,15 @@ export default function Home(props) {
   };
 
   return (
-    <div className="h-screen bg-pages " id="home">
+    <div className={`h-screen dark:bg-darkMode  `} id="home">
       <div className="grid grid-cols-1 p-5 lg:p-20 pt-10 md:pt-70 lg:pt-2 md:grid-cols-1 lg:grid-cols-2 gap-1">
         <motion.div
           variants={textDisplayConfig}
           initial="hidden"
           animate="show"
         >
-          <div className="text-white lg:text-[1.4rem] defaultFont text-[1.3rem] flex flex-col justify-center md:h-[50vh] items-left lg:h-[70vh] h-[70vh] ">
-            <span className="text-2xl text-white">
+          <div className="text-darkMode lg:text-[1.4rem] dark:text-white defaultFont text-[1.3rem] flex flex-col justify-center md:h-[50vh] items-left lg:h-[70vh] h-[70vh] ">
+            <span className="text-2xl text-darkMode dark:text-white">
               Hi! I'm MAX BRYAN BAUZON,
             </span>
             {props.birthday != "" ? (
@@ -33,17 +32,17 @@ export default function Home(props) {
                 <span className="defaultFont text-[2.5rem] lg:text-[3rem]">
                   A <span className="text-theme">SOFTWARE DEVELOPER </span>
                 </span>
-                <span className="text-white defaultFont text-2xl">
+                <span className="dark:text-white text-darkMode defaultFont text-2xl">
                   by profession with {props.year - 2019} years {props.month - 6}{" "}
                   months of work experience based in the
                 </span>
-                <div className="basedCountry text-[3rem] text-highlights lg:text-[5rem]">
+                <div className="basedCountry text-[3rem] text-darkMode dark:text-white lg:text-[5rem]">
                   PHILIPPINES.
                 </div>
               </>
             )}
 
-            <span className="subFont text-highlights text-sm">
+            <span className="subFont dark:text-white text-darkMode text-sm">
               I am a passionate software developer who is continuously learning
               and improving my skills in everyday life. Reading various
               philosophy books helps me think positively and see life much
@@ -51,7 +50,7 @@ export default function Home(props) {
               freeze time and capture moments.
             </span>
             <br />
-            <Chip
+            <Chip 
               color={
                 props.birthday != ""
                   ? "warning"
@@ -59,7 +58,7 @@ export default function Home(props) {
                   ? "default"
                   : "success"
               }
-              className="text-white"
+              className="dark:text-white text-darkMode"
               variant="dot"
             >
               {props.birthday != ""
@@ -80,7 +79,7 @@ export default function Home(props) {
             >
               <Link
                 href={"/buymeacoffee"}
-                className="defaultFont coffee text-[2rem] cursor-alias"
+                className="defaultFont coffee text-[2rem] dark:text-white text-darkMode cursor-alias"
               >
                 Buy me a Coffee ☕
               </Link>
@@ -101,7 +100,7 @@ export default function Home(props) {
                 viewBox="0 0 24 24"
                 stroke-width="2"
                 stroke="currentColor"
-                class="w-6 h-20"
+                class="w-6 h-20 text-darkMode dark:text-white"
               >
                 <path
                   stroke-linecap="round"
