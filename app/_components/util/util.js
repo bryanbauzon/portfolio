@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { motion, useScroll } from "framer-motion";
+import { motion} from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import {
@@ -16,9 +16,9 @@ export const Header = (props) => {
   return (
     <>
       <div className="flex flex-col justify-center">
-        <h1 className="p-5 cursor-pointer header text-3xl  text-center defaultFont text-white">
+        <h1 className="p-5 cursor-pointer header text-3xl  text-center defaultFont text-darkMode dark:text-white font-bold">
           {props.header.toUpperCase()}
-          <p className="subFont font-light cert text-white">
+          <p className="subFont font-light cert text-darkMode dark:text-white">
             {props.subHeader != "" ? props.subHeader : <></>}
           </p>
         </h1>
@@ -87,7 +87,7 @@ export const ExperienceComponents = (props) => {
             {props.title.toUpperCase()}
           </h1>
         </div>
-        <div className="text-white lg:p-5 md:p-5 subFont">
+        <div className="text-darkMode dark:text-white lg:p-5 md:p-5 subFont">
           <h1 className="company">
             <Link
               href={props.website}
@@ -132,7 +132,7 @@ export const ServicesComponents = (props) => {
         <p className="text-center text-lg font-bold text-theme defaultFont">
           {props.title}
         </p>
-        <p className="text-center text-white subFont">{props.description}</p>
+        <p className="text-center text-darkMode dark:text-white subFont">{props.description}</p>
       </div>
     </>
   );
@@ -248,10 +248,10 @@ export const ProjectComponents = (props) => {
               </div>
             )}
             <div className="projectDetails">
-              <div className="font-bold text-2xl defaultFont">
+              <div className="font-bold text-theme text-2xl defaultFont">
                 {props.title.toUpperCase()}
               </div>
-              <div className="subFont pt-4">{props.description}</div>
+              <div className="subFont pt-4 dark:text-white text-darkMode">{props.description}</div>
             </div>
           </div>
         </div>

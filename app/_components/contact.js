@@ -1,13 +1,11 @@
 import { Header } from "./util/util";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { motion, useScroll } from "framer-motion";
 export default function Contact() {
   return (
     <>
-      <div className="h-[50vh] bg-pages justify-center items-center flex-col text-white flex" id="contact">
+      <div className="h-[50vh] dark:bg-darkMode justify-center items-center flex-col text-white flex" id="contact">
         <Header header="let's work together! 🚀" />
-        <div className="px-10 p-10 text-center subFont">
+        <div className="px-10 p-10 text-center dark:text-white text-darkMode subFont">
           I would love to hear from you. Whether it’s a project, a job
           opportunity, or just a chat. Feel free to contact me!
             
@@ -16,13 +14,12 @@ export default function Contact() {
         </div>
         <div className="animate-bounce">
           <svg
-            color="#ffff"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="2"
             stroke="currentColor"
-            class="w-6 h-7"
+            class="w-6 h-7  dark:text-white text-darkMode"
           >
             <path
               stroke-linecap="round"
@@ -33,7 +30,7 @@ export default function Contact() {
         </div>
         <Link
           href={"mailto:mrbryanbauzon"}
-          className="underline emailLink cursor-alias"
+          className="underline emailLink cursor-alias dark:text-white text-darkMode"
         >
           mrbryanbauzon@gmail.com
         </Link>

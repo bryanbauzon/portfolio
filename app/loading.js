@@ -1,7 +1,7 @@
 export default function Loading() {
     return (
-      <div className="bg-pages h-screen flex items-center justify-center ">
-          <p className="text-white defaultFont text-2xl">Please wait...</p>
+      <div className="dark:bg-darkMode bg-white h-screen flex items-center justify-center ">
+          <p className="dark:text-white text-darkMode defaultFont text-2xl">Please wait...</p>
       </div>
     );
   }

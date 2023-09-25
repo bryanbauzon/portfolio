@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body{
-background-color: #232931;
-}
+
 .gradient {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background: linear-gradient(45deg, #79eeff, #213555);
@@ -165,7 +163,6 @@ a:hover{
 
 
 .coffee{
-  color: #eeee;
   text-decoration: underline;
   text-decoration-color: transparent;
   transition: 1s;
@@ -217,7 +214,6 @@ a:hover{
  }
 
  .footerLink,.emailLink{
-  color: #eeee;
   text-decoration: underline;
   text-decoration-color: transparent;
   transition: 1s;
