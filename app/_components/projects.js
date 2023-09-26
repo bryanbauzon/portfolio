@@ -34,14 +34,7 @@ export default function Projects() {
             actionText="Watch"
             tech="February 2023"
           />
-          <ProjectComponents
-            actionText="Watch"
-            title=" Discover Anda, Pangasinan"
-          
-            href="https://www.youtube.com/watch?v=8iBvhVrAnRQ"
-            tech="August 2023"
-            src={"/projects/anda.png"}
-          />
+         
 
           <ProjectComponents
             actionText="Watch"
@@ -57,7 +50,14 @@ export default function Projects() {
             tech="May 2023"
             actionText="Watch"
           />
-        
+         <ProjectComponents
+            actionText="Watch"
+            title=" Discover Anda, Pangasinan"
+          
+            href="https://www.youtube.com/watch?v=8iBvhVrAnRQ"
+            tech="August 2023"
+            src={"/projects/anda.png"}
+          />
         </div>
       </div>
     </div></>
