@@ -15,7 +15,6 @@ export default function Projects() {
          goal of this challenge is to create a working prototype, a
          minimum of 1 screen, on any platform that Flutter supports. `}
             src={"/projects/jobFinder.png"}
-          
             id="jobFinder"
             tech="Flutter"
             actionText="Repo"
@@ -35,25 +34,24 @@ export default function Projects() {
             id="portfolioWebsite"
             actionText="Visit"
             tech="NextJS"
-             href={"https://github.com/bryanbauzon/portfolio"}
+            href={"https://github.com/bryanbauzon/portfolio"}
           />
         </div>
       </div>
       <div className="flex flex-col">
         <ProjectCategory category={`Videography/ Video Editing`} />
         <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-5 gap-6">
-        <ProjectComponents
+          <ProjectComponents
             title="'Panayunan' - Leaves by Ben&Ben"
             description={`Bro ipsum dolor sit amet park bunny slope gondy taco mitt. Epic ski bum switch, apres ride brain bucket beater Skate roadie. Whistler crunchy hammer taco glove bowl hardtail bump huckfest air 360 gear jammer bail Bike. DH Whistler back country death cookies, jib hammerhead air avie gondy endo. Roadie stoked taco mitt pow, laps nose press grind avie greasy skid lid. Shred nose greasy, dirtbag fatty pow schwag. Tele endo grind chain ring ride titanium gondy hero snake bite misty.`}
             href="https://youtu.be/e3B8Zqu5iA4"
             src={"/projects/panayunan2023.png"}
-           
             actionText="Watch"
             id="binongey2023"
             tech="February 2023"
           />
           <ProjectComponents
-           actionText="Watch"
+            actionText="Watch"
             title=" Discover Anda, Pangasinan"
             description={` Three years ago, I used photography to freeze time and capture
           important moments. Eventually, I was curious about how to edit
@@ -72,7 +70,7 @@ export default function Projects() {
           />
 
           <ProjectComponents
-           actionText="Watch"
+            actionText="Watch"
             title="Celebrating Pista'y Dayat 2023!"
             description={`Theme: "Bridging our Noble Past to a Great Picture through Thanksgiving and Unity: Arangkada ANDA!" - May 2, 2023. Same Day Edit`}
             href="https://youtu.be/BZCwppetjw4"
@@ -84,12 +82,8 @@ export default function Projects() {
             title="19th BINONGEY FESTIVAL 2023 - MTB CHALLENGE HIGHLIGHTS (SDE)"
             description={`Bacon ipsum dolor amet dolore et ground round quis, commodo turkey spare ribs non tongue salami cillum pariatur. Tempor commodo non drumstick aliqua. Boudin tail drumstick, cupidatat brisket sunt magna jowl shoulder frankfurter buffalo dolore culpa nostrud jerky. Aliquip irure occaecat kielbasa do exercitation quis. Brisket turducken dolor, quis in shankle labore ea occaecat dolore.`}
             href="https://youtu.be/VrrJBm4Qmgw"
-            isMobile={false}
             src={"/projects/binongey2023.png"}
-            badgeSrc={
-              "https://img.shields.io/youtube/views/VrrJBm4Qmgw?style=for-the-badge&color=%234ECCA3"
-            }
-            badgeAltText={"Youtube Video Views"}
+           
             id="binongey2023"
             tech="May 2023"
             actionText="Watch"

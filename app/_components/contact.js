@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <>
-      <div className="h-[50vh] dark:bg-darkMode justify-center items-center flex-col text-white flex" id="contact">
+      <div className="h-[50vh] dark:bg-darkMode justify-center items-center flex-col text-white flex " id="contact">
         <Header header="let's work together! 🚀" />
         <div className="px-10 p-10 text-center dark:text-white text-darkMode subFont">
           I would love to hear from you. Whether it’s a project, a job

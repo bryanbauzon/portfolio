@@ -4,7 +4,8 @@ import React from "react";
 export default function Test() {
   return (
     <>
-     <Card isFooterBlurred className="w-[20vw] h-[300px] col-span-12 sm:col-span-7">
+    <div>
+    <Card isFooterBlurred className="w-[20vw] h-[300px] col-span-12 sm:col-span-7">
       <Image
         removeWrapper
         alt="Relaxing app background"
@@ -26,6 +27,7 @@ export default function Test() {
         <Button radius="full" size="sm">Watch</Button>
       </CardFooter>
     </Card>
+    </div>
     </>
   );
 }

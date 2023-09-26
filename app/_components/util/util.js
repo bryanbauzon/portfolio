@@ -33,7 +33,7 @@ export const Header = (props) => {
 export const ProjectCategory = (props) => {
   return (
     <>
-      <h2 className="pl-10 font-bold text-theme">{props.category}</h2>
+     <div> <h2 className="pl-10 font-bold text-theme">{props.category}</h2></div>
     </>
   );
 };
@@ -154,8 +154,8 @@ export const ServicesComponents = (props) => {
 export const ProjectComponents = (props) => {
   return (
     <>
+      <div>
       <div className="flex justify-center">
-       <motion.div className="">
        <Card isPressable
           isFooterBlurred
           className="w-fit h-[300px] col-span-12 sm:col-span-7"
@@ -184,7 +184,7 @@ export const ProjectComponents = (props) => {
             </Button>
           </CardFooter>
         </Card>
-       </motion.div>
+      </div>
       </div>
     </>
   );
