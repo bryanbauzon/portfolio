@@ -20,7 +20,7 @@ export default function Projects() {
               src={"/projects/portfolio.png"}
             actionText="Visit"
             tech="NextJS"
-            href={"https://github.com/bryanbauzon/portfolio"}
+            href={"https://bryanbauzon.com/"}
           />
         </div>
       </div>
