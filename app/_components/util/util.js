@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { motion} from "framer-motion";
+"use client";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import {
@@ -10,6 +10,9 @@ import {
   ModalFooter,
   Button,
   useDisclosure,
+  Card,
+  CardFooter,
+  Image,
 } from "@nextui-org/react";
 
 export const Header = (props) => {
@@ -23,6 +26,14 @@ export const Header = (props) => {
           </p>
         </h1>
       </div>
+    </>
+  );
+};
+
+export const ProjectCategory = (props) => {
+  return (
+    <>
+      <h2 className="pl-10 font-bold text-theme">{props.category}</h2>
     </>
   );
 };
@@ -61,7 +72,7 @@ export const BadgeComponents = (props) => {
                   {props.title}
                 </ModalHeader>
                 <ModalBody>
-                  <img src={props.cert} loading="eager"/>
+                  <img src={props.cert} loading="eager" />
                 </ModalBody>
                 <ModalFooter>
                   <Button color="danger" variant="light" onPress={onClose}>
@@ -102,7 +113,7 @@ export const ExperienceComponents = (props) => {
           <h2 className="font-bold">Roles and Responsibilities:</h2>
           <div className="responsibilities">
             {props.roles.map((val) => {
-              return <li>{val}</li>;
+              return <li key={`res-${val}`}>{val}</li>;
             })}
           </div>
           <h2 className="font-bold">Technology Used:</h2>
@@ -132,7 +143,9 @@ export const ServicesComponents = (props) => {
         <p className="text-center text-lg font-bold text-theme defaultFont">
           {props.title}
         </p>
-        <p className="text-center text-darkMode dark:text-white subFont">{props.description}</p>
+        <p className="text-center text-darkMode dark:text-white subFont">
+          {props.description}
+        </p>
       </div>
     </>
   );
@@ -141,121 +154,39 @@ export const ServicesComponents = (props) => {
 export const ProjectComponents = (props) => {
   return (
     <>
-      <div className="p-0 projectContainer" id={props.id}>
-        <div className=" flex flex-col">
-          <div className="sampleWorks p-5">
-            {props.isMobile ? (
-              <div>
-                <div className="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-3 ">
-                  {props.src.map((i) => {
-                    return (
-                      <>
-                        <motion.div
-                          // whileHover={{ scale: 1.3 }}
-                          whileTap={{ scale: 0.8 }}
-                          // href={`${props.href}`}
-                          // target={"_blank"}
-                        >
-                          <Image
-                            src={i}
-                            className="services p-2"
-                            height={120}
-                            width={90}
-                            alt={props.title.toUpperCase()}
-                            loading={"eager"}
-                          />
-                        </motion.div>
-                      </>
-                    );
-                  })}
-                </div>
-                <div className="p-2 flex items-center">
-                  {props.badgeSrc ? (
-                    <>
-                      <img alt={props.badgeAltText} src={props.badgeSrc} />
+      <div className="flex justify-center">
+       <motion.div className="">
+       <Card isPressable
+          isFooterBlurred
+          className="w-fit h-[300px] col-span-12 sm:col-span-7"
+        >
+          <Image
+            removeWrapper
+            alt="Relaxing app background"
+            className="z-0 w-full h-full object-cover"
+            src={props.src}
+            loading="eager"
+          />
 
-                      <div className="pl-2 font-bold  text-theme subFont text-xs">
-                        {props.tech != "" ? props.tech.toLowerCase() : ""}
-                      </div>
-                    </>
-                  ) : (
-                    <></>
-                  )}
-
-                  {props.repo ? (
-                    <>
-                      {" "}
-                      <Link
-                        href={`${props.href}`}
-                        className="ml-2 cursor-alias"
-                        target={"_blank"}
-                      >
-                        <img alt="Source" src={props.repo} />
-                      </Link>
-                    </>
-                  ) : (
-                    <></>
-                  )}
-                </div>
+          <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
+            <div className="flex flex-grow gap-2 items-center">
+              <div className="flex flex-col justify-start items-start">
+                <p className="text-tiny text-theme text-left font-bold">
+                  {props.title.toUpperCase()}
+                </p>
+                <p className="text-tiny text-white/60">{props.tech}</p>
               </div>
-            ) : (
-              <div>
-                <div className=" flex justify-center items-center flex-column ">
-                  <motion.div
-                    // whileHover={{ scale: 1.3 }}
-                    whileTap={{ scale: 0.8 }}
-                    // href={`${props.href}`}
-                    // target={"_blank"}
-                  >
-                    <Image
-                      src={props.src}
-                      className="services p-2"
-                      height={150}
-                      width={280}
-                      alt={props.title.toUpperCase()}
-                      loading={"eager"}
-                    />
-                  </motion.div>
-                </div>
-                <div className="p-2 flex  items-center">
-                  {props.badgeSrc ? (
-                    <>
-                      <img alt={props.badgeAltText} src={props.badgeSrc} />
-                    </>
-                  ) : (
-                    <></>
-                  )}
-
-                  {props.repo ? (
-                    <>
-                      <Link
-                        href={`${props.href}`}
-                        className="ml-2 cursor-alias"
-                        target={"_blank"}
-                      >
-                        <img alt="Source" src={props.repo} />
-                      </Link>
-                      <div className="pl-2 font-bold text-theme subFont text-xs">
-                        {props.tech != "" ? props.tech.toLowerCase() : ""}
-                      </div>
-                    </>
-                  ) : (
-                    <div className="pl-2 text-theme subFont text-xs font-bold ">
-                      {props.tech != "" ? props.tech.toLowerCase() : ""}
-                    </div>
-                  )}
-                </div>
-              </div>
-            )}
-            <div className="projectDetails">
-              <div className="font-bold text-theme text-2xl defaultFont">
-                {props.title.toUpperCase()}
-              </div>
-              <div className="subFont pt-4 dark:text-white text-darkMode">{props.description}</div>
             </div>
-          </div>
-        </div>
+            <Button radius="full" size="sm" className="bg-theme">
+              <Link href={props.href} target="_blank">
+                {props.actionText}
+              </Link>
+            </Button>
+          </CardFooter>
+        </Card>
+       </motion.div>
       </div>
     </>
   );
 };
+
