@@ -154,9 +154,8 @@ export const ServicesComponents = (props) => {
 export const ProjectComponents = (props) => {
   return (
     <>
-      <div>
       <div className="flex justify-center">
-       <Card isPressable
+       <Card 
           isFooterBlurred
           className="w-fit h-[300px] col-span-12 sm:col-span-7"
         >
@@ -184,7 +183,6 @@ export const ProjectComponents = (props) => {
             </Button>
           </CardFooter>
         </Card>
-      </div>
       </div>
     </>
   );
