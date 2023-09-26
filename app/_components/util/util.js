@@ -13,6 +13,8 @@ import {
   Card,
   CardFooter,
   Image,
+  CardHeader,
+  CardBody,
 } from "@nextui-org/react";
 
 export const Header = (props) => {
@@ -33,7 +35,10 @@ export const Header = (props) => {
 export const ProjectCategory = (props) => {
   return (
     <>
-     <div> <h2 className="pl-10 font-bold text-theme">{props.category}</h2></div>
+      <div>
+        {" "}
+        <h2 className="pl-10 font-bold text-theme">{props.category}</h2>
+      </div>
     </>
   );
 };
@@ -90,9 +95,91 @@ export const BadgeComponents = (props) => {
 
 //ExperienceComponents
 export const ExperienceComponents = (props) => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   return (
     <>
-      <div className="flex flex-col lg:p-10 md:p-10 p-5 experience h-min">
+      <div>
+        <Card className="max-w-[420px]">
+          <CardHeader className="justify-between">
+            <div className="flex gap-5">
+              <div className="flex flex-col gap-1 items-start justify-center">
+                <h4 className="text-small font-semibold leading-none text-default-600">
+                  {props.company}
+                </h4>
+                <h5 className="text-small tracking-tight text-default-400">
+                  {props.title}
+                </h5>
+              </div>
+            </div>
+            <Button
+              className="ml-5 bg-theme"
+              radius="full"
+              size="sm"
+              onClick={() => {
+                onOpen();
+              }}
+            >
+              Details
+            </Button>
+          </CardHeader>
+
+          <CardFooter className="gap-3">
+            <div className="flex gap-1">
+              <p className="text-default-400 text-small font-bold">
+                {props.type}
+              </p>
+            </div>
+            <div className="flex gap-1">
+              <p className=" text-default-400 text-small">{props.date}</p>
+            </div>
+          </CardFooter>
+        </Card>
+        <Modal
+          isOpen={isOpen}
+          onOpenChange={onOpenChange}
+          size="4xl"
+          backdrop="blur"
+          className="p-5"
+        >
+          <ModalContent>
+            {(onClose) => (
+              <>
+                <ModalHeader className="flex flex-col gap-1">
+                <h1 className="text-theme">  {props.title} @ {props.company}</h1>
+                </ModalHeader>
+                <ModalBody>
+                <div>
+                    <h2 className="font-bold">Date:</h2>
+                  <p> {props.date}</p>
+                  {props.type}
+                  </div>
+                  <div>
+                    <h2 className="font-bold">Roles:</h2>
+                    {props.roles.map((val) => {
+                      return <li key={`res-${val}`}>{val}</li>;
+                    })}
+                  </div>
+                  <div>
+                    <h2 className="font-bold">Technologies:</h2>
+                    {props.tech}
+                  </div>
+                  <div>
+                  <h2 className="font-bold">Website:</h2>
+                 <Link href={props.website} className="text-theme underline" target="_blank">{props.website}</Link>
+                  </div>
+                </ModalBody>
+                <ModalFooter>
+                  <Button color="danger" variant="light" onPress={onClose}>
+                    Close
+                  </Button>
+                </ModalFooter>
+              </>
+            )}
+          </ModalContent>
+        </Modal>
+      </div>
+      {/* <div className="flex flex-col lg:p-10 md:p-10 p-5 experience h-min">
         <div>
           <h1 className="defaultFont text-2xl text-theme font-bold ">
             {props.title.toUpperCase()}
@@ -119,7 +206,7 @@ export const ExperienceComponents = (props) => {
           <h2 className="font-bold">Technology Used:</h2>
           <li>{props.tech}</li>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
@@ -155,7 +242,7 @@ export const ProjectComponents = (props) => {
   return (
     <>
       <div className="flex justify-center">
-       <Card 
+        <Card
           isFooterBlurred
           className="w-fit h-[300px] col-span-12 sm:col-span-7"
         >
@@ -187,4 +274,3 @@ export const ProjectComponents = (props) => {
     </>
   );
 };
-
