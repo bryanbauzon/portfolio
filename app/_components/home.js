@@ -33,8 +33,9 @@ export default function Home(props) {
                   A <span className="text-theme">SOFTWARE DEVELOPER </span>
                 </span>
                 <span className="dark:text-white text-darkMode defaultFont text-2xl">
-                  by profession with {props.year - 2019} years {props.month - 6}{" "}
-                  months of work experience based in the
+                  by profession with {props.year - 2019}+ years 
+                  {/* {props.month - 6}{" "} */}
+                  {" "} of work experience based in the
                 </span>
                 <div className="basedCountry text-[3rem] text-darkMode dark:text-white lg:text-[5rem]">
                   PHILIPPINES.
