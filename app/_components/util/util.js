@@ -141,6 +141,7 @@ export const ExperienceComponents = (props) => {
           size="4xl"
           backdrop="blur"
           className="p-5"
+          scrollBehavior="inside"
         >
           <ModalContent>
             {(onClose) => (
