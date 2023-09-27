@@ -63,14 +63,14 @@ export default function NavbarComp(props) {
                   Experience
                 </Link>
               </NavbarItem>
-              <NavbarItem>
+              {/* <NavbarItem>
                 <Link
                   className="text-darkMode dark:text-white"
                   href="#services"
                 >
                   Services
                 </Link>
-              </NavbarItem>
+              </NavbarItem> */}
               <NavbarItem>
                 <Link
                   className="text-darkMode dark:text-white"

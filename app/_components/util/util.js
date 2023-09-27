@@ -51,7 +51,7 @@ export const BadgeComponents = (props) => {
       <div className="flex flex-col lg:justify-center  md:justify-center justify-center items-center p-1">
         <motion.div
           className="cursor-pointer"
-          whileHover={{ scale: 1.2 }}
+          whileHover={{ scale: 1.2,rotate:[0,1,1,0] }}
           onClick={() => {
             onOpen();
           }}
@@ -100,19 +100,28 @@ export const ExperienceComponents = (props) => {
   return (
     <>
       <div>
-        <Card className="max-w-[420px]">
+        <Card className="max-w-[420px] p-10">
           <CardHeader className="justify-between">
             <div className="flex gap-5">
               <div className="flex flex-col gap-1 items-start justify-center">
-                <h4 className="text-small font-semibold leading-none text-default-600">
+                <h1 className="text-small font-semibold leading-none text-theme font-bold">
                   {props.company}
-                </h4>
-                <h5 className="text-small tracking-tight text-default-400">
-                  {props.title}
-                </h5>
+                </h1>
+                <h2 className="text-small tracking-tight text-default-400">
+                  {props.title} - {props.type}
+                </h2>
               </div>
             </div>
-            <Button
+           
+          </CardHeader>
+
+          <CardFooter className="gap-3">
+           
+            <div className="flex gap-1">
+              <p className=" text-default-400 text-small">{props.date}</p>
+            </div>
+           <div className="flex gap-1">
+           <Button
               className="ml-5 bg-theme"
               radius="full"
               size="sm"
@@ -122,17 +131,7 @@ export const ExperienceComponents = (props) => {
             >
               Details
             </Button>
-          </CardHeader>
-
-          <CardFooter className="gap-3">
-            <div className="flex gap-1">
-              <p className="text-default-400 text-small font-bold">
-                {props.type}
-              </p>
-            </div>
-            <div className="flex gap-1">
-              <p className=" text-default-400 text-small">{props.date}</p>
-            </div>
+           </div>
           </CardFooter>
         </Card>
         <Modal
@@ -180,34 +179,6 @@ export const ExperienceComponents = (props) => {
           </ModalContent>
         </Modal>
       </div>
-      {/* <div className="flex flex-col lg:p-10 md:p-10 p-5 experience h-min">
-        <div>
-          <h1 className="defaultFont text-2xl text-theme font-bold ">
-            {props.title.toUpperCase()}
-          </h1>
-        </div>
-        <div className="text-darkMode dark:text-white lg:p-5 md:p-5 subFont">
-          <h1 className="company">
-            <Link
-              href={props.website}
-              className="underline font-bold cursor-alias"
-              target={"_blank"}
-            >
-              {props.company}
-            </Link>{" "}
-            - <span className="font-xs">{props.type}</span>
-          </h1>
-          <h4 className="date">{props.date}</h4>
-          <h2 className="font-bold">Roles and Responsibilities:</h2>
-          <div className="responsibilities">
-            {props.roles.map((val) => {
-              return <li key={`res-${val}`}>{val}</li>;
-            })}
-          </div>
-          <h2 className="font-bold">Technology Used:</h2>
-          <li>{props.tech}</li>
-        </div>
-      </div> */}
     </>
   );
 };
@@ -255,7 +226,7 @@ export const ProjectComponents = (props) => {
             loading="eager"
           />
 
-          <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
+          <CardFooter className="absolute bg-black/40 bottom-0 z-10">
             <div className="flex flex-grow gap-2 items-center">
               <div className="flex flex-col justify-start items-start">
                 <p className="text-tiny text-theme text-left font-bold">

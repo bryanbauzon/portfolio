@@ -50,6 +50,20 @@ export default function Projects() {
             tech="May 2023"
             actionText="Watch"
           />
+           <ProjectComponents
+            title="JUST KEEP GOING"
+            href="https://youtu.be/YdbyI57jejA"
+            src={"/projects/keepgoing.png"}
+            tech="May 2023"
+            actionText="Watch"
+          />
+            <ProjectComponents
+            title="PARINAD TI"
+            href="https://youtu.be/LPIhgopF1RE"
+            src={"/projects/parinadti.png"}
+            tech="July 2023"
+            actionText="Watch"
+          />
          <ProjectComponents
             actionText="Watch"
             title=" Discover Anda, Pangasinan"
