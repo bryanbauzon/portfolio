@@ -218,12 +218,13 @@ export const ProjectComponents = (props) => {
           isFooterBlurred
           className="w-fit h-[300px] col-span-12 sm:col-span-7"
         >
-          <img
+          <Image
             removeWrapper
             alt="Relaxing app background"
             className="z-0 w-full h-full object-cover"
             src={props.src}
             loading="eager"
+            priority
           />
 
           <CardFooter className="absolute bg-black/40 bottom-0 z-10">
