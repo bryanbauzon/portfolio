@@ -47,7 +47,7 @@ export default async function Page() {
           <>
             <Salesforce />
             <Experience />
-            <Services />
+            {/* <Services /> */}
             <Projects />
             <Contact />
           </>
