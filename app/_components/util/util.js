@@ -218,7 +218,7 @@ export const ProjectComponents = (props) => {
           isFooterBlurred
           className="w-fit h-[300px] col-span-12 sm:col-span-7"
         >
-          <Image
+          <img
             removeWrapper
             alt="Relaxing app background"
             className="z-0 w-full h-full object-cover"
