@@ -4,7 +4,7 @@ import { ThemeProvider } from "./theme-provider";
 export const metadata = {
   title: "Bryan Bauzon - Software Developer",
   description:
-    "My online space that shows my interests and passion in software technologies and other stuffs.",
+    "My online space that shows my interests and passion in software technologies and other interesting stuffs.",
 };
 
 export default function RootLayout({ children }) {
