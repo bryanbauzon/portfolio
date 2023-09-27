@@ -264,13 +264,11 @@ export const ProjectComponents = (props) => {
              
             >
               <Link href={props.href} target="_blank">
-                <Image
+                <img
                   removeWrapper
                   alt="Relaxing app background"
                   className="z-0 w-full h-full object-cover"
                   src={props.src}
-                  loading="eager"
-                  priority
                 />
               </Link>
             </Tooltip>
