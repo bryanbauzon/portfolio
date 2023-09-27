@@ -8,7 +8,7 @@ export default function Salesforce() {
           // subHeader="Click Badge to view the certificate"
         />
         <div className="flex items-center justify-center">
-          <div className="  w-fit grid grid-cols-3  md:grid-cols-3 lg:grid-cols-3 gap-8">
+          <div className="  w-fit grid grid-cols-1  md:grid-cols-3 lg:grid-cols-3 gap-8">
             <BadgeComponents
               image="/salesforce/certificate/sfadmin.png"
               cert="/salesforce/certificate/sfadmin.png"
