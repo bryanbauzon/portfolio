@@ -12,6 +12,9 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    zIndex:{
+      '40':40
+    },
     theme: {
       colors: {
         transparent: "transparent",

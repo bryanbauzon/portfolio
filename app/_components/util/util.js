@@ -121,7 +121,6 @@ export const ExperienceComponents = (props) => {
             <div className="flex gap-1">
               <Button
                 className="ml-5 bg-theme"
-                radius="full"
                 size="sm"
                 onClick={() => {
                   onOpen();
@@ -246,6 +245,7 @@ export const ProjectComponents = (props) => {
                   <Link
                     href={props.href}
                     className="underline text-theme text-small"
+                    target={"_blank"}
                   >
                     {props.actionText}
                   </Link>
@@ -254,7 +254,7 @@ export const ProjectComponents = (props) => {
             </Card>
           </div>
         ) : (
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+          <motion.div whileTap={{scale:0.8}}>
             <Tooltip
               showArrow={true}
               color="foreground"
@@ -268,8 +268,7 @@ export const ProjectComponents = (props) => {
               <Link href={props.href} target="_blank">
                 <Image
                   removeWrapper
-                  alt="Relaxing app background"
-                  className="z-0 w-full h-full object-cover"
+                  className=" rounded-none w-full h-full"
                   src={props.src}
                   priority
                 />
