@@ -14,7 +14,6 @@ import {
   CardFooter,
   Image,
   CardHeader,
-  Skeleton,
   Tooltip,
 } from "@nextui-org/react";
 
@@ -49,7 +48,7 @@ export const BadgeComponents = (props) => {
 
   return (
     <>
-      <div className="flex flex-col lg:justify-center  md:justify-center justify-center items-center p-1">
+      <div className="flex flex-col lg:justify-center  md:justify-center justify-center items-center p-5">
         <motion.div
           className="cursor-pointer"
           whileHover={{ scale: 1.2, rotate: [0, 1, 1, 0] }}
@@ -62,8 +61,8 @@ export const BadgeComponents = (props) => {
             height={props.size}
             width={props.size}
             alt={props.alt}
-            loading={"eager"}
-          ></Image>
+            priority
+          />
         </motion.div>
         <Modal
           isOpen={isOpen}
@@ -219,6 +218,7 @@ export const ServicesComponents = (props) => {
 };
 
 export const ProjectComponents = (props) => {
+  const [isLoaded, setIsLoaded] = React.useState(false);
   return (
     <>
       <div className="flex justify-center">
@@ -243,7 +243,10 @@ export const ProjectComponents = (props) => {
                   <p className=" text-default-400 text-small">{props.tech}</p>
                 </div>
                 <div className="content-end">
-                  <Link href={props.href} className="underline text-theme text-small">
+                  <Link
+                    href={props.href}
+                    className="underline text-theme text-small"
+                  >
                     {props.actionText}
                   </Link>
                 </div>
@@ -261,14 +264,14 @@ export const ProjectComponents = (props) => {
                   <div className="text-tiny">{props.date}</div>
                 </div>
               }
-             
             >
               <Link href={props.href} target="_blank">
-                <img
+                <Image
                   removeWrapper
                   alt="Relaxing app background"
                   className="z-0 w-full h-full object-cover"
                   src={props.src}
+                  priority
                 />
               </Link>
             </Tooltip>
