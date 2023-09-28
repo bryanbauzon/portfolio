@@ -20,7 +20,7 @@ export default async function Page() {
   let birthday = "";
   let dayStatus = "";
   if (!(day % 6)) {
-    dayStatus = "Probably sleeping...";
+    dayStatus = "Away from keyboard...";
   }
 
   if (month == 10 && dayNum == 8) {
