@@ -7,7 +7,7 @@ export default function Projects() {
 
       <div className="flex flex-col">
         <ProjectCategory category={`Programming`} />
-        <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-5 gap-6">
+        <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-5 gap-1">
           <ProjectComponents
             title="Job Finder (Prototype)"
             //src={"/projects/jobFinder.png"}
