@@ -2,7 +2,7 @@ import Link from "next/link";
 export default function Footer(props) {
   let year = new Date().getFullYear();
   return (
-    <footer className="h-[25vh] dark:bg-darkModeflex">
+    <footer className="h-[25vh] dark:bg-darkMode flex">
       <div className="flex lg:p-4 md:p-4 p-2 w-full justify-center items-center">
         <div className="grid grid-cols-2 gap-2 md:p-10 lg:p-10 p-2">
           <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-1">
