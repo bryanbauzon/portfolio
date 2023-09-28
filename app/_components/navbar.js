@@ -12,7 +12,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { Switch } from "@nextui-org/react";
-
+import ThemeSwitch from './theme-switch'
 export default function NavbarComp(props) {
   const [mounted, setMounted] = useState(true);
   const { theme, setTheme } = useTheme();
@@ -92,7 +92,8 @@ export default function NavbarComp(props) {
         )}
            <NavbarContent justify="end">
               <NavbarItem>
-                <Switch
+            <ThemeSwitch/>
+                {/* <Switch
                 defaultSelected
                 className="dark:text-dark text-white"
                   size="sm"
@@ -105,7 +106,7 @@ export default function NavbarComp(props) {
                   }}
                   //to get the value of state in localStorage
                 >
-               </Switch>
+               </Switch> */}
               </NavbarItem>
             
             </NavbarContent>

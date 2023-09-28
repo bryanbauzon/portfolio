@@ -23,7 +23,7 @@ export default function Home(props) {
         >
           <div className="text-darkMode lg:text-[1.4rem] dark:text-white defaultFont text-[1.3rem] flex flex-col justify-center md:h-[50vh] items-left lg:h-[70vh] h-[70vh] ">
             <span className="text-2xl text-darkMode dark:text-white">
-              Hi! I'm MAX BRYAN BAUZON,
+              Hi! I'm <span className="font-bold">MAX BRYAN BAUZON</span>,
             </span>
             {props.birthday != "" ? (
               props.birthday
@@ -66,7 +66,7 @@ export default function Home(props) {
                 ? "Celebrating"
                 : props.dayStatus != ""
                 ? props.dayStatus
-                : "Open for Work"}
+                : "Exploring"}
             </Chip>
           </div>
         </motion.div>
