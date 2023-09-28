@@ -6,7 +6,7 @@ export default function Projects() {
       <Header header="Personal Projects" />
 
       <div className="flex flex-col">
-        <ProjectCategory category={`Mobile/ Web Development`} />
+        <ProjectCategory category={`Programming`} />
         <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-5 gap-6">
           <ProjectComponents
             title="Job Finder (Prototype)"
@@ -33,8 +33,8 @@ export default function Projects() {
         </div>
       </div>
       <div className="flex flex-col">
-        <ProjectCategory category={`Videography/ Video Editing`} />
-        <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-5 gap-6">
+        <ProjectCategory category={`Videography`} />
+        <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 pt-5 md:grid-cols-2">
           <ProjectComponents
             title="'Panayunan' - Leaves by Ben&Ben"
             href="https://youtu.be/e3B8Zqu5iA4"
