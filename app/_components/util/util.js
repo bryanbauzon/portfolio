@@ -21,12 +21,14 @@ export const Header = (props) => {
   return (
     <>
       <div className="flex flex-col justify-center">
+        <Link href={'#'+props.id}>
         <h1 className="p-5 cursor-pointer header text-3xl  text-center defaultFont text-darkMode dark:text-white font-bold">
           {props.header.toUpperCase()}
           <p className="subFont font-light cert text-darkMode dark:text-white">
             {props.subHeader != "" ? props.subHeader : <></>}
           </p>
         </h1>
+        </Link>
       </div>
     </>
   );

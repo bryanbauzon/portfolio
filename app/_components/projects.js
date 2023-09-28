@@ -3,7 +3,7 @@ export default function Projects() {
   return (
     <>
     <div className="  h-min dark:bg-darkMode " id="projects">
-      <Header header="Personal Projects" />
+      <Header header="Personal Projects" id="projects"/>
 
       <div className="flex flex-col">
         <ProjectCategory category={`Programming`} />

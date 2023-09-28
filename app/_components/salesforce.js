@@ -5,6 +5,7 @@ export default function Salesforce() {
       <div className="h-min dark:bg-darkMode pt-20" id="salesforce">
         <Header
           header="3x salesforce certified"
+          id="salesforce"
           // subHeader="Click Badge to view the certificate"
         />
         <div className="flex items-center justify-center">
