@@ -14,7 +14,7 @@ import {
   CardFooter,
   Image,
   CardHeader,
-  CardBody,
+  Skeleton,
   Tooltip,
 } from "@nextui-org/react";
 
@@ -274,36 +274,6 @@ export const ProjectComponents = (props) => {
             </Tooltip>
           </motion.div>
         )}
-
-        {/* <Card
-          isFooterBlurred
-          className="w-fit h-[300px] col-span-12 sm:col-span-7"
-        >
-          <Image
-            removeWrapper
-            alt="Relaxing app background"
-            className="z-0 w-full h-full object-cover"
-            src={props.src}
-            loading="eager"
-            priority
-          />
-
-          <CardFooter className="absolute bg-black/40 bottom-0 z-10">
-            <div className="flex flex-grow gap-2 items-center">
-              <div className="flex flex-col justify-start items-start">
-                <p className="text-tiny text-theme text-left font-bold">
-                  {props.title.toUpperCase()}
-                </p>
-                <p className="text-tiny text-white/60">{props.tech}</p>
-              </div>
-            </div>
-            <Button radius="full" size="sm" className="bg-theme">
-              <Link href={props.href} target="_blank">
-                {props.actionText}
-              </Link>
-            </Button>
-          </CardFooter>
-        </Card> */}
       </div>
     </>
   );
