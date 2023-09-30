@@ -10,7 +10,7 @@ export default function Videos() {
       {" "}
       <div className="  h-min dark:bg-darkMode ">
         <div className="flex items-center p-5">
-          <Link href="/"   className="font-bold text-darkMode dark:text-white mr-10">@bryanbauzon</Link>
+          <Link href="/"   className="font-bold text-darkMode dark:text-white">@bryanbauzon</Link>
           <Header header="Videography" className="pt-5" />
         </div>
 
