@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+html{scroll-behavior: smooth;}
 
 .gradient {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
