@@ -15,7 +15,7 @@ export default function Home(props) {
 
   return (
     <div className={`h-screen dark:bg-darkMode  `} id="home">
-      <div className="grid grid-cols-1 p-5 lg:p-20 pt-10 md:pt-70 lg:pt-2 md:grid-cols-1 lg:grid-cols-2 gap-1">
+      <div className="grid grid-cols-1 p-5 lg:p-20 pt-10 md:pt-70 lg:pt-5 md:grid-cols-1 lg:grid-cols-2 gap-1">
         <motion.div
           variants={textDisplayConfig}
           initial="hidden"
