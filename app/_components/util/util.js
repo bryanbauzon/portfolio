@@ -22,7 +22,7 @@ export const Header = (props) => {
   return (
     <>
       <div className="flex flex-col justify-center">
-        <Link href={"#" + props.id} draggable>
+        <Link href={"#" +( props.id != undefined? props.id:'')} draggable>
           <h1 className="p-5 cursor-pointer header text-3xl  text-center defaultFont text-darkMode dark:text-white font-bold">
             {props.header.toUpperCase()}
             <p className="subFont font-light cert text-darkMode dark:text-white">
@@ -40,7 +40,7 @@ export const ProjectCategory = (props) => {
     <>
       <div>
         {" "}
-        <h2 className="pl-10 font-bold text-theme">{props.category}</h2>
+        <h1 className="pl-10 font-bold text-theme underline">{props.category.toUpperCase()}</h1>
       </div>
     </>
   );
