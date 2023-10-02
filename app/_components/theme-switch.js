@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Switch, VisuallyHidden, useSwitch } from "@nextui-org/react";
+import { VisuallyHidden, useSwitch } from "@nextui-org/react";
 import { useTheme } from "next-themes";
 import { MoonIcon } from "./icons/moon_icon";
 import { SunIcon } from "./icons/sun_icon";
@@ -11,7 +11,6 @@ export default function ThemeSwitch(props) {
   const [mounted, setMounted] = useState(true);
   const {
     Component,
-    slots,
     isSelected,
     getBaseProps,
     getInputProps,

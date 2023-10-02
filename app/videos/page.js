@@ -1,18 +1,41 @@
+'use client'
 import Link from "next/link";
 import {
   ProjectComponents,
   Header,
   ProjectCategory,
 } from "../_components/util/util";
+import { NextUIProvider } from "@nextui-org/react";
+import { usePathname } from 'next/navigation'
+import NavbarComp from "../_components/navbar";
+import Footer from "../_components/footer";
 export default function Videos() {
+    const pathname = usePathname()
+    let date = new Date();
+    let month = date.getMonth() + 1;
+    let dayNum = date.getDate();
+    let year = date.getFullYear();
+    let day = date.getDay();
+  
+    let birthday = "";
+  
+    
+    if (month == 10 && dayNum == 8) {
+      birthday = (
+        <div className="text-bold text-[2.2rem] defaultFont">
+          CELEBRATING MY <span className="text-theme">QUARTER-CENTURY</span>
+          !<br />
+          🥳🎉🎊
+        </div>
+      );
+    }
+
   return (
     <>
+     <NextUIProvider>
       {" "}
       <div className="  h-min dark:bg-darkMode ">
-        <div className="flex items-center p-5">
-          <Link href="/"   className="font-bold text-darkMode dark:text-white">@bryanbauzon</Link>
-          <Header header="Videography" className="pt-5" />
-        </div>
+      <NavbarComp birthday={birthday} pathname={pathname}/>
 
         <div className="flex flex-col pt-1" id="videography">
           <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 pt-1 md:grid-cols-2">
@@ -81,7 +104,9 @@ export default function Videos() {
             />
           </div>
         </div>
+        <Footer birthday={birthday} pathname={pathname}/>
       </div>
+      </NextUIProvider>
     </>
   );
 }
