@@ -7,8 +7,7 @@ export default function Projects() {
         <Header header="Personal Projects" id="projects" />
 
         <div className="flex flex-col pt-5" id="programming">
-          <Link href={'#programming'}> <ProjectCategory category={`Programming`}/></Link>
-          <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-5 gap-1">
+          <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-5 gap-5">
             <ProjectComponents
               title="Job Finder (Prototype)"
               tech="Flutter, Dart"
@@ -31,9 +30,7 @@ export default function Projects() {
             />
           </div>
         </div>
-        <div className="flex flex-col pt-5" id="videography">
-         <Link href={'/videos'}> <ProjectCategory category={`Videography`}/></Link>
-        </div>
+       
       </div>
     </>
   );

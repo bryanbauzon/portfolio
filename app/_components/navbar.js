@@ -1,39 +1,75 @@
 "use client";
-import { SunIcon } from "./icons/sun_icon";
 import { MoonIcon } from "./icons/moon_icon";
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
 } from "@nextui-org/react";
 import { Link } from "@nextui-org/react";
 import React from "react";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import { Switch } from "@nextui-org/react";
-import ThemeSwitch from './theme-switch'
+import ThemeSwitch from "./theme-switch";
 export default function NavbarComp(props) {
   const [mounted, setMounted] = useState(true);
   const { theme, setTheme } = useTheme();
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
+  const menuItems = [
+    "Home",
+    "Salesforce",
+    "Experience",
+    "Videography",
+    "Projects",
+    "Contact"
+  ];
   useEffect(() => {
     setMounted(true);
-    setTheme('dark')
+    setTheme("dark");
   }, []);
+
+  const toggle = () => {
+    setIsMenuOpen((isMenuOpen) => !isMenuOpen);
+  };
 
   if (!mounted) {
     return null;
   }
 
+  function checkPathname(redirect){
+    if(redirect === 'home'){
+      return '/';
+    }
+    if((props.pathname === '/videos')){
+      return '/'+redirect;
+    }
+
+    console.log('redirect: '+redirect)
+ 
+    return redirect;
+  }
+
   return (
     <>
-      <Navbar shouldHideOnScroll className="dark:bg-darkMode bg-white">
+      <Navbar
+        shouldHideOnScroll
+        isMenuOpen={isMenuOpen}
+        className="dark:bg-darkMode bg-white"
+        onMenuOpenChange={setIsMenuOpen}
+      >
         <NavbarContent>
+          <NavbarMenuToggle
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            className="sm:hidden"
+          />
           <NavbarBrand>
             <Link
-              className="font-bold text-darkMode dark:text-white"
-              href="#home"
+              className="font-bold text-theme"
+              href={checkPathname('home')}
             >
               @bryanbauzon
             </Link>
@@ -43,14 +79,14 @@ export default function NavbarComp(props) {
           <>
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
               <NavbarItem>
-                <Link className="text-darkMode dark:text-white" href="#home">
+                <Link className="text-darkMode dark:text-white"   href={checkPathname('#home')}>
                   Home
                 </Link>
               </NavbarItem>
               <NavbarItem>
                 <Link
                   className="text-darkMode dark:text-white"
-                  href="#salesforce"
+                  href={checkPathname('#salesforce')}
                 >
                   Salesforce
                 </Link>
@@ -58,7 +94,7 @@ export default function NavbarComp(props) {
               <NavbarItem>
                 <Link
                   className="text-darkMode dark:text-white"
-                  href="#experience"
+                  href={checkPathname('#experience')}
                 >
                   Experience
                 </Link>
@@ -71,45 +107,59 @@ export default function NavbarComp(props) {
                   Services
                 </Link>
               </NavbarItem> */}
+            
               <NavbarItem>
                 <Link
                   className="text-darkMode dark:text-white"
-                  href="#projects"
+                  href="/videos"
+                >
+                  Videography
+                </Link>
+              </NavbarItem>
+              <NavbarItem>
+                <Link
+                  className="text-darkMode dark:text-white"
+                  href={checkPathname('#projects')}
                 >
                   Projects
                 </Link>
               </NavbarItem>
               <NavbarItem>
-                <Link className="text-darkMode dark:text-white" href="#contact">
+                <Link className="text-darkMode dark:text-white" href={checkPathname('#contact')}>
                   Contact
                 </Link>
               </NavbarItem>
             </NavbarContent>
-         
           </>
         ) : (
           <></>
         )}
-           <NavbarContent justify="end">
-              <NavbarItem>
-            <ThemeSwitch/>
-                {/* <Switch
-                defaultSelected
-                className="dark:text-dark text-white"
-                  size="sm"
-                  color="warning"
-                  startContent={<SunIcon />}
-                  endContent={<MoonIcon />}
-                  onValueChange={() => {
-                    setTheme(theme === "dark" ? "light" : "dark");
-                    //setup the updated state of the swith to store in localStorage
+        <NavbarContent justify="end">
+          <NavbarItem>
+            <ThemeSwitch />
+          </NavbarItem>
+        </NavbarContent>
+        {isMenuOpen ? (
+          <NavbarMenu>
+            {menuItems.map((item, index) => (
+              <NavbarMenuItem key={`${item}-${index}`}>
+                <Link
+                  
+                  className="w-full  text-darkMode dark:text-white"
+                  href={ item.toLowerCase() === 'home' ?checkPathname('home'):item.toLowerCase() === 'videography'? checkPathname(`videos`):checkPathname(`#${item.toLowerCase()}`)}
+                  size="lg"
+                  onClick={() => {
+                    toggle();
                   }}
-                  //to get the value of state in localStorage
                 >
-               </Switch> */}
-              </NavbarItem>
-            
-            </NavbarContent>
+                  {item}
+                </Link>
+              </NavbarMenuItem>
+            ))}
+          </NavbarMenu>
+        ) : (
+          <></>
+        )}
       </Navbar>
     </>
   );

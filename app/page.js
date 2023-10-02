@@ -18,11 +18,8 @@ export default async function Page() {
   let day = date.getDay();
 
   let birthday = "";
-  let dayStatus = "";
-  if (!(day % 6)) {
-    dayStatus = "Away from keyboard...";
-  }
 
+  
   if (month == 10 && dayNum == 8) {
     birthday = (
       <div className="text-bold text-[2.2rem] defaultFont">
@@ -31,6 +28,11 @@ export default async function Page() {
         🥳🎉🎊
       </div>
     );
+  }
+
+  let dayStatus = "";
+  if (!(day % 6)) {
+    dayStatus = "Away from keyboard...";
   }
 
   return (
