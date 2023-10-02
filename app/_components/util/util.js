@@ -272,7 +272,7 @@ export const ProjectComponents = (props) => {
                 <img
                   className="rounded-none w-full h-full"
                   src={props.src}
-                  priority
+                  loading="eager"
                   onLoad={()=>{
                     setIsLoaded(true)
                   }}
