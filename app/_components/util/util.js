@@ -285,3 +285,12 @@ export const ProjectComponents = (props) => {
     </>
   );
 };
+export function checkPathname(redirect,props){
+  if(redirect === 'home'){
+    return '/';
+  }
+  if((props.pathname === '/videos')){
+    return '/'+redirect;
+  }
+  return redirect;
+}
