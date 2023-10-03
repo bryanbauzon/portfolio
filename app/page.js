@@ -57,7 +57,7 @@ export default async function Page() {
           <></>
         )}
 
-        <Footer birthday={birthday} />
+        <Footer birthday={birthday} isVideo={false}/>
 
         {/* <Skills /> */}
       </NextUIProvider>
