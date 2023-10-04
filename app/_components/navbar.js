@@ -13,7 +13,9 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import ThemeSwitch from "./theme-switch";
-import { checkPathname } from "./util/util";
+import { checkPathname,AboutComponent } from "./util/util";
+
+
 export default function NavbarComp(props) {
   const [mounted, setMounted] = useState(true);
   const { theme, setTheme } = useTheme();
@@ -54,12 +56,7 @@ export default function NavbarComp(props) {
             className="sm:hidden"
           />
           <NavbarBrand>
-            <Link
-              className="font-bold text-theme"
-              href={checkPathname("home", props)}
-            >
-              @bryanbauzon
-            </Link>
+            <AboutComponent/>
           </NavbarBrand>
         </NavbarContent>
         {props.birthday == "" ? (
