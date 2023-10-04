@@ -1,4 +1,4 @@
-import { ExperienceComponents, Header } from "../_components/util/util";
+import { ExperienceComponents, Header } from "../util/util";
 export default function Experience() {
   return (
     <div className="h-min dark:bg-darkMode pt-20" id="experience">

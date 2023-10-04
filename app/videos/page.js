@@ -4,7 +4,7 @@ import {
   ProjectComponents,
   Header,
   ProjectCategory,
-} from "../_components/util/util";
+} from "../util/util";
 import { NextUIProvider } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import NavbarComp from "../_components/navbar";

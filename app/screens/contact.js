@@ -1,4 +1,4 @@
-import { Header } from "../_components/util/util";
+import { Header } from "../util/util";
 import Link from "next/link";
 export default function Contact() {
   return (
