@@ -80,7 +80,7 @@ export const BadgeComponents = (props) => {
                   {props.title}
                 </ModalHeader>
                 <ModalBody>
-                  <img src={props.cert} loading="eager" />
+                  <img src={props.cert} priority />
                 </ModalBody>
                 <ModalFooter>
                   <Button color="danger" variant="light" onPress={onClose}>
@@ -272,10 +272,7 @@ export const ProjectComponents = (props) => {
                 <img
                   className="rounded-none w-full h-full"
                   src={props.src}
-                  loading="eager"
-                  onLoad={()=>{
-                    setIsLoaded(true)
-                  }}
+                  priority
                 />
               </Link>
             </Tooltip>
