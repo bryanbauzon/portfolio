@@ -13,7 +13,9 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import ThemeSwitch from "./theme-switch";
-import { checkPathname } from "./util/util";
+import { checkPathname,AboutComponent } from "./util/util";
+
+
 export default function NavbarComp(props) {
   const [mounted, setMounted] = useState(true);
   const { theme, setTheme } = useTheme();
@@ -25,7 +27,7 @@ export default function NavbarComp(props) {
     "Experience",
     "Videography",
     "Projects",
-    "Contact"
+    "Contact",
   ];
   useEffect(() => {
     setMounted(true);
@@ -39,8 +41,6 @@ export default function NavbarComp(props) {
   if (!mounted) {
     return null;
   }
-
-
 
   return (
     <>
@@ -56,26 +56,24 @@ export default function NavbarComp(props) {
             className="sm:hidden"
           />
           <NavbarBrand>
-            <Link
-              className="font-bold text-theme"
-              href={checkPathname('home',props)}
-            >
-              @bryanbauzon
-            </Link>
+            <AboutComponent/>
           </NavbarBrand>
         </NavbarContent>
         {props.birthday == "" ? (
           <>
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
               <NavbarItem>
-                <Link className="text-darkMode dark:text-white"   href={checkPathname('#home',props)}>
+                <Link
+                  className="text-darkMode dark:text-white"
+                  href={checkPathname("#home", props)}
+                >
                   Home
                 </Link>
               </NavbarItem>
               <NavbarItem>
                 <Link
                   className="text-darkMode dark:text-white"
-                  href={checkPathname('#salesforce',props)}
+                  href={checkPathname("#salesforce", props)}
                 >
                   Salesforce
                 </Link>
@@ -83,7 +81,7 @@ export default function NavbarComp(props) {
               <NavbarItem>
                 <Link
                   className="text-darkMode dark:text-white"
-                  href={checkPathname('#experience',props)}
+                  href={checkPathname("#experience", props)}
                 >
                   Experience
                 </Link>
@@ -96,25 +94,25 @@ export default function NavbarComp(props) {
                   Services
                 </Link>
               </NavbarItem> */}
-            
+
               <NavbarItem>
-                <Link
-                  className="text-darkMode dark:text-white"
-                  href="/videos"
-                >
+                <Link className="text-darkMode dark:text-white" href="/videos">
                   Videography
                 </Link>
               </NavbarItem>
               <NavbarItem>
                 <Link
                   className="text-darkMode dark:text-white"
-                  href={checkPathname('#projects',props)}
+                  href={checkPathname("#projects", props)}
                 >
                   Projects
                 </Link>
               </NavbarItem>
               <NavbarItem>
-                <Link className="text-darkMode dark:text-white" href={checkPathname('#contact',props)}>
+                <Link
+                  className="text-darkMode dark:text-white"
+                  href={checkPathname("#contact", props)}
+                >
                   Contact
                 </Link>
               </NavbarItem>
@@ -133,9 +131,14 @@ export default function NavbarComp(props) {
             {menuItems.map((item, index) => (
               <NavbarMenuItem key={`${item}-${index}`}>
                 <Link
-                  
                   className="w-full  text-darkMode dark:text-white"
-                  href={ item.toLowerCase() === 'home' ?checkPathname('home',props):item.toLowerCase() === 'videography'? checkPathname(`videos`,props):checkPathname(`#${item.toLowerCase()}`,props)}
+                  href={
+                    item.toLowerCase() === "home"
+                      ? checkPathname("home", props)
+                      : item.toLowerCase() === "videography"
+                      ? checkPathname(`videos`, props)
+                      : checkPathname(`#${item.toLowerCase()}`, props)
+                  }
                   size="lg"
                   onClick={() => {
                     toggle();

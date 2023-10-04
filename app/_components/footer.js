@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 export default function Footer(props) {
   let year = new Date().getFullYear();
 
@@ -21,7 +22,7 @@ export default function Footer(props) {
               <></>
             ) : (
               <h2 className=" dark:text-white text-darkMode  subFont text-center">
-                {!props.pathname == "/videos" ? (
+                {props.pathname == "/" ? (
                   <>
                     <Link
                       href={"#home"}
@@ -68,18 +69,18 @@ export default function Footer(props) {
             </Link>
           </div>
         </div>
-          <Link
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              redirectToEmail();
-            }}
-            className="animate-pulse fixed bottom-10 right-8 bg-theme w-20 h-10  drop-shadow-lg flex justify-center items-center text-darkMode dark:text-white text-small"
-            href={"javascript:void(0);"}
-          >
-            {" "}
-            Hire Me
-          </Link>
+        <Link
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            redirectToEmail();
+          }}
+          className="fixed bottom-10 right-8 bg-theme w-20 h-10  drop-shadow-lg flex justify-center items-center text-darkMode dark:text-white text-small"
+          href={"javascript:void(0);"}
+        >
+          {" "}
+          Hire Me
+        </Link>
       </div>
     </footer>
   );

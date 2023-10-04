@@ -22,7 +22,7 @@ export const Header = (props) => {
   return (
     <>
       <div className="flex flex-col justify-center">
-        <Link href={"#" +( props.id != undefined? props.id:'')} draggable>
+        <Link href={"#" + (props.id != undefined ? props.id : "")} draggable>
           <h1 className="p-5 cursor-pointer header text-3xl  text-center defaultFont text-darkMode dark:text-white font-bold">
             {props.header.toUpperCase()}
             <p className="subFont font-light cert text-darkMode dark:text-white">
@@ -40,8 +40,54 @@ export const ProjectCategory = (props) => {
     <>
       <div>
         {" "}
-        <h1 className="pl-10 font-bold text-theme underline">{props.category.toUpperCase()}</h1>
+        <h1 className="pl-10 font-bold text-theme underline">
+          {props.category.toUpperCase()}
+        </h1>
       </div>
+    </>
+  );
+};
+
+//quotes Component
+export const AboutComponent = (props) => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+  return (
+    <>
+      <Link
+        className="font-bold text-theme"
+        href={"javascript:void(0);"}
+        onClick={() => {
+          onOpen();
+        }}
+      >
+        @bryanbauzon
+      </Link>
+
+      <Modal
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        size="xs"
+        backdrop="blur"
+      >
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">
+                Hi!
+              </ModalHeader>
+              <ModalBody>
+                <p className="defaultFont text-sm">What pain do you want in life? What are you willing to struggle for?</p>
+              </ModalBody>
+              <ModalFooter>
+                <Button color="" variant="light" onPress={onClose}>
+                  Close
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
     </>
   );
 };
@@ -80,10 +126,10 @@ export const BadgeComponents = (props) => {
                   {props.title}
                 </ModalHeader>
                 <ModalBody>
-                  <Image src={props.cert} priority />
+                  <img src={props.cert} priority />
                 </ModalBody>
                 <ModalFooter>
-                  <Button color="danger" variant="light" onPress={onClose}>
+                  <Button variant="light" onPress={onClose}>
                     Close
                   </Button>
                 </ModalFooter>
@@ -198,7 +244,7 @@ export const ServicesComponents = (props) => {
       <div>
         <div className="flex justify-center p-3">
           <motion.div whileHover={{ scale: 1.5 }}>
-            <Image
+            <img
               className="object-cover services"
               src={props.src}
               alt={props.alt}
@@ -269,7 +315,7 @@ export const ProjectComponents = (props) => {
               }
             >
               <Link href={props.href} target="_blank">
-                <Image
+                <img
                   className="rounded-none w-full h-full"
                   src={props.src}
                   priority
@@ -282,12 +328,12 @@ export const ProjectComponents = (props) => {
     </>
   );
 };
-export function checkPathname(redirect,props){
-  if(redirect === 'home'){
-    return '/';
+export function checkPathname(redirect, props) {
+  if (redirect === "home") {
+    return "/";
   }
-  if((props.pathname === '/videos')){
-    return '/'+redirect;
+  if (props.pathname === "/videos") {
+    return "/" + redirect;
   }
   return redirect;
 }
