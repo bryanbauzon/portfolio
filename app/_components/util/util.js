@@ -12,7 +12,6 @@ import {
   useDisclosure,
   Card,
   CardFooter,
-  Image,
   CardHeader,
   Tooltip,
   Spinner,
