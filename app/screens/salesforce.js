@@ -1,4 +1,4 @@
-import { BadgeComponents, Header } from "./util/util";
+import { BadgeComponents, Header } from "../_components/util/util";
 export default function Salesforce() {
   return (
     <>

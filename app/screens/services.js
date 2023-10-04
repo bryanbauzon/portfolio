@@ -1,4 +1,4 @@
-import { ServicesComponents,Header } from "./util/util";
+import { ServicesComponents,Header } from "../_components/util/util";
 export default function Services() {
   return (
     <div className="p-3 pt-20 dark:bg-darkMode h-min" id="services">

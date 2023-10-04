@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ProjectComponents, Header, ProjectCategory } from "./util/util";
+import { ProjectComponents, Header, ProjectCategory } from "../_components/util/util";
 export default function Projects() {
   return (
     <>

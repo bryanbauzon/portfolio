@@ -1,13 +1,10 @@
 "use client";
-import Navbar from "./_components/navbar";
 import Footer from "./_components/footer";
-import Services from "./_components/services";
-import Home from "./_components/home";
-import Skills from "./_components/skills";
-import Projects from "./_components/projects";
-import Experience from "./_components/experience";
-import Salesforce from "./_components/salesforce";
-import Contact from "./_components/contact";
+import Home from "./screens/home";
+import Projects from "./screens/projects";
+import Experience from "./screens/experience";
+import Salesforce from "./screens/salesforce";
+import Contact from "./screens/contact";
 import { NextUIProvider } from "@nextui-org/react";
 import NavbarComp from "./_components/navbar";
 import { usePathname } from "next/navigation";
