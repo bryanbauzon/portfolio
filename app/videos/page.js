@@ -1,29 +1,25 @@
 "use client";
-import Link from "next/link";
-import {
-  ProjectComponents,
-  Header,
-  ProjectCategory,
-} from "../_components/util/util";
+import { ProjectComponents } from "../util/util";
 import { NextUIProvider } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import NavbarComp from "../_components/navbar";
 import Footer from "../_components/footer";
+import { ageChecker } from "../util/util";
 export default function Videos() {
+  
   const pathname = usePathname();
   let date = new Date();
   let month = date.getMonth() + 1;
   let dayNum = date.getDate();
   let year = date.getFullYear();
-  let day = date.getDay();
+  let age = year - 1998;
 
   let birthday = "";
 
   if (month == 10 && dayNum == 8) {
     birthday = (
-      <div className="text-bold text-[2.2rem] defaultFont">
-        CELEBRATING MY <span className="text-theme">QUARTER-CENTURY</span>
-        !<br />
+    <div className="text-bold text-[2.2rem] defaultFont">
+        CELEBRATING MY {age == 25 ? <><span className="text-theme underline font-bold">QUARTER-CENTURY </span></>:<span  className="text-theme underline font-bold">{ageChecker(age)} YEAR BIRTHDAY</span>}!<br />
         🥳🎉🎊
       </div>
     );
@@ -103,8 +99,8 @@ export default function Videos() {
               />
             </div>
           </div>
-       
-          <Footer birthday={birthday} pathname={pathname} isVideo={true}/>
+
+          <Footer birthday={birthday} pathname={pathname} isVideo={true} />
         </div>
       </NextUIProvider>
     </>

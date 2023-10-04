@@ -13,7 +13,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import ThemeSwitch from "./theme-switch";
-import { checkPathname,AboutComponent } from "./util/util";
+import { checkPathname,AboutComponent } from "../util/util";
 
 
 export default function NavbarComp(props) {

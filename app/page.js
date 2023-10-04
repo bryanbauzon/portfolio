@@ -1,16 +1,14 @@
 "use client";
-import Navbar from "./_components/navbar";
 import Footer from "./_components/footer";
-import Services from "./_components/services";
-import Home from "./_components/home";
-import Skills from "./_components/skills";
-import Projects from "./_components/projects";
-import Experience from "./_components/experience";
-import Salesforce from "./_components/salesforce";
-import Contact from "./_components/contact";
+import Home from "./screens/home";
+import Projects from "./screens/projects";
+import Experience from "./screens/experience";
+import Salesforce from "./screens/salesforce";
+import Contact from "./screens/contact";
 import { NextUIProvider } from "@nextui-org/react";
 import NavbarComp from "./_components/navbar";
 import { usePathname } from "next/navigation";
+import { ageChecker } from "./util/util";
 export default async function Page() {
   const pathname = usePathname();
   let date = new Date();
@@ -18,7 +16,6 @@ export default async function Page() {
   let dayNum = date.getDate();
   let year = date.getFullYear();
   let age = year - 1998;
-  
   let day = date.getDay();
 
   let birthday = "";
@@ -33,23 +30,12 @@ export default async function Page() {
     );
   }
 
-  function ageChecker(age){
-    let lastDigit = age.toString().slice(-1);
-    let ageStr = age;
-    if(lastDigit == 1){
-      ageStr += 'st';
-    }else  if(lastDigit == 2){
-      ageStr += 'nd';
-    }else  if(lastDigit == 3){
-      ageStr += 'rd';
-    }else{
-      ageStr += 'th';
-    }
-    return ageStr
-  }
-  let dayStatus = "";
+  
+  let dayStatus = "Exploring";
   if (!(day % 6)) {
     dayStatus = "Away from keyboard...";
+  }else if(birthday != ""){
+    dayStatus = "Celebrating..."
   }
 
   return (

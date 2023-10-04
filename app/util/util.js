@@ -14,7 +14,6 @@ import {
   CardFooter,
   CardHeader,
   Tooltip,
-  Spinner,
 } from "@nextui-org/react";
 import Image from "next/image";
 
@@ -336,4 +335,19 @@ export function checkPathname(redirect, props) {
     return "/" + redirect;
   }
   return redirect;
+}
+
+export function ageChecker(age){
+  let lastDigit = age.toString().slice(-1);
+  let ageStr = age;
+  if(lastDigit == 1){
+    ageStr += 'st';
+  }else  if(lastDigit == 2){
+    ageStr += 'nd';
+  }else  if(lastDigit == 3){
+    ageStr += 'rd';
+  }else{
+    ageStr += 'th';
+  }
+  return ageStr
 }

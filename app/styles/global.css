@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html{scroll-behavior: smooth;}
+html {
+  scroll-behavior: smooth;
+}
 
 .gradient {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -34,7 +36,7 @@ html{scroll-behavior: smooth;}
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.nav{
+.nav {
   /* From https://css.glass */
   background: rgba(35, 41, 49, 0.37);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -58,8 +60,9 @@ html{scroll-behavior: smooth;}
   background-color: #4ECCA3;
   cursor: pointer;
 }
-.projectLink{
-  color:#4ECCA3
+
+.projectLink {
+  color: #4ECCA3
 }
 
 .tech,
@@ -87,24 +90,26 @@ source {
 }
 
 
-.services{
+.services {
   height: fit-content;
   width: fit-content;
   cursor: pointer;
 }
 
 
-.tech{
+.tech {
   cursor: pointer;
 }
-a{
+
+a {
   -webkit-transition: color 1s ease-out;
   -moz-transition: color 1s ease-out;
   -ms-transition: color 1s ease-out;
   -o-transition: color 1s ease-out;
   transition: color 1s ease-out;
 }
-a:hover{
+
+a:hover {
   /* color: #4ECCA3; */
   transition: color 0.5s ease-in;
   -webkit-transition: color 0.5s ease-in;
@@ -112,9 +117,12 @@ a:hover{
   -ms-transition: color 0.5s ease-in;
   -o-transition: color 0.5s ease-in;
 }
-.hireme:hover{color: #EEEEEE;}
 
-.header:hover{
+.hireme:hover {
+  color: #EEEEEE;
+}
+
+.header:hover {
   color: #4ECCA3;
   transition: color 0.5s ease-in;
   -webkit-transition: color 0.5s ease-in;
@@ -122,7 +130,8 @@ a:hover{
   -ms-transition: color 0.5s ease-in;
   -o-transition: color 0.5s ease-in;
 }
-.header{
+
+.header {
   -webkit-transition: color 1s ease-out;
   -moz-transition: color 1s ease-out;
   -ms-transition: color 1s ease-out;
@@ -131,84 +140,99 @@ a:hover{
 }
 
 
-.coffee{
+.coffee {
   text-decoration: underline;
   text-decoration-color: transparent;
   transition: 1s;
- 
+
   /*add those for opera and mozilla support*/
   -webkit-text-decoration-color: transparent;
   -moz-text-decoration-color: transparent;
 }
-.coffee:hover{
-  text-decoration-color: #4ECCA3;;
- 
- /*add those for opera and mozilla support*/
- -webkit-text-decoration-color: #4ECCA3;;
- -moz-text-decoration-color: #4ECCA3;;
+
+.coffee:hover {
+  text-decoration-color: #4ECCA3;
+  ;
+
+  /*add those for opera and mozilla support*/
+  -webkit-text-decoration-color: #4ECCA3;
+  ;
+  -moz-text-decoration-color: #4ECCA3;
+  ;
 }
 
-.qr{
-  -webkit-transition: box-shadow  1s ease-out;
-  -moz-transition: box-shadow  1s ease-out;
-  -ms-transition: box-shadow  1s ease-out;
-  -o-transition: box-shadow  1s ease-out;
-  transition: box-shadow  1s ease-out;
- }
- .qr:hover{
-   cursor: pointer;
-   box-shadow: 2px 7px  15px #4ECCA3;
-   transition: box-shadow 0.4s ease-in;
-   -webkit-transition: box-shadow 0.4s ease-in;
-   -moz-transition: box-shadow 0.4s ease-in;
-   -ms-transition: box-shadow 0.4s ease-in;
-   -o-transition: box-shadow 0.4s ease-in;
+.qr {
+  -webkit-transition: box-shadow 1s ease-out;
+  -moz-transition: box-shadow 1s ease-out;
+  -ms-transition: box-shadow 1s ease-out;
+  -o-transition: box-shadow 1s ease-out;
+  transition: box-shadow 1s ease-out;
 }
 
-.experience{
-  -webkit-transition: box-shadow  1s ease-out;
-  -moz-transition: box-shadow  1s ease-out;
-  -ms-transition: box-shadow  1s ease-out;
-  -o-transition: box-shadow  1s ease-out;
-  transition: box-shadow  1s ease-out;
- }
- .experience:hover{
-   cursor: pointer;
-   box-shadow: 2px 2px 12px #4ECCA3;
-   transition: box-shadow 0.3s ease-in;
-   -webkit-transition: box-shadow 0.3s ease-in;
-   -moz-transition: box-shadow 0.3s ease-in;
-   -ms-transition: box-shadow 0.3s ease-in;
-   -o-transition: box-shadow 0.3s ease-in;
- }
+.qr:hover {
+  cursor: pointer;
+  box-shadow: 2px 7px 15px #4ECCA3;
+  transition: box-shadow 0.4s ease-in;
+  -webkit-transition: box-shadow 0.4s ease-in;
+  -moz-transition: box-shadow 0.4s ease-in;
+  -ms-transition: box-shadow 0.4s ease-in;
+  -o-transition: box-shadow 0.4s ease-in;
+}
 
- .footerLink,.emailLink{
+.experience {
+  -webkit-transition: box-shadow 1s ease-out;
+  -moz-transition: box-shadow 1s ease-out;
+  -ms-transition: box-shadow 1s ease-out;
+  -o-transition: box-shadow 1s ease-out;
+  transition: box-shadow 1s ease-out;
+}
+
+.experience:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 12px #4ECCA3;
+  transition: box-shadow 0.3s ease-in;
+  -webkit-transition: box-shadow 0.3s ease-in;
+  -moz-transition: box-shadow 0.3s ease-in;
+  -ms-transition: box-shadow 0.3s ease-in;
+  -o-transition: box-shadow 0.3s ease-in;
+}
+
+.footerLink,
+.emailLink {
   text-decoration: underline;
   text-decoration-color: transparent;
   transition: 1s;
- 
+
   /*add those for opera and mozilla support*/
   -webkit-text-decoration-color: transparent;
   -moz-text-decoration-color: transparent;
 }
-.footerLink:hover{
-  text-decoration-color: #4ECCA3;;
- 
- /*add those for opera and mozilla support*/
- -webkit-text-decoration-color: #4ECCA3;;
- -moz-text-decoration-color: #4ECCA3;;
-}
-.emailLink:hover{
-  text-decoration-color: #4ECCA3;;
- 
+
+.footerLink:hover {
+  text-decoration-color: #4ECCA3;
+  ;
+
   /*add those for opera and mozilla support*/
-  -webkit-text-decoration-color: #4ECCA3;;
-  -moz-text-decoration-color: #4ECCA3;;
+  -webkit-text-decoration-color: #4ECCA3;
+  ;
+  -moz-text-decoration-color: #4ECCA3;
+  ;
 }
 
-.status{
+.emailLink:hover {
+  text-decoration-color: #4ECCA3;
+  ;
+
+  /*add those for opera and mozilla support*/
+  -webkit-text-decoration-color: #4ECCA3;
+  ;
+  -moz-text-decoration-color: #4ECCA3;
+  ;
+}
+
+.status {
   border-radius: 45px;
   background: linear-gradient(145deg, #242b34, #1f242c);
-  box-shadow:  34px 34px 79px #0e1014,
-               -34px -34px 79px #36404e;
+  box-shadow: 34px 34px 79px #0e1014,
+    -34px -34px 79px #36404e;
 }

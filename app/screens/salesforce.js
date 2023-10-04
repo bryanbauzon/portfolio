@@ -1,13 +1,9 @@
-import { BadgeComponents, Header } from "./util/util";
+import { BadgeComponents, Header } from "../util/util";
 export default function Salesforce() {
   return (
     <>
       <div className="h-min dark:bg-darkMode pt-20" id="salesforce">
-        <Header
-          header="3x salesforce certified"
-          id="salesforce"
-          // subHeader="Click Badge to view the certificate"
-        />
+        <Header header="3x salesforce certified" id="salesforce" />
         <div className="flex items-center justify-center">
           <div className="  w-fit grid grid-cols-1  md:grid-cols-3 lg:grid-cols-3 gap-1">
             <BadgeComponents
@@ -16,7 +12,6 @@ export default function Salesforce() {
               size={350}
               alt="Salesforce Administrator"
               title="Salesforce Administrator"
-
             />
             <BadgeComponents
               image="/salesforce/certificate/sfpd1.png"
@@ -24,7 +19,6 @@ export default function Salesforce() {
               size={350}
               alt="Salesforce Platform Developer 1"
               title="Salesforce Platform Developer 1"
-
             />
             <BadgeComponents
               image="/salesforce/certificate/sfassoc.png"
@@ -32,7 +26,6 @@ export default function Salesforce() {
               size={350}
               alt="Salesforce Associate"
               title="Salesforce Associate"
-
             />
           </div>
         </div>
