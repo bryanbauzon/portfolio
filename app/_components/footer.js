@@ -3,7 +3,7 @@ export default function Footer(props) {
   let year = new Date().getFullYear();
 
   function redirectToEmail() {
-    window.location.href = `mailto:mrbryanbauzon@gmail.com?subject=${
+    window.location.href = `mailto:hi@bryanbauzon.com?subject=${
       props.isVideo
         ? "<Videographer/Video Editor>"
         : "<Software Developer Opportunity>"
