@@ -12,11 +12,11 @@ import {
   useDisclosure,
   Card,
   CardFooter,
-  Image,
   CardHeader,
   Tooltip,
   Spinner,
 } from "@nextui-org/react";
+import Image from "next/image";
 
 export const Header = (props) => {
   return (
@@ -80,7 +80,7 @@ export const BadgeComponents = (props) => {
                   {props.title}
                 </ModalHeader>
                 <ModalBody>
-                  <img src={props.cert} priority />
+                  <Image src={props.cert} priority />
                 </ModalBody>
                 <ModalFooter>
                   <Button color="danger" variant="light" onPress={onClose}>
@@ -269,7 +269,7 @@ export const ProjectComponents = (props) => {
               }
             >
               <Link href={props.href} target="_blank">
-                <img
+                <Image
                   className="rounded-none w-full h-full"
                   src={props.src}
                   priority
