@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { Chip } from "@nextui-org/react";
 export default function Home(props) {
   const textDisplayConfig = {
@@ -33,9 +33,8 @@ export default function Home(props) {
                   A <span className="text-theme">SOFTWARE DEVELOPER </span>
                 </span>
                 <span className="dark:text-white text-darkMode defaultFont text-2xl">
-                  by profession with {props.year - 2019}+ years 
-                  {/* {props.month - 6}{" "} */}
-                  {" "} of work experience based in the
+                  by profession with {props.year - 2019}+ years
+                  {/* {props.month - 6}{" "} */} of work experience based in the
                 </span>
                 <div className="basedCountry text-[3rem] text-darkMode dark:text-white lg:text-[5rem]">
                   PHILIPPINES.
@@ -51,22 +50,18 @@ export default function Home(props) {
               freeze time and capture moments.
             </span>
             <br />
-            <Chip 
+            <Chip
               color={
-                props.birthday != ""
+                props.dayStatus == "Celebrating..."
                   ? "warning"
-                  : props.dayStatus != ""
+                  : props.dayStatus == "Away from keyboard..."
                   ? "default"
                   : "success"
               }
-              className="dark:text-white text-darkMode"
+              className="dark:text-white text-darkMode animate-pulse"
               variant="dot"
             >
-              {props.birthday != ""
-                ? "Celebrating"
-                : props.dayStatus != ""
-                ? props.dayStatus
-                : "Exploring"}
+              {props.dayStatus}
             </Chip>
           </div>
         </motion.div>

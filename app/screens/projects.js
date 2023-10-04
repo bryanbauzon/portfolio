@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { ProjectComponents, Header, ProjectCategory } from "../util/util";
+import { ProjectComponents, Header } from "../util/util";
 export default function Projects() {
   return (
     <>
@@ -30,7 +29,6 @@ export default function Projects() {
             />
           </div>
         </div>
-       
       </div>
     </>
   );
