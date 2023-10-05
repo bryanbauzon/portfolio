@@ -27,6 +27,15 @@ export default function Projects() {
               href={"https://bryanbauzon.com/"}
               date="2023"
             />
+            <ProjectComponents
+              title="NextJS Template"
+              actionText="Github"
+              tech="NextJS, Tailwind"
+              description="A NextJS Template for building website."
+              href="https://github.com/bryanbauzon/nextjs-template"
+              date="2023"
+            />
+            
           </div>
         </div>
       </div>
