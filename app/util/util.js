@@ -265,7 +265,6 @@ export const ServicesComponents = (props) => {
 };
 
 export const ProjectComponents = (props) => {
-  const [isLoaded, setIsLoaded] = React.useState(false);
   return (
     <>
       <div className="flex justify-center">
@@ -287,7 +286,7 @@ export const ProjectComponents = (props) => {
 
               <CardFooter className="gap-3">
                 <div className="flex gap-1">
-                  <p className=" text-default-400 text-small">{props.tech}</p>
+                  <p className=" text-default-400 text-small font-bold">{props.tech}</p>
                 </div>
                 <div className="content-end">
                   <Link
