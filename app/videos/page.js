@@ -34,6 +34,13 @@ export default function Videos() {
 
           <div className="flex flex-col" id="videography">
             <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
+            <ProjectComponents
+                actionText="Watch"
+                title="Quarter Century"
+                href="https://youtu.be/DLmx6iCGLJY"
+                date="October 2023"
+                src={"/projects/quarterCentury.png"}
+              />
               <ProjectComponents
                 actionText="Watch"
                 title="Nature"
