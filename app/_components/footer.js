@@ -69,7 +69,7 @@ export default function Footer(props) {
             </Link>
           </div>
         </div>
-        <Link
+       {props.birthday == ""?<> <Link
           onClick={(e) => {
             e.preventDefault();
             e.stopPropagation();
@@ -80,7 +80,7 @@ export default function Footer(props) {
         >
           {" "}
           Hire Me
-        </Link>
+        </Link></>:<></>}
       </div>
     </footer>
   );
