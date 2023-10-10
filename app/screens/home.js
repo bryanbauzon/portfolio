@@ -1,6 +1,13 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Chip } from "@nextui-org/react";
+import {
+  NAME,
+  POSITION,
+  TOTAL_YEARS_OF_WORKING,
+  COUNTRY,
+  ABOUT_ME
+} from "../constants/strings";
 export default function Home(props) {
   const textDisplayConfig = {
     hidden: { opacity: 0 },
@@ -23,31 +30,27 @@ export default function Home(props) {
         >
           <div className="text-darkMode lg:text-[1.4rem] dark:text-white defaultFont text-[1.3rem] flex flex-col justify-center md:h-[50vh] items-left lg:h-[70vh] h-[70vh] ">
             <span className="text-2xl text-darkMode dark:text-white">
-              Hi! I'm <span className="font-bold">MAX BRYAN BAUZON</span>,
+              Hi! I'm <span className="font-bold">{NAME}</span>,
             </span>
             {props.birthday != "" ? (
               props.birthday
             ) : (
               <>
                 <span className="defaultFont text-[2.5rem] lg:text-[3rem]">
-                  A <span className="text-theme">SOFTWARE DEVELOPER </span>
+                  A <span className="text-theme">{POSITION} </span>
                 </span>
                 <span className="dark:text-white text-darkMode defaultFont text-2xl">
-                  by profession with {props.year - 2019}+ years
+                  by profession with {TOTAL_YEARS_OF_WORKING}+ years
                   {/* {props.month - 6}{" "} */} of work experience based in the
                 </span>
                 <div className="basedCountry text-[3rem] text-darkMode dark:text-white lg:text-[5rem]">
-                  PHILIPPINES.
+                  {COUNTRY}
                 </div>
               </>
             )}
 
             <span className="subFont dark:text-white text-darkMode text-sm">
-              I am a passionate software developer who is continuously learning
-              and improving my skills in everyday life. Reading various
-              philosophy books helps me think positively and see life much
-              better. I am also interested in Photography and videography to
-              freeze time and capture moments.
+             {ABOUT_ME}
             </span>
             <br />
             <Chip

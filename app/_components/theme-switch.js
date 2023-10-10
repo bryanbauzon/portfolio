@@ -6,6 +6,7 @@ import { MoonIcon } from "./icons/moon_icon";
 import { SunIcon } from "./icons/sun_icon";
 import { useState, useEffect } from "react";
 import { Tooltip } from "@nextui-org/react";
+import { LIGHT_MODE, DARK_MODE } from "../constants/strings";
 
 export default function ThemeSwitch(props) {
   const [mounted, setMounted] = useState(true);
@@ -28,7 +29,7 @@ export default function ThemeSwitch(props) {
   }
   return (
     <div className="flex flex-col gap-2">
-      <Tooltip showArrow={true} content={isSelected?'Dark Mode':'Light Mode'} placement="right">
+      <Tooltip showArrow={true} content={isSelected?DARK_MODE:LIGHT_MODE} placement="right">
         <Component {...getBaseProps()}>
           <VisuallyHidden>
             <input {...getInputProps()} />

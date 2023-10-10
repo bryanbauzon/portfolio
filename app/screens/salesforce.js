@@ -1,9 +1,10 @@
 import { BadgeComponents, Header } from "../util/util";
+import { HEADERS } from "../constants/strings";
 export default function Salesforce() {
   return (
     <>
       <div className="h-min dark:bg-darkMode pt-20" id="salesforce">
-        <Header header="3x salesforce certified" id="salesforce" />
+        <Header header={HEADERS[0]} id="salesforce" />
         <div className="flex items-center justify-center">
           <div className="  w-fit grid grid-cols-1  md:grid-cols-3 lg:grid-cols-3 gap-1">
             <BadgeComponents

@@ -8,6 +8,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import NavbarComp from "./_components/navbar";
 import { usePathname } from "next/navigation";
 import { ageChecker } from "./util/util";
+import { STATUS } from "./constants/strings";
 export default async function Page() {
   const pathname = usePathname();
   let date = new Date();
@@ -30,11 +31,11 @@ export default async function Page() {
   }
 
   
-  let dayStatus = "Exploring";
-  if (!(day % 6)) {
-    dayStatus = "Away from keyboard...";
+  let dayStatus = STATUS[0];
+  if (!(day % 6)) {//WEEKENDS
+    dayStatus = STATUS[1];
   }else if(birthday != ""){
-    dayStatus = "Celebrating..."
+    dayStatus = STATUS[2]
   }
 
   return (

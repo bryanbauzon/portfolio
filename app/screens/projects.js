@@ -1,9 +1,10 @@
 import { ProjectComponents, Header } from "../util/util";
+import { HEADERS } from "../constants/strings";
 export default function Projects() {
   return (
     <>
       <div className="  h-min dark:bg-darkMode " id="projects">
-        <Header header="Personal Projects" id="projects" />
+        <Header header={HEADERS[2]} id="projects" />
 
         <div className="flex flex-col pt-5" id="programming">
           <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 p-5 gap-5">
