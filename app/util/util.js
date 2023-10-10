@@ -382,6 +382,9 @@ export function checkPathname(redirect, props) {
     return "/";
   }
   if (props.pathname === "/films") {
+    if(redirect === '#home'){
+      return '/'
+    }
     return "/" + redirect;
   }
   return redirect;
