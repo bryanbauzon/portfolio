@@ -14,8 +14,8 @@ import {
   CardFooter,
   CardHeader,
   Tooltip,
-  Image
 } from "@nextui-org/react";
+import Image from "next/image";
 
 export const Header = (props) => {
   return (
@@ -366,11 +366,12 @@ export const ProjectComponents = (props) => {
             >
               <Link href={props.href} target="_blank">
                 <Image
-                  className="rounded-none w-full h-full"
+                  className="rounded-none h-full w-full"
                   src={IMAGE_SRC}
                   priority
-                  removeWrapper
-                  disableSkeleton
+                  width={500}
+                  height={50}
+                  
                 />
               </Link>
             </Tooltip>
