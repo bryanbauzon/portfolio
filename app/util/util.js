@@ -370,7 +370,7 @@ export const ProjectComponents = (props) => {
                   src={IMAGE_SRC}
                   priority
                   width={500}
-                  height={50}
+                  height={500}
                   
                 />
               </Link>
