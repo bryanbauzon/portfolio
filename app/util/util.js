@@ -60,7 +60,7 @@ export const AboutComponent = (props) => {
           onOpen();
         }}
       >
-        @bryanbauzon
+       {props.websiteName}
       </Link>
 
       <Modal
@@ -104,7 +104,7 @@ export const ContactComponents = (props) => {
           onOpen();
         }}
       >
-        Contact
+        {props.link}
       </Link>
 
       <Modal

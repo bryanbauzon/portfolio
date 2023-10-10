@@ -1,10 +1,10 @@
 import "./styles/global.css";
 import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "./theme-provider";
+import { META_TITLE, META_DESCRIPTION } from "./constants/strings";
 export const metadata = {
-  title: "Bryan Bauzon - Software Developer",
-  description:
-    "My online space that shows my interests and passion in software technologies and other interesting stuffs.",
+  title: { META_TITLE },
+  description: { META_DESCRIPTION },
 };
 
 export default function RootLayout({ children }) {

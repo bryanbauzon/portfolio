@@ -14,21 +14,14 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import ThemeSwitch from "./theme-switch";
 import { checkPathname,AboutComponent,ContactComponents} from "../util/util";
-
+import { MENU_ITEMS, WEBSITE_NAME} from "../constants/strings";
 
 export default function NavbarComp(props) {
   const [mounted, setMounted] = useState(true);
   const { theme, setTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
-    "Home",
-    "Salesforce",
-    "Experience",
-    "Films",
-    "Projects",
-    "Contact",
-  ];
+
   useEffect(() => {
     setMounted(true);
     setTheme("dark");
@@ -56,7 +49,7 @@ export default function NavbarComp(props) {
             className="sm:hidden"
           />
           <NavbarBrand>
-            <AboutComponent/>
+            <AboutComponent websiteName={WEBSITE_NAME}/>
           </NavbarBrand>
         </NavbarContent>
         {props.birthday == "" ? (
@@ -67,7 +60,7 @@ export default function NavbarComp(props) {
                   className="text-darkMode dark:text-white"
                   href={checkPathname("#home", props)}
                 >
-                  Home
+                  {MENU_ITEMS[0]}
                 </Link>
               </NavbarItem>
               <NavbarItem>
@@ -75,7 +68,7 @@ export default function NavbarComp(props) {
                   className="text-darkMode dark:text-white"
                   href={checkPathname("#salesforce", props)}
                 >
-                  Salesforce
+                 { MENU_ITEMS[1]}
                 </Link>
               </NavbarItem>
               <NavbarItem>
@@ -83,7 +76,7 @@ export default function NavbarComp(props) {
                   className="text-darkMode dark:text-white"
                   href={checkPathname("#experience", props)}
                 >
-                  Experience
+                  { MENU_ITEMS[2]}
                 </Link>
               </NavbarItem>
               {/* <NavbarItem>
@@ -101,16 +94,16 @@ export default function NavbarComp(props) {
                   className="text-darkMode dark:text-white"
                   href={checkPathname("#projects", props)}
                 >
-                  Projects
+                 {  MENU_ITEMS[3]}
                 </Link>
               </NavbarItem>
               <NavbarItem>
                 <Link className="text-darkMode dark:text-white" href="/films">
-                  Films
+                {MENU_ITEMS[4]}
                 </Link>
               </NavbarItem>
               <NavbarItem>
-               <ContactComponents/>
+               <ContactComponents link={ MENU_ITEMS[5]}/>
               </NavbarItem>
             </NavbarContent>
           </>
@@ -124,7 +117,7 @@ export default function NavbarComp(props) {
         </NavbarContent>
         {isMenuOpen ? (
           <NavbarMenu>
-            {menuItems.map((item, index) => (
+            {MENU_ITEMS.map((item, index) => (
               <NavbarMenuItem key={`${item}-${index}`}>
                 <Link
                   className="w-full  text-darkMode dark:text-white"

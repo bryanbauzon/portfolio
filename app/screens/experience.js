@@ -1,8 +1,9 @@
 import { ExperienceComponents, Header } from "../util/util";
+import { HEADERS } from "../constants/strings";
 export default function Experience() {
   return (
     <div className="h-min dark:bg-darkMode pt-20" id="experience">
-      <Header header="experience" id="experience" />
+      <Header header={HEADERS[1]} id="experience" />
       <div className="flex justify-center p-3">
         <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-5 p-5">
           {/* Software Engineer */}
