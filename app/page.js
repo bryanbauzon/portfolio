@@ -4,7 +4,6 @@ import Home from "./screens/home";
 import Projects from "./screens/projects";
 import Experience from "./screens/experience";
 import Salesforce from "./screens/salesforce";
-import Contact from "./screens/contact";
 import { NextUIProvider } from "@nextui-org/react";
 import NavbarComp from "./_components/navbar";
 import { usePathname } from "next/navigation";
@@ -54,7 +53,6 @@ export default async function Page() {
             <Experience />
             {/* <Services /> */}
             <Projects />
-            {/* <Contact /> */}
           </>
         ) : (
           <></>
