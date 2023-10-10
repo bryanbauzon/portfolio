@@ -36,6 +36,13 @@ export default function Videos() {
             <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
             <ProjectComponents
                 actionText="Watch"
+                title="Life Journey"
+                href="https://youtu.be/TCJZsbnDrJo"
+                date="October 2023"
+                src={"/projects/lifeJourney.png"}
+              />
+            <ProjectComponents
+                actionText="Watch"
                 title="Quarter Century"
                 href="https://youtu.be/DLmx6iCGLJY"
                 date="October 2023"
@@ -82,6 +89,13 @@ export default function Videos() {
                 href="https://youtu.be/BZCwppetjw4"
                 src={"/projects/pistayDayat2023.png"}
                 date="May 2023"
+              />
+                 <ProjectComponents
+                actionText="Watch"
+                title="YOUTH OF IGLESIA FILIPINA INDEPENDIENTE FELLOWSHIP"
+                href="https://youtu.be/Fa-kjsuxRKs"
+                date="April 2023"
+                src={"/projects/yifi.png"}
               />
               <ProjectComponents
                 actionText="Watch"

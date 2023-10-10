@@ -14,8 +14,8 @@ import {
   CardFooter,
   CardHeader,
   Tooltip,
+  Image
 } from "@nextui-org/react";
-import Image from "next/image";
 
 export const Header = (props) => {
   return (
@@ -314,6 +314,7 @@ export const ServicesComponents = (props) => {
 };
 
 export const ProjectComponents = (props) => {
+  let IMAGE_SRC = props.src;
   return (
     <>
       <div className="flex justify-center">
@@ -364,10 +365,12 @@ export const ProjectComponents = (props) => {
               }
             >
               <Link href={props.href} target="_blank">
-                <img
+                <Image
                   className="rounded-none w-full h-full"
-                  src={props.src}
+                  src={IMAGE_SRC}
                   priority
+                  removeWrapper
+                  disableSkeleton
                 />
               </Link>
             </Tooltip>
