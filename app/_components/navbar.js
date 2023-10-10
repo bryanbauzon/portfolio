@@ -25,7 +25,7 @@ export default function NavbarComp(props) {
     "Home",
     "Salesforce",
     "Experience",
-    "Videography",
+    "Films",
     "Projects",
     "Contact",
   ];
@@ -131,8 +131,8 @@ export default function NavbarComp(props) {
                   href={
                     item.toLowerCase() === "home"
                       ? checkPathname("home", props)
-                      : item.toLowerCase() === "videography"
-                      ? checkPathname(`videos`, props)
+                      : item.toLowerCase() === "films"
+                      ? checkPathname(`films`, props)
                       : checkPathname(`#${item.toLowerCase()}`, props)
                   }
                   size="lg"
