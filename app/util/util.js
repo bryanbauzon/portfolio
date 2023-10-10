@@ -366,12 +366,11 @@ export const ProjectComponents = (props) => {
             >
               <Link href={props.href} target="_blank">
                 <Image
-                  className="rounded-none h-full w-full"
+                  className="rounded-none m-0 p-0 h-full w-full"
                   src={IMAGE_SRC}
                   priority
                   width={500}
                   height={500}
-                  
                 />
               </Link>
             </Tooltip>
