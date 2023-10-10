@@ -117,7 +117,7 @@ export const ContactComponents = (props) => {
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">
-                let's work together! 🚀
+                Let's work together! 🚀
               </ModalHeader>
               <ModalBody>
                 <p className="defaultFont text-md">
@@ -381,16 +381,19 @@ export const ProjectComponents = (props) => {
   );
 };
 export function checkPathname(redirect, props) {
+  redirect = redirect.toLowerCase();
   if (redirect === "home") {
     return "/";
+  }else if(redirect === 'films'){
+    return '/'+ redirect;
   }
   if (props.pathname === "/films") {
     if(redirect === '#home'){
       return '/'
     }
-    return "/" + redirect;
+    return "/#" + redirect;
   }
-  return redirect;
+  return '#'+redirect;
 }
 
 export function ageChecker(age) {
