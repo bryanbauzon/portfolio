@@ -22,18 +22,15 @@ export default function Footer(props) {
               <></>
             ) : (
               <h2 className=" dark:text-white text-darkMode  subFont text-center">
-                {props.pathname == "/" ? (
                   <>
                     <Link
-                      href={"#home"}
+                      href={"#top"}
                       className="p-2 cursor-n-resize dark:text-white text-darkMode  footerLink hover:underline ml-2 subFont"
                     >
                       Back to Top
                     </Link>
                   </>
-                ) : (
-                  <></>
-                )}
+               
               </h2>
             )}
           </div>

@@ -13,7 +13,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import ThemeSwitch from "./theme-switch";
-import { checkPathname,AboutComponent } from "../util/util";
+import { checkPathname,AboutComponent,ContactComponents} from "../util/util";
 
 
 export default function NavbarComp(props) {
@@ -95,11 +95,7 @@ export default function NavbarComp(props) {
                 </Link>
               </NavbarItem> */}
 
-              <NavbarItem>
-                <Link className="text-darkMode dark:text-white" href="/videos">
-                  Videography
-                </Link>
-              </NavbarItem>
+            
               <NavbarItem>
                 <Link
                   className="text-darkMode dark:text-white"
@@ -109,12 +105,12 @@ export default function NavbarComp(props) {
                 </Link>
               </NavbarItem>
               <NavbarItem>
-                <Link
-                  className="text-darkMode dark:text-white"
-                  href={checkPathname("#contact", props)}
-                >
-                  Contact
+                <Link className="text-darkMode dark:text-white" href="/films">
+                  Films
                 </Link>
+              </NavbarItem>
+              <NavbarItem>
+               <ContactComponents/>
               </NavbarItem>
             </NavbarContent>
           </>

@@ -72,11 +72,60 @@ export const AboutComponent = (props) => {
         <ModalContent>
           {(onClose) => (
             <>
+              <ModalHeader className="flex flex-col gap-1">Hi!</ModalHeader>
+              <ModalBody>
+                <p className="defaultFont text-sm">
+                  What pain do you want in life? What are you willing to
+                  struggle for?
+                </p>
+              </ModalBody>
+              <ModalFooter>
+                <Button color="" variant="light" onPress={onClose}>
+                  Close
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
+    </>
+  );
+};
+
+export const ContactComponents = (props) => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+  return (
+    <>
+      <Link
+        className="text-darkMode dark:text-white"
+        href={"javascript:void(0);"}
+        onClick={() => {
+          onOpen();
+        }}
+      >
+        Contact
+      </Link>
+
+      <Modal
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        size="xs"
+        backdrop="blur"
+      >
+        <ModalContent>
+          {(onClose) => (
+            <>
               <ModalHeader className="flex flex-col gap-1">
-                Hi!
+                let's work together! 🚀
               </ModalHeader>
               <ModalBody>
-                <p className="defaultFont text-sm">What pain do you want in life? What are you willing to struggle for?</p>
+                <p className="defaultFont text-md">
+                  {" "}
+                  I would love to hear from you. Whether it’s a project, a job
+                  opportunity, or just a chat. Feel free to contact me! 👋
+                </p>
+                <Link href={`mailto:mrbryanbauzon@gmail.com`} className="text-sm text-theme">mrbryanbauzon@gmail.com</Link>
               </ModalBody>
               <ModalFooter>
                 <Button color="" variant="light" onPress={onClose}>
@@ -286,7 +335,9 @@ export const ProjectComponents = (props) => {
 
               <CardFooter className="gap-3">
                 <div className="flex gap-1">
-                  <p className=" text-default-400 text-small font-bold">{props.tech}</p>
+                  <p className=" text-default-400 text-small font-bold">
+                    {props.tech}
+                  </p>
                 </div>
                 <div className="content-end">
                   <Link
@@ -330,23 +381,23 @@ export function checkPathname(redirect, props) {
   if (redirect === "home") {
     return "/";
   }
-  if (props.pathname === "/videos") {
+  if (props.pathname === "/films") {
     return "/" + redirect;
   }
   return redirect;
 }
 
-export function ageChecker(age){
+export function ageChecker(age) {
   let lastDigit = age.toString().slice(-1);
   let ageStr = age;
-  if(lastDigit == 1){
-    ageStr += 'st';
-  }else  if(lastDigit == 2){
-    ageStr += 'nd';
-  }else  if(lastDigit == 3){
-    ageStr += 'rd';
-  }else{
-    ageStr += 'th';
+  if (lastDigit == 1) {
+    ageStr += "st";
+  } else if (lastDigit == 2) {
+    ageStr += "nd";
+  } else if (lastDigit == 3) {
+    ageStr += "rd";
+  } else {
+    ageStr += "th";
   }
-  return ageStr
+  return ageStr;
 }
