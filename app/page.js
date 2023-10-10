@@ -54,7 +54,7 @@ export default async function Page() {
             <Experience />
             {/* <Services /> */}
             <Projects />
-            <Contact />
+            {/* <Contact /> */}
           </>
         ) : (
           <></>

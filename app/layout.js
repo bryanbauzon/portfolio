@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
           className={`bg-light dark:bg-darkMode`}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <div> {children}</div>
+            <div id="top"> {children}</div>
             <Analytics />
           </ThemeProvider>
         </body>
