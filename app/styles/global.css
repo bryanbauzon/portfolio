@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: linear-gradient(45deg, #79eeff, #213555);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.defaultFont {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.subFont {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.backgroundGradient {
+  background-image: linear-gradient(45deg, #79eeff, #213555);
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nongradient {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav {
+  /* From https://css.glass */
+  background: rgba(35, 41, 49, 0.37);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.glasseffect {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.about,
+.underdev {
+  color: white;
+  background-color: #4ECCA3;
+  cursor: pointer;
+}
+
+.projectLink {
+  color: #4ECCA3
+}
+
+.tech,
+.services {
+  cursor: pointer;
+}
+
+.year,
+source {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.banner {
+  background-image: url("/salesforce/bg/bg.jpeg");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.services {
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+
+.tech {
+  cursor: pointer;
+}
+
+a {
+  -webkit-transition: color 1s ease-out;
+  -moz-transition: color 1s ease-out;
+  -ms-transition: color 1s ease-out;
+  -o-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+}
+
+a:hover {
+  /* color: #4ECCA3; */
+  transition: color 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  -moz-transition: color 0.5s ease-in;
+  -ms-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+}
+
+.hireme:hover {
+  color: #EEEEEE;
+}
+
+.header:hover {
+  color: #4ECCA3;
+  transition: color 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  -moz-transition: color 0.5s ease-in;
+  -ms-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+}
+
+.header {
+  -webkit-transition: color 1s ease-out;
+  -moz-transition: color 1s ease-out;
+  -ms-transition: color 1s ease-out;
+  -o-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+}
+
+
+.coffee {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 1s;
+
+  /*add those for opera and mozilla support*/
+  -webkit-text-decoration-color: transparent;
+  -moz-text-decoration-color: transparent;
+}
+
+.coffee:hover {
+  text-decoration-color: #4ECCA3;
+  ;
+
+  /*add those for opera and mozilla support*/
+  -webkit-text-decoration-color: #4ECCA3;
+  ;
+  -moz-text-decoration-color: #4ECCA3;
+  ;
+}
+
+.qr {
+  -webkit-transition: box-shadow 1s ease-out;
+  -moz-transition: box-shadow 1s ease-out;
+  -ms-transition: box-shadow 1s ease-out;
+  -o-transition: box-shadow 1s ease-out;
+  transition: box-shadow 1s ease-out;
+}
+
+.qr:hover {
+  cursor: pointer;
+  box-shadow: 2px 7px 15px #4ECCA3;
+  transition: box-shadow 0.4s ease-in;
+  -webkit-transition: box-shadow 0.4s ease-in;
+  -moz-transition: box-shadow 0.4s ease-in;
+  -ms-transition: box-shadow 0.4s ease-in;
+  -o-transition: box-shadow 0.4s ease-in;
+}
+
+.experience {
+  -webkit-transition: box-shadow 1s ease-out;
+  -moz-transition: box-shadow 1s ease-out;
+  -ms-transition: box-shadow 1s ease-out;
+  -o-transition: box-shadow 1s ease-out;
+  transition: box-shadow 1s ease-out;
+}
+
+.experience:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 12px #4ECCA3;
+  transition: box-shadow 0.3s ease-in;
+  -webkit-transition: box-shadow 0.3s ease-in;
+  -moz-transition: box-shadow 0.3s ease-in;
+  -ms-transition: box-shadow 0.3s ease-in;
+  -o-transition: box-shadow 0.3s ease-in;
+}
+
+.footerLink,
+.emailLink {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 1s;
+
+  /*add those for opera and mozilla support*/
+  -webkit-text-decoration-color: transparent;
+  -moz-text-decoration-color: transparent;
+}
+
+.footerLink:hover {
+  text-decoration-color: #4ECCA3;
+  ;
+
+  /*add those for opera and mozilla support*/
+  -webkit-text-decoration-color: #4ECCA3;
+  ;
+  -moz-text-decoration-color: #4ECCA3;
+  ;
+}
+
+.emailLink:hover {
+  text-decoration-color: #4ECCA3;
+  ;
+
+  /*add those for opera and mozilla support*/
+  -webkit-text-decoration-color: #4ECCA3;
+  ;
+  -moz-text-decoration-color: #4ECCA3;
+  ;
+}
+
+.status {
+  border-radius: 45px;
+  background: linear-gradient(145deg, #242b34, #1f242c);
+  box-shadow: 34px 34px 79px #0e1014,
+    -34px -34px 79px #36404e;
+}
+
+.profile {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+/* Disable grayscale on hover */
+.profile:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
