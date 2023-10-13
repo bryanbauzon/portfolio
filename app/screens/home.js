@@ -35,10 +35,10 @@ export default function Home(props) {
             <div className="w-full hidden md:hidden lg:flex  items-center justify-center">
               <Image src={"/profile/profile.jpeg"} className="profile" height={600} width={350} />
             </div>
-            <div className="p-10">
+            <div>
               <p className="text-tiny mt-2">Welcome, I'm</p>
               <p className="text-2xl text-theme font-bold">{NAME}</p>
-              <p className="text-3xl font-bold">
+              <p className="lg:text-4xl md:text-4xl text-2xl font-bold">
                 <span>{toUpperLowerCase(DEVELOPER, "u")}</span>/
                 <Link
                   href={checkPathname("films", props)}
