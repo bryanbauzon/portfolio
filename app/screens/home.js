@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Chip } from "@nextui-org/react";
-import NavbarComp from "../_components/navbar";
 import { toUpperLowerCase } from "../util/util";
 import {
   FILMMAKER,
@@ -38,15 +36,15 @@ export default function Home(props) {
             <div>
               <p className="text-tiny mt-2">Welcome, I'm</p>
               <p className="text-2xl text-theme font-bold">{NAME}</p>
-              <p className="lg:text-4xl md:text-4xl text-2xl font-bold">
-                <span>{toUpperLowerCase(DEVELOPER, "u")}</span>/
+              <div className="xl:text-8xl lg:text-7xl md:text-7xl text-6xl font-bold">
+                <p>{toUpperLowerCase(DEVELOPER, "u")}</p>
                 <Link
                   href={checkPathname("films", props)}
                   className="ml-2 text-theme"
                 >
                   {toUpperLowerCase(FILMMAKER, "u")}
                 </Link>
-              </p>
+              </div>
               <p className="text-lg dark:text-sub text-lightSub">
                 {INTRO_DESCRIPTION}
               </p>

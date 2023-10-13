@@ -57,7 +57,7 @@ export const AboutComponent = (props) => {
     <>
       <Link
         className="font-bold text-theme"
-        href={"javascript:void(0);"}
+        href={"#"}
         onClick={() => {
           onOpen();
         }}
@@ -101,13 +101,14 @@ export const ContactComponents = (props) => {
     <>
       <Link
         className="text-darkMode dark:text-white"
-        href={"javascript:void(0);"}
+        href={"#"}
         onClick={() => {
           onOpen();
         }}
       >
         {props.link}
       </Link>
+      
 
       <Modal
         isOpen={isOpen}
@@ -226,7 +227,7 @@ export const ExperienceComponents = (props) => {
             <div>
              
               <Link
-                href={"javascript:void(0);"}
+                href={"#"}
                 className="underline text-theme text-small"
                 onClick={() => {
                   onOpen();

@@ -20,35 +20,46 @@ export default async function Page() {
 
   let birthday = "";
 
-  
   if (month == 10 && dayNum == 8) {
     birthday = (
       <div className="text-bold text-[2.2rem] defaultFont">
-        CELEBRATING MY {age == 25 ? <><span className="text-theme underline font-bold">QUARTER-CENTURY </span></>:<span  className="text-theme underline font-bold">{ageChecker(age)} YEAR BIRTHDAY</span>}!<br />
+        CELEBRATING MY{" "}
+        {age == 25 ? (
+          <>
+            <span className="text-theme underline font-bold">
+              QUARTER-CENTURY{" "}
+            </span>
+          </>
+        ) : (
+          <span className="text-theme underline font-bold">
+            {ageChecker(age)} YEAR BIRTHDAY
+          </span>
+        )}
+        !<br />
         🥳🎉🎊
       </div>
     );
   }
 
-  
   let dayStatus = STATUS[0];
-  if (!(day % 6)) {//WEEKENDS
+  if (!(day % 6)) {
+    //WEEKENDS
     dayStatus = STATUS[1];
-  }else if(birthday != ""){
-    dayStatus = STATUS[2]
+  } else if (birthday != "") {
+    dayStatus = STATUS[2];
   }
 
   return (
     <>
       <NextUIProvider>
         <NavbarComp birthday={birthday} />
-    <Home
+        <Home
           birthday={birthday}
           month={month}
           year={year}
           dayStatus={dayStatus}
           pathname={pathname}
-        /> 
+        />
         {birthday == "" ? (
           <>
             <Experience />
@@ -60,7 +71,7 @@ export default async function Page() {
           <></>
         )}
 
-        <Footer birthday={birthday} pathname={pathname} isVideo={false}/>
+        <Footer birthday={birthday} pathname={pathname} isVideo={false} />
 
         {/* <Skills /> */}
       </NextUIProvider>
