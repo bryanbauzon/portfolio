@@ -21,7 +21,7 @@ export default function Home(props) {
     show: {
       opacity: 1,
       transition: {
-        delayChildren: 0.8,
+        delayChildren: 0.5,
         staggerDirection: -1,
       },
     },
@@ -33,12 +33,12 @@ export default function Home(props) {
         <div className=" flex h-screen w-full items-center">
           <div className=" p-10 defaultFont grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 gap-3">
             <div className="w-full hidden md:hidden lg:flex  items-center justify-center">
-              <Image src={"/profile/profile.jpeg"} className="profile" height={600} width={350} />
+              <Image src={"/profile/profile.jpeg"} className="profile" height={1500} width={550} />
             </div>
             <div>
               <p className="text-tiny mt-2">Welcome, I'm</p>
               <p className="text-2xl text-theme font-bold">{NAME}</p>
-              <p className="lg:text-5xl md:text-4xl text-2xl font-bold">
+              <p className="lg:text-4xl md:text-4xl text-2xl font-bold">
                 <span>{toUpperLowerCase(DEVELOPER, "u")}</span>/
                 <Link
                   href={checkPathname("films", props)}
