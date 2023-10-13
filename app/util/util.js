@@ -24,7 +24,7 @@ export const Header = (props) => {
     <>
       <div className="flex flex-col justify-center">
         <Link href={"#" + (props.id != undefined ? props.id : "")}>
-          <h1 className="p-5 cursor-pointer header text-2xl lg:text-4xl md:text-4xl  text-center defaultFont text-darkMode dark:text-white font-bold">
+          <h1 className="p-5 cursor-pointer header text-2xl lg:text-5xl md:text-4xl  text-center defaultFont text-darkMode dark:text-white font-bold">
             {props.header.toUpperCase()}
             <p className="subFont font-light text-xl text-darkMode dark:text-sub">
               {props.subHeader != "" ? props.subHeader : <></>}
