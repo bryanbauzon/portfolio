@@ -55,7 +55,10 @@ export const RETURN_TO_HOME = "Return to Home";
 
 export const DEVELOPER = "Developer/";
 export const FILMMAKER = "Filmmaker.";
+export const FILMS = 'FILMS';
 export const EXPLORE = "Explore.";
 export const RESUME = "Resume.";
 export const DETAILS = "Details"
 export const RESUME_DIR = "/docs/Max Bryan C. Bauzon - Salesforce Developer.pdf"
+export const SAME_DAY_EDIT = 'SAME DAY EDIT (SDE)';
+export const OTHER_PROJECTS = 'OTHER PROJECTS'

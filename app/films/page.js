@@ -3,9 +3,10 @@ import { ProjectComponents } from "../util/util";
 import { NextUIProvider } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import NavbarComp from "../_components/navbar";
+import { FILMS, INTRO_FILM,SAME_DAY_EDIT, OTHER_PROJECTS } from "../constants/strings";
+
 import Footer from "../_components/footer";
 export default function Videos() {
-  
   const pathname = usePathname();
 
   return (
@@ -13,24 +14,72 @@ export default function Videos() {
       <NextUIProvider>
         {" "}
         <div className="  h-min dark:bg-darkMode ">
-          <NavbarComp pathname={pathname}/>
+          <NavbarComp pathname={pathname} />
 
           <div className="flex flex-col" id="videography">
-            <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
-            <ProjectComponents
+            <div className="p-4 items-center justify-center flex flex-col">
+              <div className="xl:text-8xl lg:text-7xl md:text-7xl text-5xl font-bold">
+                {FILMS}
+              </div>
+              <div className="ml-5 text-lg defaultFont text-center dark:text-sub text-lightSub">
+                {INTRO_FILM}
+              </div>
+            </div>
+            <div>
+              <div className="p-8 xl:text-6xl lg:text-5xl md:text-5xl text-3xl font-bold text-theme">
+                {SAME_DAY_EDIT}
+              </div>
+              <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
+                <ProjectComponents
+                  actionText="Watch"
+                  title="Life Journey"
+                  href="https://youtu.be/TCJZsbnDrJo"
+                  date="October 2023"
+                  src={"/projects/lifeJourney.png"}
+                />
+                <ProjectComponents
+                  actionText="Watch"
+                  title="Quarter Century"
+                  href="https://youtu.be/DLmx6iCGLJY"
+                  date="October 2023"
+                  src={"/projects/quarterCentury.png"}
+                />
+                <ProjectComponents
+                  title="19th BINONGEY FESTIVAL 2023 - MTB CHALLENGE HIGHLIGHTS (SDE)"
+                  href="https://youtu.be/VrrJBm4Qmgw"
+                  src={"/projects/binongey2023.png"}
+                  date="May 2023"
+                  actionText="Watch"
+                />
+                <ProjectComponents
+                  actionText="Watch"
+                  title="Celebrating Pista'y Dayat 2023!"
+                  href="https://youtu.be/BZCwppetjw4"
+                  src={"/projects/pistayDayat2023.png"}
+                  date="May 2023"
+                />
+                 <ProjectComponents
+                title="Tondol White Sand Beach - 04 March 2023"
+                href="https://youtu.be/0nX-RlWMblI"
+                src={"/projects/beach.png"}
                 actionText="Watch"
-                title="Life Journey"
-                href="https://youtu.be/TCJZsbnDrJo"
-                date="October 2023"
-                src={"/projects/lifeJourney.png"}
+                date="March 2023"
               />
-            <ProjectComponents
+              <ProjectComponents
+                title="'Panayunan' - Leaves by Ben&Ben"
+                href="https://youtu.be/e3B8Zqu5iA4"
+                src={"/projects/panayunan2023.png"}
                 actionText="Watch"
-                title="Quarter Century"
-                href="https://youtu.be/DLmx6iCGLJY"
-                date="October 2023"
-                src={"/projects/quarterCentury.png"}
+                date="February 2023"
               />
+              </div>
+            </div>
+
+           <div>
+           <div className="p-8 xl:text-6xl lg:text-5xl md:text-5xl text-3xl font-bold text-theme">
+                {OTHER_PROJECTS}
+              </div>
+           <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
               <ProjectComponents
                 actionText="Watch"
                 title="Nature"
@@ -59,21 +108,8 @@ export default function Videos() {
                 date="May 2023"
                 actionText="Watch"
               />
+
               <ProjectComponents
-                title="19th BINONGEY FESTIVAL 2023 - MTB CHALLENGE HIGHLIGHTS (SDE)"
-                href="https://youtu.be/VrrJBm4Qmgw"
-                src={"/projects/binongey2023.png"}
-                date="May 2023"
-                actionText="Watch"
-              />
-              <ProjectComponents
-                actionText="Watch"
-                title="Celebrating Pista'y Dayat 2023!"
-                href="https://youtu.be/BZCwppetjw4"
-                src={"/projects/pistayDayat2023.png"}
-                date="May 2023"
-              />
-                 <ProjectComponents
                 actionText="Watch"
                 title="YOUTH OF IGLESIA FILIPINA INDEPENDIENTE FELLOWSHIP"
                 href="https://youtu.be/Fa-kjsuxRKs"
@@ -87,24 +123,12 @@ export default function Videos() {
                 date="April 2023"
                 src={"/projects/eastwood.png"}
               />
-              <ProjectComponents
-                title="Tondol White Sand Beach - 04 March 2023"
-                href="https://youtu.be/0nX-RlWMblI"
-                src={"/projects/beach.png"}
-                actionText="Watch"
-                date="March 2023"
-              />
-              <ProjectComponents
-                title="'Panayunan' - Leaves by Ben&Ben"
-                href="https://youtu.be/e3B8Zqu5iA4"
-                src={"/projects/panayunan2023.png"}
-                actionText="Watch"
-                date="February 2023"
-              />
+             
             </div>
+           </div>
           </div>
 
-          <Footer pathname={pathname}/>
+          <Footer pathname={pathname} />
         </div>
       </NextUIProvider>
     </>
