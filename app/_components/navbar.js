@@ -36,11 +36,11 @@ export default function NavbarComp(props) {
 
   return (
     <>
-      <div>
         <Navbar
           isMenuOpen={isMenuOpen}
           className="dark:bg-darkMode bg-white"
           onMenuOpenChange={setIsMenuOpen}
+          shouldHideOnScroll
         >
           <NavbarContent>
             <NavbarMenuToggle
@@ -99,7 +99,6 @@ export default function NavbarComp(props) {
             <></>
           )}
         </Navbar>
-      </div>
     </>
   );
 }
