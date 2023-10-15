@@ -14,23 +14,13 @@ export default function Videos() {
   let year = date.getFullYear();
   let age = year - 1998;
 
-  let birthday = "";
-
-  if (month == 10 && dayNum == 8) {
-    birthday = (
-    <div className="text-bold text-[2.2rem] defaultFont">
-        CELEBRATING MY {age == 25 ? <><span className="text-theme underline font-bold">QUARTER-CENTURY </span></>:<span  className="text-theme underline font-bold">{ageChecker(age)} YEAR BIRTHDAY</span>}!<br />
-        🥳🎉🎊
-      </div>
-    );
-  }
 
   return (
     <>
       <NextUIProvider>
         {" "}
         <div className="  h-min dark:bg-darkMode ">
-          <NavbarComp birthday={birthday} pathname={pathname} isVideo={true} />
+          <NavbarComp pathname={pathname}/>
 
           <div className="flex flex-col" id="videography">
             <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
@@ -121,7 +111,7 @@ export default function Videos() {
             </div>
           </div>
 
-          <Footer birthday={birthday} pathname={pathname} isVideo={true} />
+          <Footer pathname={pathname}/>
         </div>
       </NextUIProvider>
     </>
