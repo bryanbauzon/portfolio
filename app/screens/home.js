@@ -36,7 +36,7 @@ export default function Home(props) {
             <div>
               <p className="text-tiny mt-2">Welcome, I'm</p>
               <p className="text-2xl text-theme font-bold">{NAME}</p>
-              <div className="xl:text-8xl lg:text-7xl md:text-7xl text-3xl font-bold">
+              <div className="xl:text-8xl lg:text-7xl md:text-7xl text-5xl font-bold">
                 <p>{toUpperLowerCase(DEVELOPER, "u")}</p>
                 <Link
                   href={checkPathname("films", props)}
