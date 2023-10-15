@@ -4,16 +4,9 @@ import { NextUIProvider } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import NavbarComp from "../_components/navbar";
 import Footer from "../_components/footer";
-import { ageChecker } from "../util/util";
 export default function Videos() {
   
   const pathname = usePathname();
-  let date = new Date();
-  let month = date.getMonth() + 1;
-  let dayNum = date.getDate();
-  let year = date.getFullYear();
-  let age = year - 1998;
-
 
   return (
     <>
