@@ -31,7 +31,7 @@ export default function Home(props) {
         <div className=" flex h-screen w-full items-center">
           <div className=" p-10 defaultFont grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 gap-3">
             <div className="w-full hidden md:hidden lg:flex  items-center justify-center">
-              <Image src={"/profile/profile.jpeg"} className="profile" height={1500} width={550} />
+              <Image src={"/profile/profile.jpeg"} className="profile mr-5 mb-10" height={2000} width={750} />
             </div>
             <div>
               <p className="text-tiny mt-2">Welcome, I'm</p>
