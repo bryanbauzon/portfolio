@@ -53,13 +53,13 @@ export default function Home(props) {
               </p>
 
               <div className="mt-1 text-3xl flex flex-row">
-                <Link
+                {/* <Link
                   href={RESUME_DIR}
                   target={"_blank"}
                   className="underline flex items-center hover:animate-pulse text-theme font-bold"
                 >
                   {toUpperLowerCase(RESUME, "")}
-                </Link>
+                </Link> */}
                 <Link
                   href={"#experience"}
                   className="underline flex items-center hover:animate-pulse text-theme font-bold ml-2"
