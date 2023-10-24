@@ -222,7 +222,7 @@ export const ExperienceComponents = (props) => {
               <p className=" text-default-400 text-small">{props.date}</p>
             </div>
             <div>
-              <Link
+              <button
                 href={""}
                 className="underline text-theme text-small"
                 onClick={() => {
@@ -230,7 +230,7 @@ export const ExperienceComponents = (props) => {
                 }}
               >
                 {DETAILS}
-              </Link>
+              </button>
             </div>
           </CardFooter>
         </Card>
