@@ -326,7 +326,7 @@ export const ProjectComponents = (props) => {
       <div className="flex justify-center">
         {props.src == null ? (
           <div className="w-full">
-            <Card className="max-w-[420px] p-10">
+            <Card className="max-w-[420px] p-10 h-[250px]">
               <CardHeader className="justify-between">
                 <div className="flex gap-5">
                   <div className="flex flex-col gap-1 items-start justify-center">
