@@ -9,13 +9,14 @@ export default function Projects() {
         <div className="flex flex-col pt-5 items-center" id="programming">
           <div className="grid  lg:grid-cols-3 grid-cols-1 lg:grid-cols-2 md:grid-cols-2 p-5 gap-4">
             <ProjectComponents
-              title="Portfolio Website"
-              actionText="Live"
-              tech="NextJS, Tailwind"
-              description="My online space that shows my interests and passion in software technologies and other interesting stuffs."
-              href={"https://bryanbauzon.com/"}
+              title="Expense Manager"
+              actionText="Coming Soon!!!"
+              tech="Salesforce, LWR, Apex"
+              description="Gain total control of your money. Become your own money manager and make every cent count."
+              href="#"
               date="2023"
             />
+
             <ProjectComponents
               title="NextJS Template"
               actionText="Github"
@@ -25,6 +26,14 @@ export default function Projects() {
               date="2023"
               href2={"https://nextjs-template-demooo.vercel.app/"}
               actionText2="Live"
+            />
+            <ProjectComponents
+              title="Portfolio Website"
+              actionText="Live"
+              tech="NextJS, Tailwind"
+              description="My online space that shows my interests and passion in software technologies and other interesting stuffs."
+              href={"https://bryanbauzon.com/"}
+              date="2023"
             />
           </div>
         </div>

@@ -18,7 +18,6 @@ import {
 import Image from "next/image";
 import { DETAILS } from "../constants/strings";
 
-
 export const Header = (props) => {
   return (
     <>
@@ -108,7 +107,6 @@ export const ContactComponents = (props) => {
       >
         {props.link}
       </Link>
-      
 
       <Modal
         isOpen={isOpen}
@@ -131,7 +129,6 @@ export const ContactComponents = (props) => {
                 <Link
                   href={`mailto:mrbryanbauzon@gmail.com`}
                   className="text-sm text-theme"
-                  
                 >
                   mrbryanbauzon@gmail.com
                 </Link>
@@ -225,7 +222,6 @@ export const ExperienceComponents = (props) => {
               <p className=" text-default-400 text-small">{props.date}</p>
             </div>
             <div>
-             
               <Link
                 href={""}
                 className="underline text-theme text-small"
@@ -351,13 +347,24 @@ export const ProjectComponents = (props) => {
                   </p>
                 </div>
                 <div className="content-end">
-                  <Link
-                    href={props.href}
-                    className="underline text-theme text-small"
-                    target={"_blank"}
-                  >
-                    {props.actionText}
-                  </Link>
+                  {props.href == "#" ? (
+                    <>
+                      <motion.div 
+                      className="text-theme text-small">
+                        {props.actionText}
+                      </motion.div>
+                    </>
+                  ) : (
+                    <>
+                      <Link
+                        href={props.href}
+                        className="underline text-theme text-small"
+                        target={"_blank"}
+                      >
+                        {props.actionText}
+                      </Link>
+                    </>
+                  )}
                   {props.href2 != undefined ? (
                     <>
                       <Link
