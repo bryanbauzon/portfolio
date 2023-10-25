@@ -223,7 +223,6 @@ export const ExperienceComponents = (props) => {
             </div>
             <div>
               <button
-                href={""}
                 className="underline text-theme text-small"
                 onClick={() => {
                   onOpen();
