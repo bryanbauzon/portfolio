@@ -16,7 +16,14 @@ import {
   Tooltip,
 } from "@nextui-org/react";
 import Image from "next/image";
-import { DETAILS } from "../constants/strings";
+import { DETAILS,ISJAVA, RESUME_DIR_SALESFORCE, RESUME_DIR_JAVA} from "../constants/strings";
+
+export function openForWork(){
+  if(ISJAVA){
+    return RESUME_DIR_JAVA;
+  }
+  return RESUME_DIR_SALESFORCE
+}
 
 export const Header = (props) => {
   return (
@@ -424,6 +431,8 @@ export function checkPathname(redirect, props) {
   }
   return "#" + redirect;
 }
+
+
 
 export function ageChecker(age) {
   let lastDigit = age.toString().slice(-1);

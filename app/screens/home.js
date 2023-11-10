@@ -8,9 +8,10 @@ import {
   INTRO_DEV,
   INTRO_FILM,
   RESUME,
-  RESUME_DIR
+  RESUME_DIR_JAVA,
+  RESUME_DIR_SALESFORCE
 } from "../constants/strings";
-import { checkPathname } from "../util/util";
+import { checkPathname,openForWork } from "../util/util";
 import { NAME, INTRO_DESCRIPTION } from "../constants/strings";
 import Image from "next/image";
 export default function Home(props) {
@@ -54,7 +55,7 @@ export default function Home(props) {
 
               <div className="mt-1 text-3xl flex flex-row">
               <Link
-                  href={RESUME_DIR}
+                  href={openForWork()}
                   target={"_blank"}
                   className="underline flex items-center hover:animate-pulse text-theme font-bold"
                 >

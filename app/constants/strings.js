@@ -59,6 +59,10 @@ export const FILMS = 'FILMS';
 export const EXPLORE = "Explore.";
 export const RESUME = "Resume.";
 export const DETAILS = "Details"
-export const RESUME_DIR = "/docs/Max Bryan C. Bauzon - Salesforce Developer.pdf"
+
+export const ISJAVA = true;
+export const RESUME_DIR_SALESFORCE = "/docs/Max Bryan C. Bauzon - Salesforce Developer.pdf"
+export const RESUME_DIR_JAVA = "/docs/Max Bryan C. Bauzon.pdf"
+
 export const SAME_DAY_EDIT = 'SAME DAY EDIT (SDE)';
 export const OTHER_PROJECTS = 'OTHER PROJECTS'
