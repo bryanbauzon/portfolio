@@ -10,10 +10,10 @@ export default function Projects() {
           <div className="grid  lg:grid-cols-3 grid-cols-1 lg:grid-cols-2 md:grid-cols-2 p-5 gap-4">
             <ProjectComponents
               title="Expense Manager"
-              actionText="Coming Soon!!!"
+              actionText="Github"
               tech="Salesforce, LWR, Apex"
               description="Gain total control of your money. Become your own money manager and make every cent count."
-              href="#"
+              href="https://github.com/bryanbauzon/expense-manager"
               date="2023"
             />
 
