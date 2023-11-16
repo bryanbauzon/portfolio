@@ -175,7 +175,7 @@ export const BadgeComponents = (props) => {
           />
         </motion.div>
         <Modal
-          style={{zIndex:999}}
+          style={{zIndex:99999}}
           isOpen={isOpen}
           onOpenChange={onOpenChange}
           size={props.isUdemy? "3xl":"5xl"}
