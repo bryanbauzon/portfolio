@@ -167,27 +167,28 @@ export const BadgeComponents = (props) => {
           }}
         >
           <Image
-            src={props.image}
+            src={props.imageCert}
             height={props.size}
             width={props.size}
-            alt={props.alt}
+            alt={props.altTitle}
             priority
           />
         </motion.div>
         <Modal
+          style={{zIndex:999}}
           isOpen={isOpen}
           onOpenChange={onOpenChange}
-          size="5xl"
+          size={props.isUdemy? "3xl":"5xl"}
           backdrop="blur"
         >
           <ModalContent>
             {(onClose) => (
               <>
                 <ModalHeader className="flex flex-col gap-1">
-                  {props.title}
+                  {props.altTitle}
                 </ModalHeader>
                 <ModalBody>
-                  <img src={props.cert} priority />
+                  <img src={props.imageCert} priority />
                 </ModalBody>
                 <ModalFooter>
                   <Button variant="light" onPress={onClose}>

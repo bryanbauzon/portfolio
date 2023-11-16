@@ -60,7 +60,7 @@ export const EXPLORE = "Explore.";
 export const RESUME = "Resume.";
 export const DETAILS = "Details"
 
-export const ISJAVA = true;
+export const ISJAVA = false;
 export const RESUME_DIR_SALESFORCE = "/docs/Max Bryan C. Bauzon - Salesforce Developer.pdf"
 export const RESUME_DIR_JAVA = "/docs/Max Bryan C. Bauzon.pdf"
 
