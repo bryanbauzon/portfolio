@@ -15,9 +15,12 @@ import {
   Tooltip,
 } from "@nextui-org/react";
 import Image from "next/image";
-import { DETAILS} from "../constants/strings";
-
-
+import {
+  DETAILS,
+  SOCIAL_LINKS,
+  SOCIAL_MEDIA,
+  EMAIL,
+} from "../constants/strings";
 
 export const HeaderComponent = (props) => {
   return (
@@ -35,7 +38,6 @@ export const HeaderComponent = (props) => {
     </>
   );
 };
-
 
 //quotes Component
 export const AboutComponent = (props) => {
@@ -89,7 +91,7 @@ export const ContactComponent = (props) => {
     <>
       <Link
         className="text-darkMode dark:text-white"
-        href={"#"}
+        href={"javascript:void(0);"}
         onClick={() => {
           onOpen();
         }}
@@ -115,12 +117,21 @@ export const ContactComponent = (props) => {
                   I would love to hear from you. Whether it’s a project, a job
                   opportunity, or just a chat. Feel free to contact me! 👋
                 </p>
-                <Link
-                  href={`mailto:mrbryanbauzon@gmail.com`}
-                  className="text-sm text-theme"
-                >
-                  mrbryanbauzon@gmail.com
+                <Link href={`mailto:${EMAIL}`} className="text-sm text-theme">
+                  {EMAIL}
                 </Link>
+                <div>
+                  {SOCIAL_LINKS.map((item, index) => (
+                    <Link
+                      key={index}
+                      href={item}
+                      className="text-sm text-theme hover:underline ml-2"
+                      target="_blank"
+                    >
+                      {SOCIAL_MEDIA[index]}
+                    </Link>
+                  ))}
+                </div>
               </ModalBody>
               <ModalFooter>
                 <Button color="" variant="light" onPress={onClose}>
@@ -157,10 +168,10 @@ export const BadgeComponent = (props) => {
           />
         </motion.div>
         <Modal
-          style={{zIndex:99999}}
+          style={{ zIndex: 99999 }}
           isOpen={isOpen}
           onOpenChange={onOpenChange}
-          size={props.isUdemy? "3xl":"5xl"}
+          size={props.isUdemy ? "3xl" : "5xl"}
           backdrop="blur"
         >
           <ModalContent>
@@ -338,8 +349,7 @@ export const ProjectComponent = (props) => {
                 <div className="content-end">
                   {props.href == "#" ? (
                     <>
-                      <motion.div 
-                      className="text-theme text-small">
+                      <motion.div className="text-theme text-small">
                         {props.actionText}
                       </motion.div>
                     </>

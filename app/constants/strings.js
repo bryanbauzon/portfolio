@@ -10,13 +10,14 @@ export const MENU_ITEMS = [
 export const WEBSITE_NAME = " @bryanbauzon";
 export const EMAIL = "mrbryanbauzon@gmail.com";
 
-export const SOCIAL_MEDIA = ["LinkedIn", "Salesforce", "Youtube", "Facebook"];
+export const SOCIAL_MEDIA = ["LinkedIn", "Salesforce"];
+//  "Youtube", "Facebook"];
 
 export const SOCIAL_LINKS = [
   "https://www.linkedin.com/in/bryanbauzon/",
   "https://www.salesforce.com/trailblazer/bryanbauzon",
-  "https://www.youtube.com/channel/UCHKE9izs5Z7N9yLWQDFVAlg",
-  "https://www.facebook.com/brynbzn.films",
+  // "https://www.youtube.com/channel/UCHKE9izs5Z7N9yLWQDFVAlg",
+  // "https://www.facebook.com/brynbzn.films",
 ];
 
 export const HIRE_ME = "Hire Me";

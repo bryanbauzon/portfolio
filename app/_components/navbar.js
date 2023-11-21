@@ -79,7 +79,7 @@ export default function NavbarComp(props) {
                 <NavbarMenuItem key={`${item}-${index}`}>
                   {index == 5 ? (
                     <>
-                      <ContactComponents link={MENU_ITEMS[index]} />
+                      <ContactComponent link={MENU_ITEMS[index]} />
                     </>
                   ) : (
                     <Link
