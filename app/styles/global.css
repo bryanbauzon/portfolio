@@ -57,12 +57,12 @@ html {
 .about,
 .underdev {
   color: white;
-  background-color: #4ECCA3;
+  background-color: #FFD369;
   cursor: pointer;
 }
 
 .projectLink {
-  color: #4ECCA3
+  color: #FFD369
 }
 
 .tech,
@@ -107,7 +107,7 @@ a {
 }
 
 a:hover {
-  /* color: #4ECCA3; */
+  /* color: #FFD369; */
   transition: color 0.5s ease-in;
   -webkit-transition: color 0.5s ease-in;
   -moz-transition: color 0.5s ease-in;
@@ -120,7 +120,7 @@ a:hover {
 }
 
 .header:hover {
-  color: #4ECCA3;
+  color: #FFD369;
   transition: color 0.5s ease-in;
   -webkit-transition: color 0.5s ease-in;
   -moz-transition: color 0.5s ease-in;
@@ -148,13 +148,13 @@ a:hover {
 }
 
 .coffee:hover {
-  text-decoration-color: #4ECCA3;
+  text-decoration-color: #FFD369;
   ;
 
   /*add those for opera and mozilla support*/
-  -webkit-text-decoration-color: #4ECCA3;
+  -webkit-text-decoration-color: #FFD369;
   ;
-  -moz-text-decoration-color: #4ECCA3;
+  -moz-text-decoration-color: #FFD369;
   ;
 }
 
@@ -168,7 +168,7 @@ a:hover {
 
 .qr:hover {
   cursor: pointer;
-  box-shadow: 2px 7px 15px #4ECCA3;
+  box-shadow: 2px 7px 15px #FFD369;
   transition: box-shadow 0.4s ease-in;
   -webkit-transition: box-shadow 0.4s ease-in;
   -moz-transition: box-shadow 0.4s ease-in;
@@ -186,7 +186,7 @@ a:hover {
 
 .experience:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 12px #4ECCA3;
+  box-shadow: 2px 2px 12px #FFD369;
   transition: box-shadow 0.3s ease-in;
   -webkit-transition: box-shadow 0.3s ease-in;
   -moz-transition: box-shadow 0.3s ease-in;
@@ -206,24 +206,24 @@ a:hover {
 }
 
 .footerLink:hover {
-  text-decoration-color: #4ECCA3;
+  text-decoration-color: #FFD369;
   ;
 
   /*add those for opera and mozilla support*/
-  -webkit-text-decoration-color: #4ECCA3;
+  -webkit-text-decoration-color: #FFD369;
   ;
-  -moz-text-decoration-color: #4ECCA3;
+  -moz-text-decoration-color: #FFD369;
   ;
 }
 
 .emailLink:hover {
-  text-decoration-color: #4ECCA3;
+  text-decoration-color: #FFD369;
   ;
 
   /*add those for opera and mozilla support*/
-  -webkit-text-decoration-color: #4ECCA3;
+  -webkit-text-decoration-color: #FFD369;
   ;
-  -moz-text-decoration-color: #4ECCA3;
+  -moz-text-decoration-color: #FFD369;
   ;
 }
 
