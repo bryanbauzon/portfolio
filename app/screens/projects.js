@@ -1,14 +1,14 @@
-import { ProjectComponents, Header } from "../util/util";
+import { ProjectComponent, HeaderComponent } from "../util/components";
 import { HEADERS } from "../constants/strings";
 export default function Projects() {
   return (
     <>
       <div className="  h-min dark:bg-darkMode " id="projects">
-        <Header header={HEADERS[2]} id="projects" />
+        <HeaderComponent header={HEADERS[2]} id="projects" />
 
         <div className="flex flex-col pt-5 items-center" id="programming">
           <div className="grid  lg:grid-cols-3 grid-cols-1 lg:grid-cols-2 md:grid-cols-2 p-5 gap-4">
-            <ProjectComponents
+            <ProjectComponent
               title="Expense Manager"
               actionText="Github"
               tech="Salesforce, LWR, Apex"
@@ -17,7 +17,7 @@ export default function Projects() {
               date="2023"
             />
 
-            <ProjectComponents
+            <ProjectComponent
               title="NextJS Template"
               actionText="Github"
               tech="NextJS, Tailwind"
@@ -27,7 +27,7 @@ export default function Projects() {
               href2={"https://nextjs-template-demooo.vercel.app/"}
               actionText2="Live"
             />
-            <ProjectComponents
+            <ProjectComponent
               title="Portfolio Website"
               tech="NextJS, Tailwind"
               description="My online space that shows my interests and passion in software technologies and other interesting stuffs."

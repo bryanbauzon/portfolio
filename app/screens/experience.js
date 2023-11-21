@@ -1,13 +1,13 @@
-import { ExperienceComponents, Header } from "../util/util";
+import { ExperienceComponent, HeaderComponent } from "../util/components";
 import { HEADERS } from "../constants/strings";
 export default function Experience() {
   return (
     <div className="h-min dark:bg-darkMode pt-20" id="experience">
-      <Header header={HEADERS[1]} id="experience" />
+      <HeaderComponent header={HEADERS[1]} id="experience" />
       <div className="flex justify-center p-3">
         <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-5 p-5">
           {/* Software Engineer */}
-          <ExperienceComponents
+          <ExperienceComponent
             title="Software Engineer"
             website="https://www.techmahindra.com/en-in/"
             company="Tech Mahindra"
@@ -21,7 +21,7 @@ export default function Experience() {
             tech="Java Enterprise Edition/ Vaadin/ Oracle SQL Developer/ Bitbucket/ Eclipse"
           />
           {/* Junior Application Programmer */}
-          <ExperienceComponents
+          <ExperienceComponent
             title=" Junior Programmer"
             website="https://www.nova-hub.com/"
             company="NovaSolutions (Philippines) Inc."

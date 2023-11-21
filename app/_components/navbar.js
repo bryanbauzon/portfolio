@@ -13,7 +13,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import ThemeSwitch from "./theme-switch";
-import { checkPathname, AboutComponent, ContactComponents } from "../util/util";
+import { AboutComponent, ContactComponent } from "../util/components";
+import { checkPathname } from "../util/util";
 import { MENU_ITEMS, WEBSITE_NAME } from "../constants/strings";
 
 export default function NavbarComp(props) {
@@ -56,7 +57,7 @@ export default function NavbarComp(props) {
             {MENU_ITEMS.map((item, index) => (
               <NavbarItem key={index}>
                 {index == 5 ? (
-                  <ContactComponents link={MENU_ITEMS[index]} />
+                  <ContactComponent link={MENU_ITEMS[index]} />
                 ) : (
                   <Link
                     className="text-darkMode dark:text-white"
