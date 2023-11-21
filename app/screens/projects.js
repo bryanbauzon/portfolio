@@ -29,11 +29,14 @@ export default function Projects() {
             />
             <ProjectComponents
               title="Portfolio Website"
-              actionText="Live"
               tech="NextJS, Tailwind"
               description="My online space that shows my interests and passion in software technologies and other interesting stuffs."
-              href={"https://bryanbauzon.com/"}
+            
               date="2023"
+              href={"https://github.com/bryanbauzon/portfolio"}
+              actionText="Github"
+              href2={"https://bryanbauzon.com/"}
+              actionText2="Live"
             />
           </div>
         </div>
