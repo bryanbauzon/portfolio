@@ -54,7 +54,7 @@ export const ERROR_404 = "404 NOT FOUND";
 export const ERROR_404_DESCRIPTION = `The page you're looking for doesn't seem to exist.`;
 export const RETURN_TO_HOME = "Return to Home";
 
-export const DEVELOPER = "Developer/";
+export const DEVELOPER = "Developer";
 export const FILMMAKER = "Filmmaker.";
 export const FILMS = 'FILMS';
 export const EXPLORE = "Explore.";

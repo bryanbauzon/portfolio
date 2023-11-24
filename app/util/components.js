@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
+import "@fontsource/montserrat"; // Defaults to weight 400
+import "@fontsource/montserrat/400.css"; // Specify weight
+import "@fontsource/montserrat/400-italic.css"; // Specify weight and style
 import {
   Modal,
   ModalContent,
@@ -20,6 +23,8 @@ import {
   SOCIAL_LINKS,
   SOCIAL_MEDIA,
   EMAIL,
+  RESUME,
+  EXPLORE
 } from "../constants/strings";
 
 export const HeaderComponent = (props) => {
@@ -90,9 +95,10 @@ export const ContactComponent = (props) => {
   return (
     <>
       <Link
-        className="text-darkMode dark:text-white"
-        href={"javascript:void(0);"}
-        onClick={() => {
+        className="text-white"
+        href={"#"}
+        onClick={(e) => {
+          e.preventDefault()
           onOpen();
         }}
       >
@@ -204,14 +210,15 @@ export const ExperienceComponent = (props) => {
   return (
     <>
       <div>
-        <Card className="max-w-[420px] p-10">
+        <motion.div whileHover={{rotate:[0,12,2,0]}}> 
+        <Card className="max-w-[420px] p-10 ">
           <CardHeader className="justify-between">
             <div className="flex gap-5">
               <div className="flex flex-col gap-1 items-start justify-center">
-                <h1 className="text-xl font-semibold defaultFont text-theme font-bold">
+                <h1 className="text-xl font-bold defaultFont text-theme font-bold">
                   {props.company}
                 </h1>
-                <h2 className="text-small tracking-tight text-sub">
+                <h2 className="text-small tracking-tight">
                   {props.title} - {props.type}
                 </h2>
               </div>
@@ -224,7 +231,7 @@ export const ExperienceComponent = (props) => {
             </div>
             <div>
               <button
-                className="underline text-theme text-small"
+                className="flex items-center defaultFont text-theme font-bold ml-2 hover:underline"
                 onClick={() => {
                   onOpen();
                 }}
@@ -234,6 +241,7 @@ export const ExperienceComponent = (props) => {
             </div>
           </CardFooter>
         </Card>
+        </motion.div>
         <Modal
           isOpen={isOpen}
           onOpenChange={onOpenChange}
@@ -269,13 +277,7 @@ export const ExperienceComponent = (props) => {
                   </div>
                   <div>
                     <h2 className="font-bold">Website:</h2>
-                    <Link
-                      href={props.website}
-                      className="text-theme underline"
-                      target="_blank"
-                    >
-                      {props.website}
-                    </Link>
+                    <CustomLinksComponent isAnimate={false} href={props.website} displayText={props.website}/>
                   </div>
                 </ModalBody>
                 <ModalFooter>
@@ -323,6 +325,7 @@ export const ProjectComponent = (props) => {
   let IMAGE_SRC = props.src;
   return (
     <>
+     <motion.div whileHover={{rotate:[0,12,2,0]}}> 
       <div className="flex justify-center">
         {props.src == null ? (
           <div className="w-full">
@@ -330,7 +333,7 @@ export const ProjectComponent = (props) => {
               <CardHeader className="justify-between">
                 <div className="flex gap-5">
                   <div className="flex flex-col gap-1 items-start justify-center">
-                    <h1 className="text-lg font-semibold leading-none text-theme font-bold">
+                    <h1 className="text-xl defaultFont font-bold leading-none text-theme font-bold">
                       {props.title} - {props.date}
                     </h1>
                     <h2 className="text-small tracking-tight text-default-400">
@@ -342,11 +345,11 @@ export const ProjectComponent = (props) => {
 
               <CardFooter className="gap-3">
                 <div className="flex gap-1">
-                  <p className=" text-default-400 text-small font-bold">
+                  <p className=" text-default-400 defaultFont text-small font-bold">
                     {props.tech}
                   </p>
                 </div>
-                <div className="content-end">
+                <div className="content-end flex">
                   {props.href == "#" ? (
                     <>
                       <motion.div className="text-theme text-small">
@@ -355,24 +358,12 @@ export const ProjectComponent = (props) => {
                     </>
                   ) : (
                     <>
-                      <Link
-                        href={props.href}
-                        className="underline text-theme text-small"
-                        target={"_blank"}
-                      >
-                        {props.actionText}
-                      </Link>
+                        <CustomLinksComponent href={props.href} displayText={props.actionText}/>
                     </>
                   )}
                   {props.href2 != undefined ? (
                     <>
-                      <Link
-                        href={props.href2}
-                        className="ml-2 underline text-theme text-small"
-                        target={"_blank"}
-                      >
-                        {props.actionText2}
-                      </Link>
+                      <CustomLinksComponent href={props.href2} displayText={props.actionText2}/>
                     </>
                   ) : (
                     <></>
@@ -395,17 +386,44 @@ export const ProjectComponent = (props) => {
             >
               <Link href={props.href} target="_blank">
                 <Image
-                  className="rounded-none m-0 p-0 h-full w-full"
+                alt={props.title}
+                  className="rounded-none m-0 p-0 h-full w-full bg-debug"
                   src={IMAGE_SRC}
-                  priority
                   width={500}
-                  height={500}
+                  height={700}
                 />
               </Link>
             </Tooltip>
           </motion.div>
         )}
       </div>
+      </motion.div>
     </>
   );
 };
+
+
+export const CustomLinksComponent = (props) =>{
+  return (<>
+  {props.isAnimate ? <>
+    <motion.a href={props.href} 
+        target={props.href == '#experience'? "_self":"_blank"}
+        whileHover={{ scale: 1.2 }}
+        whileTap={{scale:0.9}}
+        className="flex items-center text-theme font-bold ml-2"
+    >
+      {props.displayText}
+    </motion.a>
+  </>:
+  <>
+    <motion.a href={props.href} 
+        target={props.href == '#experience'? "_self":"_blank"}
+        className="flex items-center text-theme font-bold ml-2 hover:underline defaultFont"
+    >
+      {props.displayText}
+    </motion.a>
+  </>
+  }
+  
+  </>)
+}

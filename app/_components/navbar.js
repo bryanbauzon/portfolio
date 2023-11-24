@@ -39,7 +39,7 @@ export default function NavbarComp(props) {
     <>
         <Navbar
           isMenuOpen={isMenuOpen}
-          className="dark:bg-darkMode bg-white"
+          className="bg-navbar"
           onMenuOpenChange={setIsMenuOpen}
           shouldHideOnScroll
         >
@@ -60,7 +60,7 @@ export default function NavbarComp(props) {
                   <ContactComponent link={MENU_ITEMS[index]} />
                 ) : (
                   <Link
-                    className="text-darkMode dark:text-white"
+                    className="text-white"
                     href={checkPathname(`${MENU_ITEMS[index]}`, props)}
                   >
                     {MENU_ITEMS[index]}
@@ -83,7 +83,7 @@ export default function NavbarComp(props) {
                     </>
                   ) : (
                     <Link
-                      className="w-full  text-darkMode dark:text-white"
+                      className="w-full text-white"
                       href={checkPathname(`${MENU_ITEMS[index]}`, props)}
                       size="lg"
                       onClick={() => {
