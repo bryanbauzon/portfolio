@@ -10,8 +10,8 @@ export default function Projects() {
           <div className="grid  lg:grid-cols-3 grid-cols-1 lg:grid-cols-2 md:grid-cols-2 p-5 gap-4">
             <ProjectComponent
               title="Expense Manager"
-              actionText="Github"
-              tech="Salesforce, LWR, Apex"
+              actionText="Github."
+              tech="Salesforce, LWR OSS, JSForce, OAuth2, ExpressJS"
               description="Gain total control of your money. Become your own money manager and make every cent count."
               href="https://github.com/bryanbauzon/expense-manager"
               date="2023"
@@ -19,13 +19,13 @@ export default function Projects() {
 
             <ProjectComponent
               title="NextJS Template"
-              actionText="Github"
+              actionText="Github."
               tech="NextJS, Tailwind"
               description="A NextJS Template for building website."
               href="https://github.com/bryanbauzon/nextjs-template"
               date="2023"
               href2={"https://nextjs-template-demooo.vercel.app/"}
-              actionText2="Live"
+              actionText2="Live."
             />
             <ProjectComponent
               title="Portfolio Website"
@@ -34,9 +34,9 @@ export default function Projects() {
             
               date="2023"
               href={"https://github.com/bryanbauzon/portfolio"}
-              actionText="Github"
+              actionText="Github."
               href2={"https://bryanbauzon.com/"}
-              actionText2="Live"
+              actionText2="Live."
             />
           </div>
         </div>

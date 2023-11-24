@@ -15,11 +15,11 @@ html {
 }
 
 .defaultFont {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Montserrat;
 }
 
 .subFont {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Montserrat;
 }
 
 .backgroundGradient {
@@ -57,12 +57,12 @@ html {
 .about,
 .underdev {
   color: white;
-  background-color: #FFD369;
+  background-color: #B4DFE5;
   cursor: pointer;
 }
 
 .projectLink {
-  color: #FFD369
+  color: #B4DFE5
 }
 
 .tech,
@@ -107,7 +107,7 @@ a {
 }
 
 a:hover {
-  /* color: #FFD369; */
+  /* color: #B4DFE5; */
   transition: color 0.5s ease-in;
   -webkit-transition: color 0.5s ease-in;
   -moz-transition: color 0.5s ease-in;
@@ -120,7 +120,7 @@ a:hover {
 }
 
 .header:hover {
-  color: #FFD369;
+  color: #B4DFE5;
   transition: color 0.5s ease-in;
   -webkit-transition: color 0.5s ease-in;
   -moz-transition: color 0.5s ease-in;
@@ -148,13 +148,13 @@ a:hover {
 }
 
 .coffee:hover {
-  text-decoration-color: #FFD369;
+  text-decoration-color: #B4DFE5;
   ;
 
   /*add those for opera and mozilla support*/
-  -webkit-text-decoration-color: #FFD369;
+  -webkit-text-decoration-color: #B4DFE5;
   ;
-  -moz-text-decoration-color: #FFD369;
+  -moz-text-decoration-color: #B4DFE5;
   ;
 }
 
@@ -168,7 +168,7 @@ a:hover {
 
 .qr:hover {
   cursor: pointer;
-  box-shadow: 2px 7px 15px #FFD369;
+  box-shadow: 2px 7px 15px #B4DFE5;
   transition: box-shadow 0.4s ease-in;
   -webkit-transition: box-shadow 0.4s ease-in;
   -moz-transition: box-shadow 0.4s ease-in;
@@ -186,7 +186,7 @@ a:hover {
 
 .experience:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 12px #FFD369;
+  box-shadow: 2px 2px 12px #B4DFE5;
   transition: box-shadow 0.3s ease-in;
   -webkit-transition: box-shadow 0.3s ease-in;
   -moz-transition: box-shadow 0.3s ease-in;
@@ -206,24 +206,24 @@ a:hover {
 }
 
 .footerLink:hover {
-  text-decoration-color: #FFD369;
+  text-decoration-color: #B4DFE5;
   ;
 
   /*add those for opera and mozilla support*/
-  -webkit-text-decoration-color: #FFD369;
+  -webkit-text-decoration-color: #B4DFE5;
   ;
-  -moz-text-decoration-color: #FFD369;
+  -moz-text-decoration-color: #B4DFE5;
   ;
 }
 
 .emailLink:hover {
-  text-decoration-color: #FFD369;
+  text-decoration-color: #B4DFE5;
   ;
 
   /*add those for opera and mozilla support*/
-  -webkit-text-decoration-color: #FFD369;
+  -webkit-text-decoration-color: #B4DFE5;
   ;
-  -moz-text-decoration-color: #FFD369;
+  -moz-text-decoration-color: #B4DFE5;
   ;
 }
 
@@ -234,14 +234,7 @@ a:hover {
     -34px -34px 79px #36404e;
 }
 
-.profile {
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-}
 
-/* Disable grayscale on hover */
-.profile:hover {
-  -webkit-filter: grayscale(0);
-  filter: none;
+NavbarMenuToggle{
+  color: #ffff;
 }

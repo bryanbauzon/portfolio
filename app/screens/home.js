@@ -7,12 +7,11 @@ import {
   EXPLORE,
   INTRO_DEV,
   INTRO_FILM,
-  RESUME,
-  RESUME_DIR_JAVA,
-  RESUME_DIR_SALESFORCE
+  RESUME
 } from "../constants/strings";
 import { checkPathname,openForWork } from "../util/util";
 import { NAME, INTRO_DESCRIPTION } from "../constants/strings";
+import { CustomLinksComponent } from "../util/components";
 import Image from "next/image";
 export default function Home(props) {
   const textDisplayConfig = {
@@ -35,10 +34,10 @@ export default function Home(props) {
               <Image src={"/profile/profile.jpeg"} className="profile mr-5 mb-10" height={2000} width={750} />
             </div>
             <div>
-              <p className="text-tiny mt-2">Welcome, I'm</p>
+              <p className="text-tiny mt-2 font-bold">Welcome, I'm</p>
               <p className="text-2xl text-theme font-bold">{NAME}</p>
               <div className="xl:text-8xl lg:text-7xl md:text-7xl text-5xl font-bold">
-                <p>{toUpperLowerCase(DEVELOPER, "u")}</p>
+                <p className="dark:text-white text-darkMode">{toUpperLowerCase(DEVELOPER, "u")}</p>
                 <Link
                   href={checkPathname("films", props)}
                   className="ml-2 text-theme"
@@ -54,19 +53,9 @@ export default function Home(props) {
               </p>
 
               <div className="mt-1 text-3xl flex flex-row">
-              <Link
-                  href={openForWork()}
-                  target={"_blank"}
-                  className="underline flex items-center hover:animate-pulse text-theme font-bold"
-                >
-                  {toUpperLowerCase(RESUME, "")}
-                </Link> 
-                <Link
-                  href={"#experience"}
-                  className="underline flex items-center hover:animate-pulse text-theme font-bold ml-2"
-                >
-                   {toUpperLowerCase(EXPLORE, "")}
-                </Link>
+             
+                <CustomLinksComponent isAnimate={true} href={openForWork()} displayText={toUpperLowerCase(RESUME, "")}/>
+                <CustomLinksComponent isAnimate={true} href={"#experience"} displayText={toUpperLowerCase(EXPLORE, "")}/>
               </div>
             </div>
           </div>
