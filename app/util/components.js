@@ -325,9 +325,10 @@ export const ProjectComponent = (props) => {
   let IMAGE_SRC = props.src;
   return (
     <>
-     <motion.div whileHover={{rotate:[0,12,2,0]}}> 
+    
       <div className="flex justify-center">
         {props.src == null ? (
+           <motion.div whileHover={{rotate:[0,12,2,0]}}> 
           <div className="w-full">
             <Card className="max-w-[420px] p-10 h-[250px]">
               <CardHeader className="justify-between">
@@ -372,6 +373,7 @@ export const ProjectComponent = (props) => {
               </CardFooter>
             </Card>
           </div>
+          </motion.div>
         ) : (
           <motion.div whileTap={{ scale: 0.8 }}>
             <Tooltip
@@ -387,7 +389,7 @@ export const ProjectComponent = (props) => {
               <Link href={props.href} target="_blank">
                 <Image
                 alt={props.title}
-                  className="rounded-none m-0 p-0 h-full w-full bg-debug"
+                  className="rounded-none m-0 p-0 h-[250px] w-full bg-debug"
                   src={IMAGE_SRC}
                   width={500}
                   height={700}
@@ -397,7 +399,7 @@ export const ProjectComponent = (props) => {
           </motion.div>
         )}
       </div>
-      </motion.div>
+     
     </>
   );
 };
