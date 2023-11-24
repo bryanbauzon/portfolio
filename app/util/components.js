@@ -389,7 +389,7 @@ export const ProjectComponent = (props) => {
               <Link href={props.href} target="_blank">
                 <Image
                 alt={props.title}
-                  className="rounded-none m-0 p-0 h-[250px] w-full bg-debug"
+                  className="rounded-none m-0 p-0 h-[250px] w-[100vh]"
                   src={IMAGE_SRC}
                   width={500}
                   height={700}
