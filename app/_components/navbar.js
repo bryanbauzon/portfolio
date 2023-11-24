@@ -86,7 +86,7 @@ export default function NavbarComp(props) {
                     </>
                   ) : (
                     <Link
-                      className="w-full text-white"
+                      className="w-full dark:text-white text-darkMode"
                       href={checkPathname(`${MENU_ITEMS[index]}`, props)}
                       size="lg"
                       onClick={() => {
