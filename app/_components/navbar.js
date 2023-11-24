@@ -68,7 +68,10 @@ export default function NavbarComp(props) {
                 )}
               </NavbarItem>
             ))}
-            <NavbarItem>
+          
+          </NavbarContent>
+          <NavbarContent justify="end">
+          <NavbarItem>
               <ThemeSwitch />
             </NavbarItem>
           </NavbarContent>
