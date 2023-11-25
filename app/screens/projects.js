@@ -4,10 +4,10 @@ export default function Projects() {
   return (
     <>
       <div className="  h-min dark:bg-darkMode " id="projects">
-        <HeaderComponent header={HEADERS[2]} id="projects" />
+        <HeaderComponent header={HEADERS[3]} id="projects" />
 
         <div className="flex flex-col pt-5 items-center" id="programming">
-          <div className="grid  lg:grid-cols-3 grid-cols-1 lg:grid-cols-2 md:grid-cols-2 p-5 gap-4">
+          <div className="grid  lg:grid-cols-3 grid-cols-1 lg:grid-cols-2 md:grid-cols-2 p-5 gap-4 pb-20">
             <ProjectComponent
               title="Expense Manager"
               actionText="Github."

@@ -13,17 +13,11 @@ export default async function Page() {
     <>
       <NextUIProvider>
         <NavbarComp />
-        <Home
-          pathname={pathname}
-        />
-            <Experience />
-            <Certifications />
-            {/* <Services /> */}
-            <Projects />
-
-        <Footer pathname={pathname} />
-
-        {/* <Skills /> */}
+        <Home />
+        <Experience />
+        <Certifications />
+        <Projects />
+        <Footer />
       </NextUIProvider>
     </>
   );

@@ -51,7 +51,7 @@ export const AboutComponent = (props) => {
   return (
     <>
       <Link
-        className="font-bold text-theme"
+        className="font-bold text-theme defaultFont"
         href={"#"}
         onClick={() => {
           onOpen();
@@ -111,19 +111,19 @@ export const ContactComponent = (props) => {
         size="xs"
         backdrop="blur"
       >
-        <ModalContent>
+        <ModalContent className="defaultFont">
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">
                 Let's work together! 🚀
               </ModalHeader>
               <ModalBody>
-                <p className="defaultFont text-md">
+                <p className="defaultFont text-small">
                   {" "}
                   I would love to hear from you. Whether it’s a project, a job
                   opportunity, or just a chat. Feel free to contact me! 👋
                 </p>
-                <Link href={`mailto:${EMAIL}`} className="text-sm text-theme">
+                <Link href={`mailto:${EMAIL}`} className="text-sm hover:underline text-theme">
                   {EMAIL}
                 </Link>
                 <div>
@@ -346,7 +346,7 @@ export const ProjectComponent = (props) => {
 
               <CardFooter className="gap-3">
                 <div className="flex gap-1">
-                  <p className=" text-default-400 defaultFont text-small font-bold">
+                  <p className=" text-default-400 defaultFont text-xs font-bold">
                     {props.tech}
                   </p>
                 </div>

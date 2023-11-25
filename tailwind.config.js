@@ -33,10 +33,10 @@ module.exports = {
       colors: {
         darkMode: "#222629",
         light:"#FFF",
-        navbar: "#222629",
+        navbar: "#1c2022",
         name: "#DDE6ED",
         role: "#EEEEEE",
-        footer: "#222831",
+        footer: "#111315",
         links:'#ff7c00',
         white:'#FFF',
         dark: "#F0F0F0",
@@ -46,7 +46,6 @@ module.exports = {
         theme:'#85cbd5',
         sub:'#D1D1D1',
         lightSub:'#2C3333'
-        // "#F0F0F0",
       },
     },
   },
