@@ -40,7 +40,7 @@ export default function Home(props) {
                 <p className="dark:text-white text-darkMode">{toUpperLowerCase(DEVELOPER, "u")}</p>
                 <Link
                   href={checkPathname("films", props)}
-                  className="ml-2 text-theme"
+                  className="ml-2 text-theme animate-pulse"
                 >
                   {toUpperLowerCase(FILMMAKER, "u")}
                 </Link>
