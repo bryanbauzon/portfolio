@@ -231,7 +231,7 @@ export const ExperienceComponent = (props) => {
             </div>
             <div>
               <button
-                className="flex items-center defaultFont text-theme font-bold ml-2 hover:underline"
+                className="flex items-center defaultFont text-theme font-bold ml-2 hover:underline decoration-dotted"
                 onClick={() => {
                   onOpen();
                 }}
@@ -420,7 +420,7 @@ export const CustomLinksComponent = (props) =>{
   <>
     <motion.a href={props.href} 
         target={props.href == '#experience'? "_self":"_blank"}
-        className="flex items-center text-theme font-bold ml-2 hover:underline defaultFont"
+        className="flex items-center text-theme font-bold ml-2 hover:underline decoration-dotted defaultFont"
     >
       {props.displayText}
     </motion.a>
