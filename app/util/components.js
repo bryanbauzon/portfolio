@@ -250,7 +250,7 @@ export const ExperienceComponent = (props) => {
           className="p-5"
           scrollBehavior="inside"
         >
-          <ModalContent>
+          <ModalContent className="defaultFont">
             {(onClose) => (
               <>
                 <ModalHeader className="flex flex-col gap-1">
