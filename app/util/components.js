@@ -212,10 +212,10 @@ export const ExperienceComponent = (props) => {
       <div>
         <motion.div whileHover={{rotate:[0,12,2,0]}}> 
         <Card className="max-w-[420px] p-10 ">
-          <CardHeader className="justify-between">
+          <CardHeader className="justify-between defaultFont">
             <div className="flex gap-5">
               <div className="flex flex-col gap-1 items-start justify-center">
-                <h1 className="text-xl font-bold defaultFont text-theme font-bold">
+                <h1 className="text-xl font-bold  text-theme font-bold">
                   {props.company}
                 </h1>
                 <h2 className="text-small tracking-tight">
