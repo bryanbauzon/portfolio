@@ -43,6 +43,20 @@ export default function Videos() {
             <div>
               <CategoryComponent displayText={SAME_DAY_EDIT} />
               <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
+              <ProjectComponent
+                  actionText="Watch"
+                  title="Tanduyong Island - The Untold Story"
+                  href="https://www.youtube.com/watch?v=iESDS_YYeJA"
+                  date="November 2023"
+                  src={"/projects/tanduyongIs.png"}
+                />
+              <ProjectComponent
+                  actionText="Watch"
+                  title="Capture Everything"
+                  href="https://www.youtube.com/watch?v=p-k61M1yU_c"
+                  date="November 2023"
+                  src={"/projects/captureEverything.png"}
+                />
                 <ProjectComponent
                   actionText="Watch"
                   title="Life Journey"

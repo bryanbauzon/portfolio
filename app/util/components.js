@@ -378,7 +378,9 @@ export const ProjectComponent = (props) => {
           <motion.div whileTap={{ scale: 0.8 }}>
             <Tooltip
               showArrow={true}
-              color="foreground"
+              color="default"
+              placement="bottom"
+              offset={-7}
               content={
                 <div className="px-1 py-2">
                   <div className="text-small font-bold">{props.title}</div>
