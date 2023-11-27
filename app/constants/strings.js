@@ -7,7 +7,7 @@ export const MENU_ITEMS = [
   "Contact",
 ];
 
-export const WEBSITE_NAME = " @bryanbauzon";
+export const WEBSITE_NAME = "@bryanbauzon";
 export const EMAIL = "mrbryanbauzon@gmail.com";
 
 export const SOCIAL_MEDIA = ["LinkedIn", "Salesforce"];
