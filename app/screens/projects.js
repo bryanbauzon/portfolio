@@ -8,6 +8,14 @@ export default function Projects() {
 
         <div className="flex flex-col pt-5 items-center" id="programming">
           <div className="grid  lg:grid-cols-3 grid-cols-1 lg:grid-cols-2 md:grid-cols-2 p-5 gap-4 pb-20">
+          <ProjectComponent
+              title="IFI App"
+              actionText="Github."
+              tech="Flutter"
+              description="A simple mobile app used to list the church songs at ease with predefined titles/ labels."
+              href="https://github.com/bryanbauzon/ifi"
+              date="December 2023"
+            />
             <ProjectComponent
               title="Expense Manager"
               actionText="Github."
