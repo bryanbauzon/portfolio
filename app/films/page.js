@@ -31,7 +31,7 @@ export default function Videos() {
         <div className="  h-min dark:bg-darkMode ">
           <NavbarComp pathname={pathname} />
 
-          <div className="flex flex-col defaultFont" id="videography">
+          <div className="flex pb-20  flex-col defaultFont" id="videography">
             <div className="p-4 items-center justify-center flex flex-col">
               <div className="xl:text-8xl lg:text-7xl md:text-7xl text-5xl font-bold ">
                 {FILMS}
@@ -105,6 +105,13 @@ export default function Videos() {
             <div>
               <CategoryComponent displayText={OTHER_PROJECTS} />
               <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
+              <ProjectComponent
+                  actionText="Watch"
+                  title="2023 SEASON"
+                  href="https://youtu.be/MR_FI7tNDds"
+                  date="December 2023"
+                  src={"/projects/2023.png"}
+                />
                 <ProjectComponent
                   actionText="Watch"
                   title="Nature"
