@@ -9,7 +9,15 @@ export default function Projects() {
         <div className="flex flex-col pt-5 items-center" id="programming">
           <div className="grid  lg:grid-cols-3 grid-cols-1 lg:grid-cols-2 md:grid-cols-2 p-5 gap-4 pb-20">
           <ProjectComponent
-              title="IFI App"
+              title="Healthcare Mobile App"
+              actionText="Github."
+              tech="Flutter"
+              description="The HIPAA Privacy Rule requires appropriate safeguards to protect the privacy of protected health information and sets limits and conditions on the uses and disclosures that may be made of such information without an authorization."
+              href="https://github.com/bryanbauzon/healthcare-app"
+              date="January 2024"
+            />
+          <ProjectComponent
+              title="IFI Mobile App"
               actionText="Github."
               tech="Flutter"
               description="A simple mobile app used to list the church songs at ease with predefined titles/ labels."

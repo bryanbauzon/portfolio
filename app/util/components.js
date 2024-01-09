@@ -330,12 +330,12 @@ export const ProjectComponent = (props) => {
         {props.src == null ? (
            <motion.div whileHover={{rotate:[0,12,2,0]}}> 
           <div className="w-full">
-            <Card className="max-w-[420px] p-10 h-[250px]">
+            <Card className="max-w-[420px] p-10 h-[min]">
               <CardHeader className="justify-between">
                 <div className="flex gap-5">
                   <div className="flex flex-col gap-1 items-start justify-center">
                     <h1 className="text-xl defaultFont font-bold leading-none text-theme font-bold">
-                      {props.title} - {props.date}
+                      {props.title}
                     </h1>
                     <h2 className="text-small tracking-tight text-default-400">
                       {props.description}
@@ -347,7 +347,7 @@ export const ProjectComponent = (props) => {
               <CardFooter className="gap-3">
                 <div className="flex gap-1">
                   <p className=" text-default-400 defaultFont text-xs font-bold">
-                    {props.tech}
+                    {props.tech} - {props.date}
                   </p>
                 </div>
                 <div className="content-end flex">
