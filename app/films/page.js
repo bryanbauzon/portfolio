@@ -107,6 +107,13 @@ export default function Videos() {
               <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
               <ProjectComponent
                   actionText="Watch"
+                  title="DJI AVATA X DJI OSMO ACTION 1"
+                  href="https://www.youtube.com/watch?v=6kCg6ZFGFrc"
+                  date="January 2024"
+                  src={"/projects/avata.png"}
+                />
+              <ProjectComponent
+                  actionText="Watch"
                   title="2023 SEASON"
                   href="https://youtu.be/MR_FI7tNDds"
                   date="December 2023"
