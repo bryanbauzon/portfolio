@@ -126,6 +126,13 @@ export default function Videos() {
                   date="December 2023"
                   src={"/projects/2023.png"}
                 />
+                   <ProjectComponent
+                  actionText="Watch"
+                  title="IT'S REFUSING TO GIVE UP"
+                  href="https://youtu.be/7K1WDy3emes"
+                  date="December 2023"
+                  src={"/projects/help.png"}
+                />
                 <ProjectComponent
                   actionText="Watch"
                   title="Nature"
