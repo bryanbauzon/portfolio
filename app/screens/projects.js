@@ -9,6 +9,12 @@ export default function Projects() {
         <div className="flex flex-col pt-5 items-center" id="programming">
           <div className="grid  lg:grid-cols-3 grid-cols-1 lg:grid-cols-2 md:grid-cols-2 p-5 gap-4 pb-20">
           <ProjectComponent
+              title="Financial Manager"
+              tech="Flutter"
+              description="A mobile application made with Flutter that calculates your daily expenses, monitor your spending habit, budget your monthly bills, and so on."
+              date="in-progress"
+            />
+          <ProjectComponent
               title="Healthcare Mobile App"
               actionText="Github."
               tech="Flutter"
