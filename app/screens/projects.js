@@ -11,6 +11,8 @@ export default function Projects() {
           <ProjectComponent
               title="Financial Manager"
               tech="Flutter"
+              actionText='Github.'
+              href='https://github.com/bryanbauzon/finance-manager'
               description="A mobile application made with Flutter that calculates your daily expenses, monitor your spending habit, budget your monthly bills, and so on."
               date="in-progress"
             />
