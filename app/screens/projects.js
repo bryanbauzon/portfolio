@@ -33,7 +33,7 @@ export default function Projects() {
               date="December 2023"
             />
             <ProjectComponent
-              title="Expense Manager"
+              title="Expense Manager (Udemy Course)"
               actionText="Github."
               tech="Salesforce, LWR OSS, JSForce, OAuth2, ExpressJS"
               description="Gain total control of your money. Become your own money manager and make every cent count."
