@@ -45,6 +45,13 @@ export default function Videos() {
               <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
               <ProjectComponent
                   actionText="Watch"
+                  title="57th FOUNDING ANNIVERSARY - TONDOL NATIONAL HIGH SCHOOL"
+                  href="https://youtu.be/RvoEv5ymD1Q"
+                  date="March 2024"
+                  src={"/projects/57foundingAnniversary.png"}
+                />
+              <ProjectComponent
+                  actionText="Watch"
                   title="LIFE IS TOO SHORT"
                   href="https://youtu.be/OpzL18Af2R0"
                   date="February 2024"
