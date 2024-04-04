@@ -43,6 +43,13 @@ export default function Videos() {
             <div>
               <CategoryComponent displayText={SAME_DAY_EDIT} />
               <div className="grid  lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
+                 <ProjectComponent
+                  actionText="Watch"
+                  title="HAPPY FIESTA, BARANGAY TONDOL!"
+                  href="https://youtu.be/4W2k_fWqps8"
+                  date="March 2024"
+                  src={"/projects/2024BarangayTondol.png"}
+                />
               <ProjectComponent
                   actionText="Watch"
                   title="57th FOUNDING ANNIVERSARY - TONDOL NATIONAL HIGH SCHOOL"
