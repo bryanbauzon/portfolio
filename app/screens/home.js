@@ -7,9 +7,9 @@ import {
   EXPLORE,
   INTRO_DEV,
   INTRO_FILM,
-  RESUME
+  RESUME,
 } from "../constants/strings";
-import { checkPathname,openForWork } from "../util/util";
+import { checkPathname, openForWork } from "../util/util";
 import { NAME, INTRO_DESCRIPTION } from "../constants/strings";
 import { CustomLinksComponent } from "../util/components";
 import Image from "next/image";
@@ -31,31 +31,46 @@ export default function Home(props) {
         <div className=" flex h-screen w-full items-center">
           <div className=" p-10 defaultFont grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 gap-3">
             <div className="w-full hidden md:hidden lg:flex  items-center justify-center">
-              <Image src={"/profile/profile.jpeg"} className="profile mr-5 mb-10" height={2000} width={750} />
+              <Image
+                src={"/profile/image.png"}
+                className="profile mr-5 mb-10"
+                height={2000}
+                width={750}
+              />
             </div>
             <div>
               <p className="text-tiny mt-2 font-bold">Welcome, I'm</p>
               <p className="text-2xl text-theme font-bold">{NAME}</p>
               <div className="xl:text-8xl lg:text-7xl md:text-7xl text-5xl font-bold">
-                <p className="dark:text-white text-darkMode">{toUpperLowerCase(DEVELOPER, "u")}</p>
-                <Link
+                <p className="dark:text-white text-darkMode  animate-pulse">
+                  {toUpperLowerCase(DEVELOPER, "u")}
+                </p>
+                {/* <Link
                   href={checkPathname("films", props)}
                   className="ml-2 text-theme animate-pulse"
                 >
                   {toUpperLowerCase(FILMMAKER, "u")}
-                </Link>
+                </Link> */}
               </div>
               <p className="text-lg dark:text-sub text-lightSub">
                 {INTRO_DESCRIPTION}
               </p>
               <p className="text-lg dark:text-sub text-lightSub">
-                {INTRO_DEV} {INTRO_FILM}
+                {INTRO_DEV}
+                {/* {INTRO_FILM} */}
               </p>
 
               <div className="mt-1 text-3xl flex flex-row">
-             
-                <CustomLinksComponent isAnimate={true} href={openForWork()} displayText={toUpperLowerCase(RESUME, "")}/>
-                <CustomLinksComponent isAnimate={true} href={"#experience"} displayText={toUpperLowerCase(EXPLORE, "")}/>
+                <CustomLinksComponent
+                  isAnimate={true}
+                  href={openForWork()}
+                  displayText={toUpperLowerCase(RESUME, "")}
+                />
+                <CustomLinksComponent
+                  isAnimate={true}
+                  href={"#experience"}
+                  displayText={toUpperLowerCase(EXPLORE, "")}
+                />
               </div>
             </div>
           </div>

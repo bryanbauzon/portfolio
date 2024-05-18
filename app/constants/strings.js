@@ -3,7 +3,7 @@ export const MENU_ITEMS = [
   "Experience",
   "Certifications",
   "Projects",
-  "Films",
+  // "Films",
   "Contact",
 ];
 
@@ -37,7 +37,7 @@ let year = date.getFullYear();
 
 const YEAR_STARTED_WORKING = 2019;
 export const TOTAL_YEARS_OF_WORKING = year - YEAR_STARTED_WORKING + "+ years ";
-export const INTRO_DESCRIPTION = `A ${TOTAL_YEARS_OF_WORKING} Software Developer by profession and a passionate filmmaker based in Philippines.`;
+export const INTRO_DESCRIPTION = `A ${TOTAL_YEARS_OF_WORKING} Software Developer based in Philippines.`;
 export const INTRO_DEV = ` My journey in software development has been driven by a curiosity to learn and a dedication to building applications that make a meaningful impact.`;
 export const INTRO_FILM = `
 I'm a creative storyteller with a camera in hand and a vision in mind. As a filmmaker, I bring stories to life through the lens,
@@ -46,7 +46,12 @@ I'm a creative storyteller with a camera in hand and a vision in mind. As a film
 
 export const BASED_COUNTRY = "based in Philippines.";
 
-export const HEADERS = ["Certifications", "Experience","Some tools I use", "Recent projects"];
+export const HEADERS = [
+  "Certifications",
+  "Experience",
+  "Some tools I use",
+  "Recent projects",
+];
 
 export const BACK_TO_TOP = "Back to Top";
 export const PLEASE_WAIT = "Please wait...";
@@ -56,14 +61,14 @@ export const RETURN_TO_HOME = "Return to Home";
 
 export const DEVELOPER = "Developer.";
 export const FILMMAKER = "Filmmaker.";
-export const FILMS = 'FILMS';
+export const FILMS = "FILMS";
 export const EXPLORE = "Explore.";
 export const RESUME = "Resume.";
-export const DETAILS = "Details"
+export const DETAILS = "Details";
 
-export const ISJAVA = true;
-export const RESUME_DIR_SALESFORCE = "/docs/Max Bryan C. Bauzon - Salesforce Developer.pdf"
-export const RESUME_DIR_JAVA = "/docs/Max Bryan C. Bauzon.pdf"
+export const ISJAVA = false;
+export const RESUME_DIR_SALESFORCE = "/docs/Max Bryan Bauzon - SFDEV.pdf";
+export const RESUME_DIR_JAVA = "/docs/Max Bryan C. Bauzon.pdf";
 
-export const SAME_DAY_EDIT = 'SAME DAY EDIT (SDE)';
-export const OTHER_PROJECTS = 'OTHER PROJECTS'
+export const SAME_DAY_EDIT = "SAME DAY EDIT (SDE)";
+export const OTHER_PROJECTS = "OTHER PROJECTS";
